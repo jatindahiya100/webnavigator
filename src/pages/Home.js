@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <TextImageGrid
         heading="I’m Jatin Dahiya. I live in Sonipat City, where I design the future."
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        text="I’ve loved making things for as long as I can remember, and wrote my first program when I was 12 years old, just two weeks after my father brought home the brand new DELL Latitude | E5410 that I taught myself to type on."
         btnText="Explore More"
         btnLink=""
         imageType="Lottie"
