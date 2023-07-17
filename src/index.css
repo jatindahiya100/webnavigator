@@ -85,3 +85,9 @@
     color: var(--primary-color);
     background-color: var(--accent);
 }
+
+/* Topography */
+a {
+    text-decoration: none;
+    color: unset;
+}
