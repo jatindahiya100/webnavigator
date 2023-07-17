@@ -14,58 +14,10 @@
     --dark-gray: #1F1F1F;
 }
 
-.primary-text-light-mode.active {
-    color: var(--primary-color);
-    background-color: var(--accent);
-    transition: 1s;
-}
-
-.primary-text-dark-mode.active {
-    color: var(--primary-color);
-    background-color: var(--accent);
-    transition: 1s;
-}
-
-/* Light Mode */
-.primary-bg-light-mode {
-    background-color: var(--primary-color);
-    transition: 1s;
-}
-
-.secondary-bg-light-mode {
-    background-color: var(--light-gray);
-    transition: 1s;
-}
-
-.primary-text-light-mode {
-    color: var(--secondary-color);
-    transition: 1s;
-}
-
-.secondary-text-light-mode {
-    color: var(--dark-gray);
-    transition: 1s;
-}
-
-/* Dark Mode */
-.primary-bg-dark-mode {
-    background-color: var(--secondary-color);
-    transition: 1s;
-}
-
-.secondary-bg-dark-mode {
-    background-color: var(--dark-gray);
-    transition: 1s;
-}
-
-.primary-text-dark-mode {
-    color: var(--primary-color);
-    transition: 1s;
-}
-
-.secondary-text-dark-mode {
-    color: var(--light-gray);
-    transition: 1s;
+/* Topography */
+a {
+    text-decoration: none;
+    color: unset;
 }
 
 /* Classes */
@@ -84,10 +36,4 @@
     cursor: pointer;
     color: var(--primary-color);
     background-color: var(--accent);
-}
-
-/* Topography */
-a {
-    text-decoration: none;
-    color: unset;
 }
