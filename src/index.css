@@ -8,7 +8,7 @@
 :root {
     --primary-color: #FFFFFF;
     --secondary-color: #151515;
-    --accent: #407bff;
+    --accent: rgb(49, 130, 255);;
     --light-gray: #F5F5F5;
     --dark-gray: #1F1F1F;
 }

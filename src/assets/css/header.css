@@ -10,10 +10,8 @@
 }
 
 .header .logo img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    border-radius: 50%;
+    width: 100px;
+    height: auto;
     outline: none;
     border: none;
     cursor: pointer;
@@ -28,7 +26,26 @@
 }
 
 .nav-items a {
+    font-size: medium;
+    font-weight: 500;
     text-decoration: none;
     padding: 0.6em 1em;
     border-radius: 4em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.quick-actions .toogle-mode {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    font-size: x-large;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,.35);
 }
