@@ -1,0 +1,18 @@
+.text-image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .text-content {
+    grid-column: 1;
+  }
+  
+  .image-content {
+    grid-column: 2;
+  }
+  
+  .image {
+    max-width: 100%;
+  }
+  

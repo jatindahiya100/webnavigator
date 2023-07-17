@@ -1,7 +1,6 @@
 import React from 'react'
-import '../assets/css/header.css'
-import logo from '../assets/images/logo.png'
-import logo1 from '../assets/images/thrive-logo.png'
+import '../assets/css/Header.css'
+import logo from '../assets/images/thrive-logo.png'
 import { Link, NavLink } from "react-router-dom"
 
 export default function Header() {
@@ -10,7 +9,7 @@ export default function Header() {
     <div className='header'>
 
       <div className="logo">
-        <Link to='/'><img className='logo' src={logo1} alt="" /></Link>
+        <Link to='/'><img className='logo' src={logo} alt="" /></Link>
       </div>
 
       <div className="nav-items">
