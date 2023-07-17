@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <TextImageGrid
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        imageUrl="https://example.com/image.jpg"
+        imageUrl="https://d14pjowmeoxkey.cloudfront.net/wp-content/uploads/thrivedigital-about-1200x941-1.jpg"
       />
     </>
   )
