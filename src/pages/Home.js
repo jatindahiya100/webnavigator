@@ -1,12 +1,17 @@
 import React from 'react'
 import TextImageGrid from '../components/TextImageGrid'
+import animationData from '../assets/images/Animation1689573956186.json'
 
 export default function Home() {
   return (
     <>
       <TextImageGrid
+        heading="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        imageUrl="https://d14pjowmeoxkey.cloudfront.net/wp-content/uploads/thrivedigital-about-1200x941-1.jpg"
+        btnText="Explore More"
+        btnLink=""
+        imageType="Lottie"
+        imageUrl={animationData}
       />
     </>
   )
