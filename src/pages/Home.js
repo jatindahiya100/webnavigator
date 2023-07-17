@@ -50,7 +50,7 @@ export default function Home() {
       },
       imageType: "Lottie",
       imageUrl: Lottie04,
-      gridBg: "#F1F0EA"
+      gridBg: "#FFFFF"
 
     },
     {
