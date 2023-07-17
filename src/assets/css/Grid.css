@@ -1,37 +1,38 @@
-.text-image-grid {
+.grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   overflow: hidden;
 }
 
-.text-content {
-  padding: 6em 1em 0 1em;
+.grid-item {
   display: flex;
   flex-flow: column nowrap;
   gap: 2em;
 }
 
-.text-content h1 {
+.grid-item.text {
+  padding: 6em 1em 0 1em;
+}
+
+.grid-item h1 {
   font-size: 4rem;
   text-transform: capitalize;
   font-weight: 800;
 }
 
-.text-content p {
+.grid-item p {
   font-size: medium;
   line-height: 1.8em;
 }
 
-.image-content {}
-
-.image {
+.grid-item .image {
   max-width: 100%;
 }
 
 /* Responsive Styles */
 
 @media screen and (max-width: 800px) {
-  .text-image-grid {
+  .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
 }
