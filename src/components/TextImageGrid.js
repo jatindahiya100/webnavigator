@@ -8,7 +8,7 @@ const TextImageGrid = ({ heading, text, btnText, btnLink, imageType, imageUrl })
       <div className="text-content">
         <h1>{heading}</h1>
         <p>{text}</p>
-        <button onClick={() => { window.open({ btnLink }) }}>{btnText}</button>
+        <button className='button' onClick={() => { window.open({ btnLink }) }}>{btnText}</button>
       </div>
       <div className="image-content">
         {imageType === "Lottie" ?

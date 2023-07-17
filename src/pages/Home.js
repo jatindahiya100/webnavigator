@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <TextImageGrid
-        heading="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        heading="I’m Jatin Dahiya. I live in Sonipat City, where I design the future."
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         btnText="Explore More"
         btnLink=""

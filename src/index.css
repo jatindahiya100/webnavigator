@@ -8,7 +8,8 @@
 :root {
     --primary-color: #FFFFFF;
     --secondary-color: #151515;
-    --accent: rgb(49, 130, 255);;
+    --accent: rgb(49, 130, 255);
+    ;
     --light-gray: #F5F5F5;
     --dark-gray: #1F1F1F;
 }
@@ -65,4 +66,19 @@
 .secondary-text-dark-mode {
     color: var(--light-gray);
     transition: 1s;
+}
+
+/* Classes */
+.button {
+    outline: none;
+    border: none;
+    width: max-content;
+    font-size: medium;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 4em;
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: var(--accent);
 }
