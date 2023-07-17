@@ -15,10 +15,10 @@ export default function Header() {
 
       <div className="nav-items">
         <NavLink className="primary-text-light-mode" to='/'><ion-icon name="home"></ion-icon>Home</NavLink>
-        <NavLink className="primary-text-light-mode" to='/services'>What We Do</NavLink>
-        <NavLink className="primary-text-light-mode" to='/about'>We Are</NavLink>
-        <NavLink className="primary-text-light-mode" to='/work'>Portfolio</NavLink>
-        <NavLink className="primary-text-light-mode" to='/contact'>Contact</NavLink>
+        <NavLink className="primary-text-light-mode" to='/services'><ion-icon name="cube"></ion-icon> Services</NavLink>
+        <NavLink className="primary-text-light-mode" to='/work'><ion-icon name="logo-react"></ion-icon> Work</NavLink>
+        <NavLink className="primary-text-light-mode" to='/about'><ion-icon name="information-circle"></ion-icon> About</NavLink>
+        <NavLink className="primary-text-light-mode" to='/contact'><ion-icon name="infinite"></ion-icon> Start Project</NavLink>
       </div>
 
 
