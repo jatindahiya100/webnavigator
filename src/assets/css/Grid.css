@@ -45,6 +45,10 @@
     padding: 2em 1em 0 1em;
   }
 
+  .grid-item.text {
+    align-items: center;
+  }
+
   .grid-item h1 {
     font-size: xx-large;
   }

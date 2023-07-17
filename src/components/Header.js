@@ -34,7 +34,7 @@ export default function Header() {
         <NavLink to='/startProject' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="infinite"></ion-icon> Start Project</NavLink>
       </nav>
 
-      <div className='toggle-menu' onClick={toggleMenu}><ion-icon name="menu"></ion-icon></div>
+      <div className='toggle-menu' onClick={toggleMenu}><ion-icon name={isNavOpen === false ? "menu" : "close"}></ion-icon></div>
 
     </header>
   )
