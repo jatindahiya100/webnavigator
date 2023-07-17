@@ -2,7 +2,7 @@ import React from 'react';
 import '../assets/css/Grid.css';
 import Lottie from 'lottie-react'
 
-const Grid = ({ index, heading, text, btnText, handleBtnClick, imageType, imageUrl }) => {
+const Grid = ({ index, heading, text, btnText, handleBtnClick, imageType, imageUrl, gridBg }) => {
   const isEven = index % 2 === 0;
 
   const renderTextItem = () => (
@@ -24,19 +24,22 @@ const Grid = ({ index, heading, text, btnText, handleBtnClick, imageType, imageU
   );
 
   return (
-    <div className="grid-container">
-      {isEven ? (
-        <>
-          {renderTextItem()}
-          {renderImageItem()}
-        </>
-      ) : (
-        <>
-          {renderImageItem()}
-          {renderTextItem()}
-        </>
-      )}
+    <div style={{ backgroundColor: gridBg }}>
+      <div className="grid-container">
+        {isEven ? (
+          <>
+            {renderTextItem()}
+            {renderImageItem()}
+          </>
+        ) : (
+          <>
+            {renderImageItem()}
+            {renderTextItem()}
+          </>
+        )}
+      </div>
     </div>
+
   );
 };
 

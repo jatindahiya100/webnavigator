@@ -13,42 +13,56 @@ export default function Home() {
       text: "Our highly skilled team possesses the ability to transform your wildest ideas and concepts into tangible, innovative realities. With our expertise and passion for development, we can bring to life any vision you share with us, no matter how complex or imaginative it may be.",
       btnText: "Scroll Down",
       handleBtnClick: () => {
-        alert("Hello");
+        alert("Website is under development");
       },
       imageType: "Lottie",
-      imageUrl: Lottie01
+      imageUrl: Lottie01,
+      gridBg: "#FFFFFF"
     },
     {
       heading: "we will craft a custom solution from scratch",
       text: "Experience the power of custom solutions as our expert team crafts innovative and personalized solutions from scratch, designed to meet your exact needs and exceed your expectations.",
-      btnText: "Explore More",
-      handleBtnClick: "",
+      btnText: "Previous Work",
+      handleBtnClick: () => {
+        alert("Website is under development");
+      },
       imageType: "Lottie",
-      imageUrl: Lottie02
+      imageUrl: Lottie02,
+      gridBg: "#A3CFFF"
     },
     {
       heading: "Let’s collaborate to make something incredible. Just like you",
       text: "Join forces with our collaborative team to create something extraordinary. Together, we'll bring your vision to life, just as exceptional as you imagined.",
-      btnText: "Explore More",
-      handleBtnClick: "",
+      btnText: "Let's Collab",
+      handleBtnClick: () => {
+        alert("Website is under development");
+      },
       imageType: "Lottie",
-      imageUrl: Lottie03
+      imageUrl: Lottie03,
+      gridBg: "#FFFFFF"
     },
     {
       heading: "Elegant UI / UX design beyond just putting pixels together",
       text: "Experience the art of UI/UX design that goes beyond pixel assembly. Our team creates elegant and intuitive interfaces that captivate users, ensuring seamless interactions and an exceptional user experience.",
       btnText: "Explore More",
-      handleBtnClick: "",
+      handleBtnClick: () => {
+        alert("Website is under development");
+      },
       imageType: "Lottie",
-      imageUrl: Lottie04
+      imageUrl: Lottie04,
+      gridBg: "#F1F0EA"
+
     },
     {
       heading: "Customers leave us reviews. See the difference for yourself",
       text: "Discover the impact we make through customer reviews. Witness firsthand the difference we bring to projects, as our satisfied clients share their experiences and attest to the exceptional quality of our work.",
-      btnText: "Explore More",
-      handleBtnClick: "",
+      btnText: "Take Me There!",
+      handleBtnClick: () => {
+        alert("Website is under development");
+      },
       imageType: "Lottie",
-      imageUrl: Lottie05
+      imageUrl: Lottie05,
+      gridBg: "#FFF"
     },
     // Add more grid data objects as needed
   ];
@@ -63,6 +77,7 @@ export default function Home() {
         handleBtnClick={gridData[0].handleBtnClick}
         imageType={gridData[0].imageType}
         imageUrl={gridData[0].imageUrl}
+        gridBg={gridData[0].gridBg}
       />
 
       <Grid
@@ -73,6 +88,8 @@ export default function Home() {
         handleBtnClick={gridData[1].handleBtnClick}
         imageType={gridData[1].imageType}
         imageUrl={gridData[1].imageUrl}
+        gridBg={gridData[1].gridBg}
+
       />
 
       <Grid
@@ -83,26 +100,29 @@ export default function Home() {
         handleBtnClick={gridData[2].handleBtnClick}
         imageType={gridData[2].imageType}
         imageUrl={gridData[2].imageUrl}
+        gridBg={gridData[2].gridBg}
       />
 
       <Grid
-        index={2}
+        index={3}
         heading={gridData[3].heading}
         text={gridData[3].text}
         btnText={gridData[3].btnText}
         handleBtnClick={gridData[3].handleBtnClick}
         imageType={gridData[3].imageType}
         imageUrl={gridData[3].imageUrl}
+        gridBg={gridData[3].gridBg}
       />
 
       <Grid
-        index={3}
+        index={4}
         heading={gridData[4].heading}
         text={gridData[4].text}
         btnText={gridData[4].btnText}
         handleBtnClick={gridData[4].handleBtnClick}
         imageType={gridData[4].imageType}
         imageUrl={gridData[4].imageUrl}
+        gridBg={gridData[4].gridBg}
       />
 
       {/* Render other components here */}
