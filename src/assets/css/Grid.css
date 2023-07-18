@@ -16,7 +16,7 @@
 }
 
 .grid-item.text {
-  padding: 2em 2em 0 2em;
+  padding: 2em;
 }
 
 .grid-item h1 {
@@ -42,11 +42,11 @@
   }
 
   .grid-item.text {
-    padding: 2em 1em 0 1em;
     align-items: center;
+    padding: 2em 1em 2em 1em;
   }
 
   .grid-item h1 {
-    font-size: xx-large;
+    font-size: 3rem;
   }
 }

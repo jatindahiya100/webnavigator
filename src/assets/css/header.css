@@ -37,6 +37,8 @@ header {
     align-items: center;
     flex-flow: column nowrap;
     background: var(--primary-color);
+    padding-bottom: 2em;
+    height: 100vh;
 }
 
 nav a {
@@ -83,6 +85,10 @@ nav a.active {
 
     .desktop-menu {
         display: none;
+    }
+
+    nav a {
+        font-size: medium;
     }
 
     .toggle-menu {
