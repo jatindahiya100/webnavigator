@@ -1,45 +1,32 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import '../assets/css/Footer.css'
 
 export default function Footer() {
   return (
     <footer>
-      <div className='newsletter-container'>
-        <div className="">
-          <h3>Drop Your Email</h3>
-          <label htmlFor="newsletter-secondary-text">&amp; We'll Catch You Soon</label>
-        </div>
-        <div className="">
-          <form>
-            <input type="email" placeholder='Email Address' />
-            <button className='button'>Submit</button>
-          </form>
-        </div>
+      <div className="footer-top">
+        <h2>Ready To Start A <br /> Project?</h2>
+        <button className='button'>Let's Do This</button>
       </div>
-
-      <div className="links">
-        <ul>
-          <li><Link to="/">Home <ion-icon name="home"></ion-icon></Link></li>
-          <li><Link to="/work">Work <ion-icon name="logo-react"></ion-icon></Link></li>
-          <li><Link to="/tools">Tools <ion-icon name="build"></ion-icon></Link></li>
-          <li><Link to="/hire">Hire <ion-icon name="ribbon"></ion-icon></Link></li>
-        </ul>
-        <ul>
-          <li><a href="/">FAQs <ion-icon name="help-circle"></ion-icon></a></li>
-          <li><a href="/">Refund Policy <ion-icon name="refresh-circle"></ion-icon></a></li>
-          <li><a href="/">Terms &amp; Conditions <ion-icon name="document"></ion-icon></a></li>
-        </ul>
-      </div>
-
       <div className="footer-bottom">
-        <h2>LOGO</h2>
-        <div>
-          <div className='join-me'>
-            <ion-icon name="logo-instagram"></ion-icon>
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </div>
-          <div className="copyright">Copyright &#169; 2022 Whitehell.Devops Inc. All rights reserved</div>
+        <div className="nav-links">
+          <ul>
+            <li><NavLink to='/'><ion-icon name="cube"></ion-icon> Home</NavLink></li>
+            <li><NavLink to='services'><ion-icon name="cube"></ion-icon> Services</NavLink></li>
+            <li><NavLink to='work'><ion-icon name="cube"></ion-icon> Work</NavLink></li>
+            <li><NavLink to='/about'><ion-icon name="cube"></ion-icon> About</NavLink></li>
+          </ul>
+        </div>
+        <p>
+          Made With <span style={{ color: "crimson" }}><ion-icon name="heart"></ion-icon></span> In India. All rights reserved &copy; 2023.
+        </p>
+        <div className="social-links">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <ion-icon name="logo-github"></ion-icon>
         </div>
       </div>
     </footer>

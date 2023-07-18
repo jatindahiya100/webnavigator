@@ -1,176 +1,77 @@
 footer {
+    width: 100%;
     position: relative;
-    margin-top: 10%;
-    min-height: 400px;
     display: flex;
-    flex-direction: column;
-    gap: 1em;
+    flex-flow: column nowrap;
     align-items: center;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
-    background: var(--secondary-color);
+    justify-content: center;
 }
 
-.newsletter-container {
-    position: absolute;
-    top: -30%;
-    width: 70%;
-    min-height: 60%;
-    border-radius: 2em;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.footer-top {
+    max-width: 1600px;
+    width: 100%;
+    padding: 4em 1em;
     display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F0EA;
     gap: 2em;
-    align-items: center;
-    padding: 2rem;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    z-index: 100;
-    background: white;
 }
 
-.newsletter-container h3 {
-    font-size: clamp(2rem, 3.4vw, 4.6rem);
-    font-weight: 800;
+.footer-top h2 {
     text-align: center;
-    font-family: inherit;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 
-.newsletter-container label {
-    font-size: clamp(0.8rem, 1vw, 1.8rem);
-    line-height: clamp(1.8rem, 2vw, 2.8rem);
-}
-
-.newsletter-container form {
-    padding: 0.25em 0.5em;
-    border: 4px solid rgb(95, 95, 95);
-    border-radius: 5em;
-    display: inline-flex;
+.footer-bottom {
+    padding: 2em 1em;
+    display: flex;
+    flex-flow: column;
     align-items: center;
+    gap: 2em;
 }
 
-.newsletter-container form input {
-    border: none;
-    outline: none;
-    outline: none;
-    border: none;
-    padding: 1em 1.4em;
-    background-color: transparent;
-    border-radius: 50px;
+.footer-bottom .nav-links ul {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 2.6em;
+}
+
+.footer-bottom .nav-links ul li a {
     display: inline-flex;
     align-items: center;
     gap: 0.4em;
     font-weight: 500;
-    font-size: clamp(0.8rem, 1vw, 2rem);
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-
-footer .links {
-    width: 70%;
-    position: absolute;
-    z-index: 1000;
-    top: 40%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-    gap: 10%;
-}
-
-footer .links ul {
-    list-style: none;
-    display: flex;
-    gap: 1em;
-    flex-direction: column;
-}
-
-footer .links ul li {
-    width: 100%;
-}
-
-footer .links ul li a {
-    font-family: inherit;
-    color: #b1b1b1;
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: clamp(0.6rem, 1vw, 1.4rem);
-    line-height: clamp(1.2rem, 1vw, 1.8rem);
-}
-
-footer .links ul li a:hover {
-    color: white;
-}
-
-.footer-bottom {
-    width: 80%;
-    position: absolute;
-    bottom: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1em;
-}
-
-.footer-bottom h2 {
-    color: white;
-}
-
-.footer-bottom>div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 0.5em;
-}
-
-.footer-bottom .join-me {
-    color: white;
-    display: inline-flex;
-    gap: 1em;
-}
-
-.footer-bottom .join-me ion-icon {
-    font-size: 2em;
-}
-
-.footer-bottom .copyright {
-    color: rgba(255, 255, 255, 0.911);
-    font-weight: 300;
     font-size: small;
 }
 
-@media screen and (max-width:600px) {
-    footer {
-        padding: 4em 1em 1em 1em;
-        height: auto;
-    }
+.footer-bottom .nav-links ul li a:hover {
+    color: var(--accent);
+    transition: 0.2s;
+    scale: 1.2;
+}
 
-    .newsletter-container,
-    footer .links,
-    .footer-bottom {
-        width: 95%;
-        position: unset;
-        top: unset;
-        left: unset;
-        bottom: unset;
-    }
+.footer-bottom .nav-links ul li a ion-icon {
+    color: var(--accent);
+}
 
-    .newsletter-container form {
-        flex-wrap: wrap;
-        border: none;
-        gap: 2em;
-    }
+.footer-bottom .social-links {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.8em;
+}
 
-    .newsletter-container button {
-        width: 100%;
-    }
+.footer-bottom .social-links ion-icon {
+    font-size: x-large;
+    cursor: pointer;
+}
 
-    .footer-bottom {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .footer-bottom>div {
-        align-items: center;
-    }
+.footer-bottom .social-links ion-icon:hover {
+    color: var(--accent);
+    transition: 0.2s;
+    scale: 1.2;
 }
