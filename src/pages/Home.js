@@ -28,7 +28,7 @@ export default function Home() {
       },
       imageType: "Lottie",
       imageUrl: Lottie02,
-      gridBg: "#A3CFFF"
+      gridBg: "#FFFFFF"
     },
     {
       heading: "Let’s collaborate to make something incredible. Just like you",
@@ -50,7 +50,7 @@ export default function Home() {
       },
       imageType: "Lottie",
       imageUrl: Lottie04,
-      gridBg: "#FFFFF"
+      gridBg: "#FFFFFF"
 
     },
     {
@@ -62,7 +62,7 @@ export default function Home() {
       },
       imageType: "Lottie",
       imageUrl: Lottie05,
-      gridBg: "#FFF"
+      gridBg: "#FFFFFF"
     },
     // Add more grid data objects as needed
   ];
