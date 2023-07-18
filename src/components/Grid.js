@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../assets/css/Grid.css';
 import Lottie from 'lottie-react'
 
 const Grid = ({ index, heading, text, btnText, handleBtnClick, imageType, imageUrl, gridBg }) => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
+
+  const updateIsMobile = () => {
+    setIsMobile(window.innerWidth <= 800);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', updateIsMobile);
+    return () => {
+      window.removeEventListener('resize', updateIsMobile);
+    };
+  }, []);
+
   const isEven = index % 2 === 0;
 
   const renderTextItem = () => (
@@ -15,32 +28,41 @@ const Grid = ({ index, heading, text, btnText, handleBtnClick, imageType, imageU
 
   const renderImageItem = () => (
     <div className="grid-item">
-      {imageType === "Lottie" ?
+      {imageType === "Lottie" ? (
         <Lottie className='image' animationData={imageUrl} />
-        :
+      ) : (
         <img className="image" src={imageUrl} alt="" />
-      }
+      )}
     </div>
   );
 
   return (
     <div style={{ backgroundColor: gridBg }}>
       <div className="grid-container">
-        {isEven ? (
+        {isMobile ? (
           <>
             {renderTextItem()}
             {renderImageItem()}
           </>
         ) : (
           <>
-            {renderImageItem()}
-            {renderTextItem()}
+            {isEven ? (
+              <>
+                {renderTextItem()}
+                {renderImageItem()}
+              </>
+            ) : (
+              <>
+                {renderImageItem()}
+                {renderTextItem()}
+              </>
+            )}
           </>
         )}
       </div>
     </div>
-
   );
 };
+
 
 export default Grid;

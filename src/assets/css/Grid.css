@@ -15,8 +15,8 @@
   gap: 2em;
 }
 
-.grid-item.text {
-  padding: 2em;
+.grid-item {
+  padding: 1.6em;
 }
 
 .grid-item h1 {
@@ -43,7 +43,6 @@
 
   .grid-item.text {
     align-items: center;
-    padding: 2em 1em 2em 1em;
   }
 
   .grid-item h1 {
