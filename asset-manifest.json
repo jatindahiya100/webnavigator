@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/jatindahiya/static/css/main.9a225862.css",
-    "main.js": "/jatindahiya/static/js/main.10b61319.js",
+    "main.css": "/jatindahiya/static/css/main.919cd16e.css",
+    "main.js": "/jatindahiya/static/js/main.1de0a620.js",
     "static/media/thrive-logo.png": "/jatindahiya/static/media/thrive-logo.8202dc4958a30d6addf9.png",
     "index.html": "/jatindahiya/index.html",
-    "main.9a225862.css.map": "/jatindahiya/static/css/main.9a225862.css.map",
-    "main.10b61319.js.map": "/jatindahiya/static/js/main.10b61319.js.map"
+    "main.919cd16e.css.map": "/jatindahiya/static/css/main.919cd16e.css.map",
+    "main.1de0a620.js.map": "/jatindahiya/static/js/main.1de0a620.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a225862.css",
-    "static/js/main.10b61319.js"
+    "static/css/main.919cd16e.css",
+    "static/js/main.1de0a620.js"
   ]
 }
