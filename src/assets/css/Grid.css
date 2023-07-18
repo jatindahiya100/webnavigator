@@ -36,6 +36,7 @@
 @media screen and (max-width: 800px) {
   .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    padding-bottom: 2em;
   }
 
   .grid-item.text {
