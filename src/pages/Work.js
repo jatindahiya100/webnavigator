@@ -34,7 +34,7 @@ export default function Work() {
       gridBg: "#FFFFFF"
     },
     {
-      heading: "3). Compressor.io - Web-Based Compression",
+      heading: "3). Web Image Compression",
       text: "Compressor.io is a web-based image compression tool designed to reduce the file size of images without compromising their quality significantly. The platform is useful for individuals and web developers who seek to optimize the loading speed of their websites and applications by minimizing image sizes.",
       btnText: "Visit Site",
       handleBtnClick: () => {
