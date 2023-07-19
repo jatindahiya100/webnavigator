@@ -5,8 +5,11 @@ import Lottie02 from '../assets/images/Lottie02.json';
 import Lottie03 from '../assets/images/Lottie03.json';
 import Lottie04 from '../assets/images/Lottie04.json';
 import Lottie05 from '../assets/images/Lottie05.json';
+import { useNavigate } from 'react-router-dom';
+
 
 export default function Home() {
+  const navigate = useNavigate();
   const gridData = [
     {
       heading: "Our team can develop anything you can imagine or explain to us!",
@@ -24,7 +27,7 @@ export default function Home() {
       text: "Experience the power of custom solutions as our expert team crafts innovative and personalized solutions from scratch, designed to meet your exact needs and exceed your expectations.",
       btnText: "Previous Work",
       handleBtnClick: () => {
-        alert("Website is under development");
+        navigate('/work');
       },
       imageType: "Lottie",
       imageUrl: Lottie02,
