@@ -27,7 +27,7 @@ const Grid = ({ index, heading, text, btnText, handleBtnClick, imageType, imageU
   );
 
   const renderImageItem = () => (
-    <div className="grid-item">
+    <div id={index} className="grid-item">
       {imageType === "Lottie" ? (
         <Lottie className='image' animationData={imageUrl} />
       ) : (

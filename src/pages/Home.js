@@ -14,10 +14,11 @@ export default function Home() {
     {
       heading: "Our team can develop anything you can imagine or explain to us!",
       text: "Our highly skilled team possesses the ability to transform your wildest ideas and concepts into tangible, innovative realities. With our expertise and passion for development, we can bring to life any vision you share with us, no matter how complex or imaginative it may be.",
-      btnText: "Scroll Down",
+      btnText: "Explore",
       handleBtnClick: () => {
-        alert("Website is under development");
-      },
+        // 
+      }
+      ,
       imageType: "Lottie",
       imageUrl: Lottie01,
       gridBg: "#FFFFFF"
@@ -49,7 +50,7 @@ export default function Home() {
       text: "Experience the art of UI/UX design that goes beyond pixel assembly. Our team creates elegant and intuitive interfaces that captivate users, ensuring seamless interactions and an exceptional user experience.",
       btnText: "Explore More",
       handleBtnClick: () => {
-        alert("Website is under development");
+        navigate('/work');
       },
       imageType: "Lottie",
       imageUrl: Lottie04,
