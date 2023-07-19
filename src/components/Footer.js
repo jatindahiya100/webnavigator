@@ -18,7 +18,7 @@ export default function Footer() {
             <li><NavLink to='/about'><ion-icon name="cube"></ion-icon> About</NavLink></li>
           </ul>
         </div>
-        <p>
+        <p style={{textAlign: "center"}}>
           Made With <span style={{ color: "crimson" }}><ion-icon name="heart"></ion-icon></span> In India. All rights reserved &copy; 2023.
         </p>
         <div className="social-links">

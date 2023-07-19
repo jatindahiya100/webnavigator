@@ -38,6 +38,7 @@ footer {
     display: inline-flex;
     flex-flow: row wrap;
     align-items: center;
+    justify-content: space-between;
     gap: 2.6em;
 }
 
