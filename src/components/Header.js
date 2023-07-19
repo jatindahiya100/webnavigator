@@ -30,7 +30,6 @@ export default function Header() {
         <NavLink to='/' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="home"></ion-icon> Home</NavLink>
         <NavLink to='/services' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="shapes"></ion-icon> Services</NavLink>
         <NavLink to='/work' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="ribbon"></ion-icon> Work</NavLink>
-        <NavLink to='/about' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="logo-react"></ion-icon> About</NavLink>
         <NavLink to='/hire' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="infinite"></ion-icon> Start Project</NavLink>
       </nav>
 
