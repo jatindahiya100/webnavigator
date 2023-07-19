@@ -23,8 +23,8 @@ export default function Work() {
       gridBg: "#FFFFFF"
     },
     {
-      heading: "2). Clearbit - Data Analytics",
-      text: "Clearbit is a leading provider of B2B data intelligence, empowering go-to-market teams with robust company, contact, and IP information. Their comprehensive dataset, gathered from diverse sources, helps businesses enhance their targeting, personalization, and outreach strategies. With APIs and integrations, Clearbit enables seamless integration of their data into existing platforms, offering go-to-market teams a valuable resource for effective decision-making and customer engagement.",
+      heading: "2). Clearbit - Data Enrichment.",
+      text: "Clearbit is a data enrichment platform that provides business intelligence and contact information for companies and individuals. The platform uses advanced algorithms and data sources to gather and organize data on millions of businesses and professionals worldwide.",
       btnText: "Visit Site",
       handleBtnClick: () => {
         window.open("https://clearbit.com/");
@@ -34,8 +34,8 @@ export default function Work() {
       gridBg: "#FFFFFF"
     },
     {
-      heading: "3). Compressor.io - A Image Compression Tool",
-      text: "Clearbit is a leading provider of B2B data intelligence, empowering go-to-market teams with robust company, contact, and IP information. Their comprehensive dataset, gathered from diverse sources, helps businesses enhance their targeting, personalization, and outreach strategies. With APIs and integrations, Clearbit enables seamless integration of their data into existing platforms, offering go-to-market teams a valuable resource for effective decision-making and customer engagement.",
+      heading: "3). Compressor.io - Web-Based Compression",
+      text: "Compressor.io is a web-based image compression tool designed to reduce the file size of images without compromising their quality significantly. The platform is useful for individuals and web developers who seek to optimize the loading speed of their websites and applications by minimizing image sizes.",
       btnText: "Visit Site",
       handleBtnClick: () => {
         window.open("https://compressor.io/");
@@ -45,7 +45,7 @@ export default function Work() {
       gridBg: "#FFFFFF"
     },
     {
-      heading: "4). Studio Proper - e-commerce",
+      heading: "4). Studio Proper  e-commerce",
       text: "Studio Proper is a leading online retailer offering innovative accessories for mobile devices. They specialize in stylish and functional products like protective cases, mounts, stands, and more, designed to enhance the user experience and keep devices secure.",
       btnText: "Visit Site",
       handleBtnClick: () => {
