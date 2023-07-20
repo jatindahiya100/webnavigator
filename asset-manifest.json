@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/webnavigator/static/css/main.d0d80929.css",
-    "main.js": "/webnavigator/static/js/main.d07ffcc8.js",
+    "main.js": "/webnavigator/static/js/main.554f5bd5.js",
     "static/media/Luxy-Hair.png": "/webnavigator/static/media/Luxy-Hair.f898d1e628e2274d627f.png",
     "static/media/Proper.png": "/webnavigator/static/media/Proper.7e02eb508d590ece1e00.png",
     "static/media/Clearbit.png": "/webnavigator/static/media/Clearbit.00352c9caf578fbdedbc.png",
@@ -12,10 +12,10 @@
     "static/media/thrive-logo.png": "/webnavigator/static/media/thrive-logo.8202dc4958a30d6addf9.png",
     "index.html": "/webnavigator/index.html",
     "main.d0d80929.css.map": "/webnavigator/static/css/main.d0d80929.css.map",
-    "main.d07ffcc8.js.map": "/webnavigator/static/js/main.d07ffcc8.js.map"
+    "main.554f5bd5.js.map": "/webnavigator/static/js/main.554f5bd5.js.map"
   },
   "entrypoints": [
     "static/css/main.d0d80929.css",
-    "static/js/main.d07ffcc8.js"
+    "static/js/main.554f5bd5.js"
   ]
 }
