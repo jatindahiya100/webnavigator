@@ -1,9 +1,36 @@
 import React from 'react'
+import Grid from '../components/Grid';
+import Lottie01 from '../assets/images/Lottie01.json';
 
 export default function Hire() {
+    const gridData = [
+        {
+            heading: "Let's Build Together",
+            text: "Are you in need of top-notch digital solutions for your business? Look no further! At Web Navigator, we are committed to crafting digital experiences that drive success for your brand. Whether you require a stunning custom website, an SEO strategy that boosts your online presence, captivating social media management, or powerful ads campaigns, we've got you covered.",
+            btnText: "Get in Touch",
+            handleBtnClick: () => {
+                window.open("")
+            }
+            ,
+            imageType: "Lottie",
+            imageUrl: Lottie01,
+            gridBg: "#FFFFFF"
+        },
+        // Add more grid data objects as needed
+    ];
+
     return (
-        <div style={{ height: "80vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <h1 style={{ fontSize: "3rem" }}>Hire Us</h1>
-        </div>
+        <>
+            <Grid
+                index={0}
+                heading={gridData[0].heading}
+                text={gridData[0].text}
+                btnText={gridData[0].btnText}
+                handleBtnClick={gridData[0].handleBtnClick}
+                imageType={gridData[0].imageType}
+                imageUrl={gridData[0].imageUrl}
+                gridBg={gridData[0].gridBg}
+            />
+        </>
     )
 }
