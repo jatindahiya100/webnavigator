@@ -3,8 +3,10 @@ import Grid from '../components/Grid';
 import Lottie01 from '../assets/images/Lottie01.json';
 import Lottie02 from '../assets/images/Lottie02.json';
 import Lottie03 from '../assets/images/Lottie03.json';
-import Lottie04 from '../assets/images/Lottie04.json';
-import Lottie05 from '../assets/images/Lottie05.json';
+import SEOLottie from '../assets/images/SEO-Lottie-01.json';
+import SocialMediaLottie from '../assets/images/Social-Media-Lottie-01.json';
+import AdsCampaignLottie from '../assets/images/Ads-Campaign-Lottie-01.json';
+import ReviewsLottie from '../assets/images/Reviews-Lottie-01.json';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -12,9 +14,9 @@ export default function Home() {
   const navigate = useNavigate();
   const gridData = [
     {
-      heading: "Our team can develop anything you can imagine or explain to us!",
-      text: "Our highly skilled team possesses the ability to transform your wildest ideas and concepts into tangible, innovative realities. With our expertise and passion for development, we can bring to life any vision you share with us, no matter how complex or imaginative it may be.",
-      btnText: "Explore",
+      heading: "Unleash Your Digital Triumph!",
+      text: "Welcome to [Agency Name], where we transform your digital dreams into reality! As a premier digital service agency, we are driven by your success. Prepare to embark on an extraordinary journey with our dedicated team of visionaries and tech enthusiasts, as we empower your brand to conquer the digital realm.",
+      btnText: "Let's Begin Your Journey",
       handleBtnClick: () => {
         // 
       }
@@ -24,9 +26,9 @@ export default function Home() {
       gridBg: "#FFFFFF"
     },
     {
-      heading: "we will craft a custom solution from scratch",
-      text: "Experience the power of custom solutions as our expert team crafts innovative and personalized solutions from scratch, designed to meet your exact needs and exceed your expectations.",
-      btnText: "Previous Work",
+      heading: "We Will Craft A Custom Solution From Scratch",
+      text: "At [Agency Name], we don't just build websites; we create digital experiences that resonate with your audience. Our team of skilled developers and designers crafts fully custom websites tailored to meet your unique business needs. Stand out from the crowd with a website that not only looks stunning but also delivers seamless functionality and user-friendly interactions.",
+      btnText: "Discover Our Custom Websites",
       handleBtnClick: () => {
         navigate('/work');
       },
@@ -35,9 +37,9 @@ export default function Home() {
       gridBg: "#FFFFFF"
     },
     {
-      heading: "Let’s collaborate to make something incredible. Just like you",
-      text: "Join forces with our collaborative team to create something extraordinary. Together, we'll bring your vision to life, just as exceptional as you imagined.",
-      btnText: "Let's Collab",
+      heading: "Versatile Website Solutions From WordPress to Custom Builds.",
+      text: "Embrace versatility with our website solutions. Whether you prefer the ease of WordPress, the flexibility of Wix, or any other website builder, we've got you covered! Our expertise spans across various platforms, ensuring that your website is built using the technology that suits you best, without compromising on quality or creativity.",
+      btnText: "Explore Our Website Solutions",
       handleBtnClick: () => {
         alert("Website is under development");
       },
@@ -46,26 +48,48 @@ export default function Home() {
       gridBg: "#FFFFFF"
     },
     {
-      heading: "Elegant UI / UX design beyond just putting pixels together",
-      text: "Experience the art of UI/UX design that goes beyond pixel assembly. Our team creates elegant and intuitive interfaces that captivate users, ensuring seamless interactions and an exceptional user experience.",
-      btnText: "Explore More",
+      heading: "Harness the Power of SEO & Amplify Your Growth",
+      text: "Reach new heights with our SEO Experts team by your side. Boost your website's visibility and attract organic traffic with our data-driven SEO strategies. Watch as your website climbs the search engine ranks and draws in the right audience, ultimately driving business growth and ensuring your online success.",
+      btnText: "Unleash SEO Potential",
       handleBtnClick: () => {
         navigate('/work');
       },
       imageType: "Lottie",
-      imageUrl: Lottie04,
+      imageUrl: SEOLottie,
       gridBg: "#FFFFFF"
 
     },
     {
-      heading: "Customers leave us reviews. See the difference for yourself",
-      text: "Discover the impact we make through customer reviews. Witness firsthand the difference we bring to projects, as our satisfied clients share their experiences and attest to the exceptional quality of our work.",
-      btnText: "Take Me There!",
+      heading: "Ignite Your Online Presence Through Social Media",
+      text: "Unlock the full potential of social media with our expert management team. Engage your audience, build a loyal following, and create meaningful connections with your brand. Our social media wizards will craft captivating content and manage your online presence, helping you take the social media world by storm.",
+      btnText: "Elevate Social Presence",
       handleBtnClick: () => {
         alert("Website is under development");
       },
       imageType: "Lottie",
-      imageUrl: Lottie05,
+      imageUrl: SocialMediaLottie,
+      gridBg: "#FFFFFF"
+    },
+    {
+      heading: "Unleash Your Business Potential With Ads Campaigns",
+      text: "Take your business to the next level with our dynamic ads campaigns. From Google Ads to Facebook and Instagram Ads, our creative team will design compelling ad campaigns that drive results. Increase conversions, expand your reach, and witness the power of strategic advertising for your business.",
+      btnText: " Ignite Your Ads Campaign",
+      handleBtnClick: () => {
+        alert("Website is under development");
+      },
+      imageType: "Lottie",
+      imageUrl: AdsCampaignLottie,
+      gridBg: "#FFFFFF"
+    },
+    {
+      heading: "Client Love: Hear What Our Clients Say",
+      text: "Our success is measured by the satisfaction of our clients. Discover what our previous partners have to say about their experience with [Agency Name]. We take pride in delivering exceptional results and building lasting relationships, and our clients' testimonials speak volumes about the dedication and excellence we bring to every project.",
+      btnText: " Read Client Reviews",
+      handleBtnClick: () => {
+        alert("Website is under development");
+      },
+      imageType: "Lottie",
+      imageUrl: ReviewsLottie,
       gridBg: "#FFFFFF"
     },
     // Add more grid data objects as needed
@@ -127,6 +151,28 @@ export default function Home() {
         imageType={gridData[4].imageType}
         imageUrl={gridData[4].imageUrl}
         gridBg={gridData[4].gridBg}
+      />
+
+      <Grid
+        index={5}
+        heading={gridData[5].heading}
+        text={gridData[5].text}
+        btnText={gridData[5].btnText}
+        handleBtnClick={gridData[5].handleBtnClick}
+        imageType={gridData[5].imageType}
+        imageUrl={gridData[5].imageUrl}
+        gridBg={gridData[5].gridBg}
+      />
+
+      <Grid
+        index={6}
+        heading={gridData[6].heading}
+        text={gridData[6].text}
+        btnText={gridData[6].btnText}
+        handleBtnClick={gridData[6].handleBtnClick}
+        imageType={gridData[6].imageType}
+        imageUrl={gridData[6].imageUrl}
+        gridBg={gridData[6].gridBg}
       />
 
       {/* Render other components here */}
