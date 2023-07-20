@@ -1,11 +1,11 @@
 import React from 'react'
 import Grid from '../components/Grid';
-import Lottie01 from '../assets/images/Lottie01.json';
+import HireLottie from '../assets/images/Hire-Lottie-01.json';
 
 export default function Hire() {
     const gridData = [
         {
-            heading: "Let's Build Together",
+            heading: "Ready to Get Started? Shoot Us a Chat!",
             text: "Are you in need of top-notch digital solutions for your business? Look no further! At Web Navigator, we are committed to crafting digital experiences that drive success for your brand. Whether you require a stunning custom website, an SEO strategy that boosts your online presence, captivating social media management, or powerful ads campaigns, we've got you covered.",
             btnText: "Get in Touch",
             handleBtnClick: () => {
@@ -13,7 +13,7 @@ export default function Hire() {
             }
             ,
             imageType: "Lottie",
-            imageUrl: Lottie01,
+            imageUrl: HireLottie,
             gridBg: "#FFFFFF"
         },
         // Add more grid data objects as needed
