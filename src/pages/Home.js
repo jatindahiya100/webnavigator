@@ -52,7 +52,7 @@ export default function Home() {
       text: "Reach new heights with our SEO Experts team by your side. Boost your website's visibility and attract organic traffic with our data-driven SEO strategies. Watch as your website climbs the search engine ranks and draws in the right audience, ultimately driving business growth and ensuring your online success.",
       btnText: "Unleash SEO Potential",
       handleBtnClick: () => {
-        navigate('/work');
+        
       },
       imageType: "Lottie",
       imageUrl: SEOLottie,
@@ -64,7 +64,7 @@ export default function Home() {
       text: "Unlock the full potential of social media with our expert management team. Engage your audience, build a loyal following, and create meaningful connections with your brand. Our social media wizards will craft captivating content and manage your online presence, helping you take the social media world by storm.",
       btnText: "Elevate Social Presence",
       handleBtnClick: () => {
-        alert("Website is under development");
+        
       },
       imageType: "Lottie",
       imageUrl: SocialMediaLottie,
@@ -75,7 +75,7 @@ export default function Home() {
       text: "Take your business to the next level with our dynamic ads campaigns. From Google Ads to Facebook and Instagram Ads, our creative team will design compelling ad campaigns that drive results. Increase conversions, expand your reach, and witness the power of strategic advertising for your business.",
       btnText: " Ignite Your Ads Campaign",
       handleBtnClick: () => {
-        alert("Website is under development");
+        
       },
       imageType: "Lottie",
       imageUrl: AdsCampaignLottie,
@@ -86,7 +86,7 @@ export default function Home() {
       text: "Our success is measured by the satisfaction of our clients. Discover what our previous partners have to say about their experience with Web Navigator. We take pride in delivering exceptional results and building lasting relationships, and our clients' testimonials speak volumes about the dedication and excellence we bring to every project.",
       btnText: " Read Client Reviews",
       handleBtnClick: () => {
-        alert("Website is under development");
+        
       },
       imageType: "Lottie",
       imageUrl: ReviewsLottie,
