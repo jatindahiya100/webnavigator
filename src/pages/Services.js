@@ -25,7 +25,7 @@ export default function Services() {
       text: "Sidebird.io is a unique Twitter tool that enables passive growth through smart retweet automations. The emphasis was on providing non-spammy retweets to help users grow their Twitter presence even when they are busy or inactive.",
       imageType: "image",
       imageUrl: WebDevelopmentCover,
-      gridBg: "#FFFFFF"
+      gridBg: "#F7F6F3"
     },
     {
       index: 2,
@@ -41,7 +41,7 @@ export default function Services() {
       text: "Sidebird.io is a unique Twitter tool that enables passive growth through smart retweet automations. The emphasis was on providing non-spammy retweets to help users grow their Twitter presence even when they are busy or inactive.",
       imageType: "image",
       imageUrl: SEOCover,
-      gridBg: "#FFFFFF"
+      gridBg: "#F7F6F3"
     },
     {
       index: 4,
@@ -57,7 +57,7 @@ export default function Services() {
       text: "Sidebird.io is a unique Twitter tool that enables passive growth through smart retweet automations. The emphasis was on providing non-spammy retweets to help users grow their Twitter presence even when they are busy or inactive.",
       imageType: "image",
       imageUrl: HostingCover,
-      gridBg: "#FFFFFF"
+      gridBg: "#F7F6F3"
     },
     // Add more grid data objects as needed
   ];
