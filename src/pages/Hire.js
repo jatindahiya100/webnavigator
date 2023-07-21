@@ -23,7 +23,7 @@ export default function Hire() {
             list: ["Secure Payments: Reliable and worry-free transactions on Upwork.", "Verified Reviews: Authentic client feedback for quality assurance.", "Escrow Protection: Ensured fairness through milestone-based payments.", "Time-Tracking: Transparent progress monitoring with Upwork's feature."],
             btnText: "Hire On Upwork",
             handleBtnClick: () => {
-
+                window.open("https://www.upwork.com/ab/flservices/workwith/jatindahiya");
             },
             imageType: "Lottie",
             imageUrl: HireLottie,
@@ -35,7 +35,7 @@ export default function Hire() {
             list: ["Visit our Upwork profile by clicking the link below.", "Review our portfolio, client feedback, and the range of services we offer.", "Share your project requirements, and we will promptly respond with a tailored proposal.", "Fund the project securely through Upwork's escrow system.", "Sit back and relax as we bring your digital vision to life!"],
             btnText: "Upwork Profile",
             handleBtnClick: () => {
-
+                window.open("https://www.upwork.com/freelancers/~012d6eb926a1f7a86a");
             },
             imageType: "Lottie",
             imageUrl: HireLottie,
