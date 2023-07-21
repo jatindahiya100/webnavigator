@@ -9,9 +9,10 @@ export default function Hire() {
             text: "Are you in need of top-notch digital solutions for your business? Look no further! At Web Navigator, we are committed to crafting digital experiences that drive success for your brand. Whether you require a stunning custom website, an SEO strategy that boosts your online presence, captivating social media management, or powerful ads campaigns, we've got you covered.",
             btnText: "Get in Touch",
             handleBtnClick: () => {
-                window.open("")
-            }
-            ,
+                window.tidioChatApi.show();
+                window.tidioChatApi.open();
+
+            },
             imageType: "Lottie",
             imageUrl: HireLottie,
             gridBg: "#FFFFFF"
