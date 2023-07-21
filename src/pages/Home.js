@@ -16,7 +16,7 @@ export default function Home() {
     {
       index: 0,
       heading: "Unleash Your Digital Triumph!",
-      text: "Welcome to Web Navigator, where we transform your digital dreams into reality! As a premier digital service agency, we are driven by your success. Prepare to embark on an extraordinary journey with our dedicated team of visionaries and tech enthusiasts, as we empower your brand to conquer the digital realm.",
+      text: "Welcome to Web Navigators, where we transform your digital dreams into reality! As a premier digital service agency, we are driven by your success. Prepare to embark on an extraordinary journey with our dedicated team of visionaries and tech enthusiasts, as we empower your brand to conquer the digital realm.",
       btnText: "Let's Begin Your Journey",
       handleBtnClick: () => {
         // 
@@ -28,7 +28,7 @@ export default function Home() {
     {
       index: 1,
       heading: "We Will Craft A Custom Solution From Scratch",
-      text: "At Web Navigator, we don't just build websites; we create digital experiences that resonate with your audience. Our team of skilled developers and designers crafts fully custom websites tailored to meet your unique business needs. Stand out from the crowd with a website that not only looks stunning but also delivers seamless functionality and user-friendly interactions.",
+      text: "At Web Navigators, we don't just build websites; we create digital experiences that resonate with your audience. Our team of skilled developers and designers crafts fully custom websites tailored to meet your unique business needs. Stand out from the crowd with a website that not only looks stunning but also delivers seamless functionality and user-friendly interactions.",
       btnText: "Discover Our Custom Websites",
       handleBtnClick: () => {
         navigate('/work');
@@ -89,7 +89,7 @@ export default function Home() {
     {
       index: 6,
       heading: "Client Love: Hear What Our Clients Say",
-      text: "Our success is measured by the satisfaction of our clients. Discover what our previous partners have to say about their experience with Web Navigator. We take pride in delivering exceptional results and building lasting relationships, and our clients' testimonials speak volumes about the dedication and excellence we bring to every project.",
+      text: "Our success is measured by the satisfaction of our clients. Discover what our previous partners have to say about their experience with Web Navigators. We take pride in delivering exceptional results and building lasting relationships, and our clients' testimonials speak volumes about the dedication and excellence we bring to every project.",
       btnText: " Read Client Reviews",
       handleBtnClick: () => {
 
