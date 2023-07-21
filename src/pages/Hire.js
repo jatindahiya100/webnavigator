@@ -1,6 +1,6 @@
 import React from 'react'
 import Grid from '../components/Grid';
-import HireLottie from '../assets/images/Lottie/Hire-Lottie-01.json';
+import ChatLottie from '../assets/images/Lottie/Chat-Lottie-01.json';
 import HireOnUpworkLottie from '../assets/images/Lottie/Hire-On-Upwork-Lottie-01.json';
 import HowToHireOnUpworkLottie from '../assets/images/Lottie/How-To-Hire-On-Upwork-Lottie-01.json';
 
@@ -16,7 +16,7 @@ export default function Hire() {
                 window.tidioChatApi.open();
             },
             imageType: "Lottie",
-            imageUrl: HireLottie,
+            imageUrl: ChatLottie,
             gridBg: "#FFFFFF"
         },
         {
