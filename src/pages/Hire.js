@@ -1,6 +1,6 @@
 import React from 'react'
 import Grid from '../components/Grid';
-import HireLottie from '../assets/images/Hire-Lottie-01.json';
+import HireLottie from '../assets/images/Lottie/Hire-Lottie-01.json';
 
 export default function Hire() {
     const gridData = [

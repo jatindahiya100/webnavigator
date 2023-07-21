@@ -1,12 +1,12 @@
 import React from 'react';
 import Grid from '../components/Grid';
-import Lottie01 from '../assets/images/Lottie01.json';
-import Lottie02 from '../assets/images/Lottie02.json';
-import Lottie03 from '../assets/images/Lottie03.json';
-import SEOLottie from '../assets/images/SEO-Lottie-01.json';
-import SocialMediaLottie from '../assets/images/Social-Media-Lottie-01.json';
-import AdsCampaignLottie from '../assets/images/Ads-Campaign-Lottie-01.json';
-import ReviewsLottie from '../assets/images/Reviews-Lottie-01.json';
+import Lottie01 from '../assets/images/Lottie/Lottie01.json';
+import Lottie02 from '../assets/images/Lottie/Lottie02.json';
+import Lottie03 from '../assets/images/Lottie/Lottie03.json';
+import SEOLottie from '../assets/images/Lottie/SEO-Lottie-02.json';
+import SocialMediaLottie from '../assets/images/Lottie/Social-Media-Lottie-01.json';
+import AdsCampaignLottie from '../assets/images/Lottie/Ads-Campaign-Lottie-01.json';
+import ReviewsLottie from '../assets/images/Lottie/Reviews-Lottie-01.json';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -34,7 +34,7 @@ export default function Home() {
       },
       imageType: "Lottie",
       imageUrl: Lottie02,
-      gridBg: "#FFFFFF"
+      gridBg: "#F7F6F3"
     },
     {
       heading: "Versatile Website Solutions From WordPress to Custom Builds.",
@@ -56,7 +56,7 @@ export default function Home() {
       },
       imageType: "Lottie",
       imageUrl: SEOLottie,
-      gridBg: "#FFFFFF"
+      gridBg: "#F7F6F3"
 
     },
     {
@@ -79,7 +79,7 @@ export default function Home() {
       },
       imageType: "Lottie",
       imageUrl: AdsCampaignLottie,
-      gridBg: "#FFFFFF"
+      gridBg: "#F7F6F3"
     },
     {
       heading: "Client Love: Hear What Our Clients Say",
