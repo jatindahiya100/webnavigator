@@ -1,6 +1,8 @@
 import React from 'react'
 import Grid from '../components/Grid';
 import HireLottie from '../assets/images/Lottie/Hire-Lottie-01.json';
+import HireOnUpworkLottie from '../assets/images/Lottie/Hire-On-Upwork-Lottie-01.json';
+import HowToHireOnUpworkLottie from '../assets/images/Lottie/How-To-Hire-On-Upwork-Lottie-01.json';
 
 export default function Hire() {
     const gridData = [
@@ -26,8 +28,8 @@ export default function Hire() {
                 window.open("https://www.upwork.com/ab/flservices/workwith/jatindahiya");
             },
             imageType: "Lottie",
-            imageUrl: HireLottie,
-            gridBg: "#FFFFFF"
+            imageUrl: HireOnUpworkLottie,
+            gridBg: "#F7F6F3"
         },
         {
             index: 2,
@@ -38,7 +40,7 @@ export default function Hire() {
                 window.open("https://www.upwork.com/freelancers/~012d6eb926a1f7a86a");
             },
             imageType: "Lottie",
-            imageUrl: HireLottie,
+            imageUrl: HowToHireOnUpworkLottie,
             gridBg: "#FFFFFF"
         },
         // Add more grid data objects as needed

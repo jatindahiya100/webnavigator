@@ -3,7 +3,7 @@ import Grid from '../components/Grid';
 import Lottie01 from '../assets/images/Lottie/Lottie01.json';
 import Lottie02 from '../assets/images/Lottie/Lottie02.json';
 import Lottie03 from '../assets/images/Lottie/Lottie03.json';
-import SEOLottie from '../assets/images/Lottie/SEO-Lottie-02.json';
+import SEOLottie from '../assets/images/Lottie/SEO-Lottie-01.json';
 import SocialMediaLottie from '../assets/images/Lottie/Social-Media-Lottie-01.json';
 import AdsCampaignLottie from '../assets/images/Lottie/Ads-Campaign-Lottie-01.json';
 import ReviewsLottie from '../assets/images/Lottie/Reviews-Lottie-01.json';
