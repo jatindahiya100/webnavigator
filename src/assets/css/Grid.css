@@ -16,16 +16,23 @@
   padding: 1.6em;
 }
 
-.grid-item h1 {
+.grid-item.text h1 {
   font-size: 4rem;
   text-transform: capitalize;
   font-weight: 800;
   color: var(--secondary-color);
 }
 
-.grid-item p {
+.grid-item.text p {
   font-size: medium;
   line-height: 1.8em;
+  color: var(--dark-gray);
+}
+
+.grid-item.text ul {
+  list-style-type: unset;
+  font-size: medium;
+  line-height: 2em;
   color: var(--dark-gray);
 }
 

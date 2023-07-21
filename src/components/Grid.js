@@ -21,8 +21,28 @@ const Grid = (props) => {
   const renderTextItem = () => (
     <div className="grid-item text">
       <h1 className='primary-text-light-mode'>{props.gridData.heading}</h1>
-      <p className='secondary-text-light-mode'>{props.gridData.text}</p>
-      <button className='button' onClick={props.gridData.handleBtnClick}>{props.gridData.btnText} <ion-icon name="arrow-down-circle"></ion-icon></button>
+      {
+        props.gridData.text ?
+          <p className='secondary-text-light-mode'>{props.gridData.text}</p>
+          :
+          <></>
+      }
+      {props.gridData.list ? (
+        <ul>
+          {props.gridData.list.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      ) : (
+        <></>
+      )}
+
+      {
+        props.gridData.btnText ?
+          <button className='button' onClick={props.gridData.handleBtnClick}>{props.gridData.btnText} <ion-icon name="arrow-down-circle"></ion-icon></button>
+          :
+          <></>
+      }
     </div>
   );
 

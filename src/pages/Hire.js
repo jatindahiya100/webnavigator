@@ -20,12 +20,22 @@ export default function Hire() {
         {
             index: 1,
             heading: "Hire Us on Upwork for Secure Payments and More!",
-            text: "Why Upwork?",
-            // list: ["Secure Payments: Reliable and worry-free transactions on Upwork.", "Verified Reviews: Authentic client feedback for quality assurance.", "Escrow Protection: Ensured fairness through milestone-based payments.", "Time-Tracking: Transparent progress monitoring with Upwork's feature."],
-            btnText: "Get in Touch",
+            list: ["Secure Payments: Reliable and worry-free transactions on Upwork.", "Verified Reviews: Authentic client feedback for quality assurance.", "Escrow Protection: Ensured fairness through milestone-based payments.", "Time-Tracking: Transparent progress monitoring with Upwork's feature."],
+            btnText: "Hire On Upwork",
             handleBtnClick: () => {
-                window.tidioChatApi.show();
-                window.tidioChatApi.open();
+
+            },
+            imageType: "Lottie",
+            imageUrl: HireLottie,
+            gridBg: "#FFFFFF"
+        },
+        {
+            index: 2,
+            heading: "How to Hire Us on Upwork ?",
+            list: ["Visit our Upwork profile by clicking the link below.", "Review our portfolio, client feedback, and the range of services we offer.", "Share your project requirements, and we will promptly respond with a tailored proposal.", "Fund the project securely through Upwork's escrow system.", "Sit back and relax as we bring your digital vision to life!"],
+            btnText: "Upwork Profile",
+            handleBtnClick: () => {
+
             },
             imageType: "Lottie",
             imageUrl: HireLottie,
@@ -37,8 +47,8 @@ export default function Hire() {
     return (
         <>
             <Grid gridData={gridData[0]} />
-
             <Grid gridData={gridData[1]} />
+            <Grid gridData={gridData[2]} />
         </>
     )
 }
