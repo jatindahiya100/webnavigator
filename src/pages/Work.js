@@ -33,7 +33,7 @@ export default function Work() {
       },
       imageType: "image",
       imageUrl: ClearBit,
-      gridBg: "#FFFFFF"
+      gridBg: "#F7F6F3"
     },
     {
       index: 2,
@@ -57,7 +57,7 @@ export default function Work() {
       },
       imageType: "image",
       imageUrl: Proper,
-      gridBg: "#FFFFFF"
+      gridBg: "#F7F6F3"
     },
     {
       index: 4,
@@ -81,7 +81,7 @@ export default function Work() {
       },
       imageType: "image",
       imageUrl: JPLewis,
-      gridBg: "#FFFFFF"
+      gridBg: "#F7F6F3"
     },
     {
       index: 6,
