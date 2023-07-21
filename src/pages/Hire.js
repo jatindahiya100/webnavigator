@@ -5,8 +5,23 @@ import HireLottie from '../assets/images/Lottie/Hire-Lottie-01.json';
 export default function Hire() {
     const gridData = [
         {
+            index: 0,
             heading: "Ready to Get Started? Shoot Us a Chat!",
             text: "Are you in need of top-notch digital solutions for your business? Look no further! At Web Navigator, we are committed to crafting digital experiences that drive success for your brand. Whether you require a stunning custom website, an SEO strategy that boosts your online presence, captivating social media management, or powerful ads campaigns, we've got you covered.",
+            btnText: "Get in Touch",
+            handleBtnClick: () => {
+                window.tidioChatApi.show();
+                window.tidioChatApi.open();
+            },
+            imageType: "Lottie",
+            imageUrl: HireLottie,
+            gridBg: "#FFFFFF"
+        },
+        {
+            index: 1,
+            heading: "Hire Us on Upwork for Secure Payments and More!",
+            text: "Why Upwork?",
+            // list: ["Secure Payments: Reliable and worry-free transactions on Upwork.", "Verified Reviews: Authentic client feedback for quality assurance.", "Escrow Protection: Ensured fairness through milestone-based payments.", "Time-Tracking: Transparent progress monitoring with Upwork's feature."],
             btnText: "Get in Touch",
             handleBtnClick: () => {
                 window.tidioChatApi.show();
@@ -21,16 +36,9 @@ export default function Hire() {
 
     return (
         <>
-            <Grid
-                index={0}
-                heading={gridData[0].heading}
-                text={gridData[0].text}
-                btnText={gridData[0].btnText}
-                handleBtnClick={gridData[0].handleBtnClick}
-                imageType={gridData[0].imageType}
-                imageUrl={gridData[0].imageUrl}
-                gridBg={gridData[0].gridBg}
-            />
+            <Grid gridData={gridData[0]} />
+
+            <Grid gridData={gridData[1]} />
         </>
     )
 }
