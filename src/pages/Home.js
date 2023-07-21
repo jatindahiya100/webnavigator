@@ -20,8 +20,7 @@ export default function Home() {
       btnText: "Let's Begin Your Journey",
       handleBtnClick: () => {
         // 
-      }
-      ,
+      },
       imageType: "Lottie",
       imageUrl: Lottie01,
       gridBg: "#FFFFFF"
