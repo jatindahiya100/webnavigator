@@ -1,3 +1,14 @@
+/* Define the fading animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 header {
     position: sticky;
     top: 0;
@@ -23,6 +34,8 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 2.4em;
+    /* Add animation properties */
+    animation: fade-in 2s ease;
 }
 
 .mobile-menu {
@@ -39,6 +52,8 @@ header {
     background: var(--primary-color);
     padding-bottom: 2em;
     height: 100vh;
+    /* Add animation properties */
+    animation: fade-in 1s ease;
 }
 
 nav a {
