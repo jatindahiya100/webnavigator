@@ -60,6 +60,13 @@ footer {
     color: var(--accent);
 }
 
+.footer-bottom p {
+    text-align: center;
+    width: 60%;
+    line-height: 2em;
+    color: var(--dark-gray);
+}
+
 .footer-bottom .social-links {
     display: inline-flex;
     align-items: center;
@@ -75,4 +82,12 @@ footer {
     color: var(--accent);
     transition: 0.2s;
     scale: 1.2;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 800px) {
+    .footer-bottom p {
+        width: 90%;
+        text-align: justify;
+    }
 }

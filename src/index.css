@@ -8,11 +8,11 @@
 
 :root {
     --primary-color: #FFFFFF;
-    --secondary-color: #151515;
+    --secondary-color: #1F2937;
     --accent: rgb(49, 130, 255);
     ;
     --light-gray: #F5F5F5;
-    --dark-gray: #1F1F1F;
+    --dark-gray: #1F2937A1;
 }
 
 /* Topography */
