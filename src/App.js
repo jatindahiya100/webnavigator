@@ -2,10 +2,11 @@ import Header from './components/Header'
 import { HashRouter as Router, Routes, Route, } from "react-router-dom";
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
-import Work from './pages/Work';
 import Services from './pages/Services';
-import Footer from './components/Footer';
+import Work from './pages/Work';
 import Hire from './pages/Hire';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/work' element={<Work />} />
         <Route path='/services' element={<Services />} />
-        <Route path='/hire' element={<Hire />} />
+        <Route path='/start-project' element={<Hire />} />
       </Routes>
       <Footer />
     </Router>

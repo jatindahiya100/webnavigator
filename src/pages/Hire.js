@@ -11,7 +11,6 @@ export default function Hire() {
             handleBtnClick: () => {
                 window.tidioChatApi.show();
                 window.tidioChatApi.open();
-
             },
             imageType: "Lottie",
             imageUrl: HireLottie,
