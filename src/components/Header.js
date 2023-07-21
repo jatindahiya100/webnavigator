@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import '../assets/css/Header.css'
-import logo from '../assets/images/thrive-logo.png'
 import { Link, NavLink } from 'react-router-dom'
 
 export default function Header() {
@@ -23,7 +22,7 @@ export default function Header() {
     <header>
 
       <div className="logo">
-        <Link to='/'><img src={logo} alt="" /></Link>
+        <Link to='/'><ion-icon name="compass"></ion-icon>Web&nbsp;<span>Navigators</span></Link>
       </div>
 
       <nav className={isNavOpen === true ? 'mobile-menu' : 'desktop-menu'}>

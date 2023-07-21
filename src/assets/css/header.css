@@ -22,12 +22,26 @@ header {
     align-items: center;
     justify-content: space-between;
     background: var(--primary-color);
-    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
 }
 
-.logo img {
-    width: 100px;
-    height: auto;
+.logo a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: x-large;
+    border: 4px solid black;
+    border-radius: 2rem;
+    padding: 0 0.4em 0 0;
+}
+
+.logo a ion-icon {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.logo a span {
+    color: var(--accent);
 }
 
 .desktop-menu {
@@ -96,6 +110,16 @@ nav a.active {
 @media screen and (max-width: 800px) {
     header {
         align-items: unset;
+    }
+
+    .logo a {
+        font-size: medium;
+        border: 2px solid black;
+
+    }
+
+    .logo a ion-icon {
+        font-size: 30px;
     }
 
     .desktop-menu {
