@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/webnavigator/static/css/main.8e3f7751.css",
+    "main.css": "/webnavigator/static/css/main.fd41db3d.css",
     "main.js": "/webnavigator/static/js/main.6597e052.js",
     "static/media/Luxy-Hair.png": "/webnavigator/static/media/Luxy-Hair.f898d1e628e2274d627f.png",
     "static/media/Proper.png": "/webnavigator/static/media/Proper.7e02eb508d590ece1e00.png",
@@ -16,11 +16,11 @@
     "static/media/seo-adwords-cover.png": "/webnavigator/static/media/seo-adwords-cover.f6a869cca9d9387fa5b5.png",
     "static/media/web-design-cover.png": "/webnavigator/static/media/web-design-cover.adc5d35efca70c9672f5.png",
     "index.html": "/webnavigator/index.html",
-    "main.8e3f7751.css.map": "/webnavigator/static/css/main.8e3f7751.css.map",
+    "main.fd41db3d.css.map": "/webnavigator/static/css/main.fd41db3d.css.map",
     "main.6597e052.js.map": "/webnavigator/static/js/main.6597e052.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e3f7751.css",
+    "static/css/main.fd41db3d.css",
     "static/js/main.6597e052.js"
   ]
 }
