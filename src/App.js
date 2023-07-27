@@ -22,26 +22,34 @@ function App() {
       const images = document.querySelectorAll("img");
       const imagesLoaded = Array.from(images).every(img => img.complete && img.naturalWidth !== 0);
 
-      // Add any other checks for additional resources if needed
-
       // Set resourcesLoaded to true if all required resources are loaded
       if (fontsLoaded && imagesLoaded) {
         setResourcesLoaded(true);
       }
     };
 
-    // Add an event listener for window.onload to check when all resources have loaded
-    window.addEventListener("load", checkResourcesLoaded);
+    // Check resources loaded once the DOM content is ready
+    document.addEventListener("DOMContentLoaded", checkResourcesLoaded);
 
-    // Cleanup the event listener on component unmount
+    // Fallback in case the event doesn't fire (useful if all resources are already cached)
+    const timeoutId = setTimeout(() => {
+      checkResourcesLoaded();
+    }, 2000); // Wait for 2 seconds, adjust the time as needed
+
+    // Cleanup the event listener and timeout on component unmount
     return () => {
-      window.removeEventListener("load", checkResourcesLoaded);
+      document.removeEventListener("DOMContentLoaded", checkResourcesLoaded);
+      clearTimeout(timeoutId);
     };
   }, []);
 
   if (!resourcesLoaded) {
     // Show the loader until resources are loaded
-    return <Loader />;
+    return (
+      <div style={{ width: "100%", height: "calc(100vh - 80px)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Loader />
+      </div>
+    );
   }
 
   // Once resources are loaded, render the main content
