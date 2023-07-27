@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import '../assets/css/Grid.css';
 import Lottie from 'lottie-react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Grid = (props) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
@@ -19,7 +23,7 @@ const Grid = (props) => {
   const isEven = props.gridData.index % 2 === 0;
 
   const renderTextItem = () => (
-    <div className="grid-item text">
+    <div className="grid-item text" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-offset="500">
       <h1 className='primary-text-light-mode'>{props.gridData.heading}</h1>
       {
         props.gridData.text ?

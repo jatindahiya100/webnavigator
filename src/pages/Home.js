@@ -101,15 +101,14 @@ export default function Home() {
     // Add more grid data objects as needed
   ];
 
+  // 'gridData' is an array containing the data for each Grid component
+  const gridComponents = gridData.map((data, index) => (
+    <Grid key={index} gridData={data} />
+  ));
+
   return (
     <>
-      <Grid gridData={gridData[0]} />
-      <Grid gridData={gridData[1]} />
-      <Grid gridData={gridData[2]} />
-      <Grid gridData={gridData[3]} />
-      <Grid gridData={gridData[4]} />
-      <Grid gridData={gridData[5]} />
-      <Grid gridData={gridData[6]} />
+      {gridComponents}
     </>
   );
 }
