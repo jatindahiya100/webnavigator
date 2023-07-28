@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="nav-links">
           <ul>
             <li><NavLink to='/'><ion-icon name="cube"></ion-icon> Home</NavLink></li>
-            <li><NavLink to='services'><ion-icon name="cube"></ion-icon> Services</NavLink></li>
+            <li><NavLink to='what-we-do'><ion-icon name="cube"></ion-icon> What We Do?</NavLink></li>
             <li><NavLink to='work'><ion-icon name="cube"></ion-icon> Work</NavLink></li>
             <li><NavLink to='/start-project'><ion-icon name="cube"></ion-icon> Start Project</NavLink></li>
           </ul>

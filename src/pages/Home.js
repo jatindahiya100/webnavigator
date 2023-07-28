@@ -43,7 +43,7 @@ export default function Home() {
       text: "Embrace versatility with our website solutions. Whether you prefer the ease of WordPress, the flexibility of Wix, or any other website builder, we've got you covered! Our expertise spans across various platforms, ensuring that your website is built using the technology that suits you best, without compromising on quality or creativity.",
       btnText: "Explore Our Website Solutions",
       handleBtnClick: () => {
-        navigate('/services');
+        navigate('/what-we-do');
       },
       imageType: "Lottie",
       imageUrl: Lottie03,
