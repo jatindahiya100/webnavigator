@@ -21,10 +21,7 @@ export default function WhatWeDo() {
         "Content Management Systems (CMS): Implementing systems like WordPress, Joomla, or Drupal for easy website management.",
         "Website Maintenance: Ensuring your website stays up-to-date, secure, and optimized for peak performance."
       ],
-      btnText: "Get Started",
-      handleBtnClick: () => {
-        navigate("/start-project");
-      },
+
       imageType: "image",
       imageUrl: WebDesignCover,
       gridBg: "#FFFFFF"
@@ -39,12 +36,8 @@ export default function WhatWeDo() {
         "Email Marketing: Crafting compelling email campaigns to nurture leads and drive conversions.",
         "Analytics and Conversion Tracking: Monitoring and analyzing website data to enhance marketing strategies."
       ],
-      btnText: "Let's Code",
-      handleBtnClick: () => {
-        navigate("/start-project");
-      },
       imageType: "image",
-      imageUrl: WebDevelopmentCover,
+      imageUrl: DigitalMarketingCover,
       gridBg: "#F7F6F3"
     },
     {
@@ -55,12 +48,8 @@ export default function WhatWeDo() {
         "Web Hosting: Providing reliable hosting solutions with optimal server performance and security.",
         "SSL Certificates: Ensuring secure data transmission with SSL certificates for enhanced trust."
       ],
-      btnText: "Let's Design",
-      handleBtnClick: () => {
-        navigate("/start-project");
-      },
       imageType: "image",
-      imageUrl: ECommerceCover,
+      imageUrl: HostingCover,
       gridBg: "#FFFFFF"
     },
     // Add more grid data objects as needed
