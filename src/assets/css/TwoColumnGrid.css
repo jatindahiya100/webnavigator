@@ -1,11 +1,21 @@
+/* Default styles for the two-column grid */
 .two-column-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    background-color: #F7F6F3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  background-color: #F7F6F3;
+}
+
+.two-column-grid-item {
+  padding: 2em;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .two-column-grid-container {
+    grid-template-columns: 1fr;
   }
-  
   .two-column-grid-item {
-    padding: 2em;
+    padding: 1em;
   }
-  
+}
