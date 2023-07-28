@@ -18,7 +18,7 @@
   grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   overflow: hidden;
   align-items: center;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 70px);
   /* Add animation properties */
   animation: fade-in 2.5s ease;
 }
