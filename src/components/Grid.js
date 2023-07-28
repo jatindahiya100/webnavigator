@@ -64,10 +64,16 @@ const Grid = (props) => {
     <div style={{ backgroundColor: props.gridData.gridBg }}>
       <div className="grid-container">
         {isMobile ? (
-          <>
-            {renderTextItem()}
-            {renderImageItem()}
-          </>
+          props.gridData.index === 0 ?
+            <>
+              {renderImageItem()}
+              {renderTextItem()}
+            </>
+            :
+            <>
+              {renderTextItem()}
+              {renderImageItem()}
+            </>
         ) : (
           <>
             {isEven ? (
