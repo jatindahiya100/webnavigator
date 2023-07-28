@@ -1,0 +1,11 @@
+.two-column-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .two-column-grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  

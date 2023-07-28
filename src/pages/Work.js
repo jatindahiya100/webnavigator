@@ -7,6 +7,7 @@ import Proper from '../assets/images/project/Proper.png'
 import LuxyHair from '../assets/images/project/Luxy-Hair.png'
 import JPLewis from '../assets/images/project/JP-Lewis-Group.png'
 import customDashboardUI from '../assets/images/project/customDashboardUI.png'
+import TwoColumnGrid from '../components/TwoColumnGrid';
 
 
 export default function Work() {
@@ -97,6 +98,21 @@ export default function Work() {
     },
     // Add more grid data objects as needed
   ];
+  const cardData = [
+    {
+      imageSrc: 'path/to/image1.jpg',
+      heading: 'Card 1 Heading',
+      description: 'This is the description of Card 1.',
+      buttonText: 'Click Card 1',
+    },
+    {
+      imageSrc: 'path/to/image2.jpg',
+      heading: 'Card 2 Heading',
+      description: 'This is the description of Card 2.',
+      buttonText: 'Click Card 2',
+    },
+    // Add more card data objects as needed
+  ];
   return (
     <>
 
@@ -107,7 +123,7 @@ export default function Work() {
       <Grid gridData={gridData[4]} />
       <Grid gridData={gridData[5]} />
       <Grid gridData={gridData[6]} />
-
+      <TwoColumnGrid items={cardData} />
     </>
   )
 }
