@@ -4,6 +4,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 1em;
   background-color: #F7F6F3;
+   /* Add animation properties */
+   animation: fade-in 2.5s ease;
 }
 
 .two-column-grid-item {

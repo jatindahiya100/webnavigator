@@ -12,6 +12,7 @@ const TwoColumnGrid = ({ items }) => {
                         heading={item.heading}
                         description={item.description}
                         buttonText={item.buttonText}
+                        websiteUrl={item.websiteUrl}
                     />
                 </div>
             ))}
