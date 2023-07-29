@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/webnavigator/static/css/main.065dff09.css",
-    "main.js": "/webnavigator/static/js/main.5366c829.js",
-    "static/media/Luxy-Hair.png": "/webnavigator/static/media/Luxy-Hair.f898d1e628e2274d627f.png",
-    "static/media/Proper.png": "/webnavigator/static/media/Proper.7e02eb508d590ece1e00.png",
-    "static/media/Clearbit.png": "/webnavigator/static/media/Clearbit.00352c9caf578fbdedbc.png",
-    "static/media/JP-Lewis-Group.png": "/webnavigator/static/media/JP-Lewis-Group.de8a0ce5022c9724bd10.png",
-    "static/media/customDashboardUI.png": "/webnavigator/static/media/customDashboardUI.2198ec8cb5f761d49669.png",
-    "static/media/Sidebird-Twitter-fanbase-builder.png": "/webnavigator/static/media/Sidebird-Twitter-fanbase-builder.24794fb8ede4e3fe0e40.png",
-    "static/media/Compressor-io.png": "/webnavigator/static/media/Compressor-io.01fec784678adcdd699c.png",
-    "static/media/digital-marketing-cover.jpg": "/webnavigator/static/media/digital-marketing-cover.f1546cc593a7929dadd8.jpg",
-    "static/media/web-development-cover.png": "/webnavigator/static/media/web-development-cover.a8eaa04bcc0462392227.png",
-    "static/media/ecommerce-cover.png": "/webnavigator/static/media/ecommerce-cover.e3b44ed0ab2cfdd50a66.png",
-    "static/media/hosting-cover.png": "/webnavigator/static/media/hosting-cover.303c7fe4b44f9fdc724f.png",
-    "static/media/seo-adwords-cover.png": "/webnavigator/static/media/seo-adwords-cover.f6a869cca9d9387fa5b5.png",
-    "static/media/web-design-cover.png": "/webnavigator/static/media/web-design-cover.adc5d35efca70c9672f5.png",
-    "index.html": "/webnavigator/index.html",
-    "main.065dff09.css.map": "/webnavigator/static/css/main.065dff09.css.map",
-    "main.5366c829.js.map": "/webnavigator/static/js/main.5366c829.js.map"
+    "main.css": "/static/css/main.065dff09.css",
+    "main.js": "/static/js/main.b97d44c7.js",
+    "static/media/Luxy-Hair.png": "/static/media/Luxy-Hair.f898d1e628e2274d627f.png",
+    "static/media/Proper.png": "/static/media/Proper.7e02eb508d590ece1e00.png",
+    "static/media/Clearbit.png": "/static/media/Clearbit.00352c9caf578fbdedbc.png",
+    "static/media/JP-Lewis-Group.png": "/static/media/JP-Lewis-Group.de8a0ce5022c9724bd10.png",
+    "static/media/customDashboardUI.png": "/static/media/customDashboardUI.2198ec8cb5f761d49669.png",
+    "static/media/Sidebird-Twitter-fanbase-builder.png": "/static/media/Sidebird-Twitter-fanbase-builder.24794fb8ede4e3fe0e40.png",
+    "static/media/Compressor-io.png": "/static/media/Compressor-io.01fec784678adcdd699c.png",
+    "static/media/digital-marketing-cover.jpg": "/static/media/digital-marketing-cover.f1546cc593a7929dadd8.jpg",
+    "static/media/web-development-cover.png": "/static/media/web-development-cover.a8eaa04bcc0462392227.png",
+    "static/media/ecommerce-cover.png": "/static/media/ecommerce-cover.e3b44ed0ab2cfdd50a66.png",
+    "static/media/hosting-cover.png": "/static/media/hosting-cover.303c7fe4b44f9fdc724f.png",
+    "static/media/seo-adwords-cover.png": "/static/media/seo-adwords-cover.f6a869cca9d9387fa5b5.png",
+    "static/media/web-design-cover.png": "/static/media/web-design-cover.adc5d35efca70c9672f5.png",
+    "index.html": "/index.html",
+    "main.065dff09.css.map": "/static/css/main.065dff09.css.map",
+    "main.b97d44c7.js.map": "/static/js/main.b97d44c7.js.map"
   },
   "entrypoints": [
     "static/css/main.065dff09.css",
-    "static/js/main.5366c829.js"
+    "static/js/main.b97d44c7.js"
   ]
 }
