@@ -1,6 +1,10 @@
 import React from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import '../assets/css/Footer.css'
+import Lottie from 'lottie-react'
+import Lottie01 from '../assets/images/Lottie/Lottie01.json'
+
+
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -8,6 +12,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-top">
+        <Lottie animationData={Lottie01} style={{height: "200px"}} />
         <h2>Ready To Start A <br /> Project?</h2>
         <button className='button' onClick={() => { navigate('/start-project'); }}>Let's Do This</button>
       </div>

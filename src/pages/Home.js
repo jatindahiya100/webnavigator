@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '../components/Grid';
-import Lottie01 from '../assets/images/Lottie/Lottie01.json';
+import Lottie01 from '../assets/images/Lottie/Thewebnavigators-Agency-Lottie-01.json';
 import Lottie02 from '../assets/images/Lottie/Lottie02.json';
 import Lottie03 from '../assets/images/Lottie/Lottie03.json';
 import SEOLottie from '../assets/images/Lottie/SEO-Lottie-01.json';
