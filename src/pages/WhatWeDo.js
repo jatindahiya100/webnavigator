@@ -1,15 +1,10 @@
 import React from 'react'
 import Grid from '../components/Grid';
 import WebDesignCover from '../assets/images/what-we-do/web-design-cover.png'
-import WebDevelopmentCover from '../assets/images/what-we-do/web-development-cover.png'
-import ECommerceCover from '../assets/images/what-we-do/ecommerce-cover.png'
-import SEOCover from '../assets/images/what-we-do/seo-adwords-cover.png'
 import DigitalMarketingCover from '../assets/images/what-we-do/digital-marketing-cover.jpg'
 import HostingCover from '../assets/images/what-we-do/hosting-cover.png'
-import { useNavigate } from 'react-router-dom';
 
 export default function WhatWeDo() {
-  const navigate = useNavigate();
   const gridData = [
     {
       index: 0,

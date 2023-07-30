@@ -1,35 +1,32 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import '../assets/css/ClientReviewsSlideshow.css'; // Import your CSS file for styling
 
 const ClientReviewsSlideshow = ({ reviews }) => {
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
   const slideshowIntervalRef = useRef();
   const wrapperRef = useRef(null);
 
   // Function to increment the review index
-  const nextReview = () => {
+  const nextReview = useCallback(() => {
     setCurrentReviewIndex((prevIndex) => (prevIndex + 1) % reviews.length);
-  };
+  }, [reviews]);
 
   useEffect(() => {
-    // Auto change review every 5 seconds
+    // Auto change review every 3 seconds
     slideshowIntervalRef.current = setInterval(nextReview, 3000);
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(slideshowIntervalRef.current);
-  }, []);
+  }, [nextReview]);
 
   useEffect(() => {
     const wrapperElement = wrapperRef.current;
     if (wrapperElement) {
       const handleMouseEnter = () => {
-        setIsHovered(true);
         clearInterval(slideshowIntervalRef.current);
       };
 
       const handleMouseLeave = () => {
-        setIsHovered(false);
         slideshowIntervalRef.current = setInterval(nextReview, 3000);
       };
 
@@ -41,7 +38,7 @@ const ClientReviewsSlideshow = ({ reviews }) => {
         wrapperElement.removeEventListener('mouseleave', handleMouseLeave);
       };
     }
-  }, [wrapperRef]);
+  }, [nextReview]);
 
   // Handle click on a dot to show the corresponding review
   const handleDotClick = (index) => {
@@ -56,10 +53,9 @@ const ClientReviewsSlideshow = ({ reviews }) => {
           const shouldSlideIn = index >= currentReviewIndex - 1 && index <= currentReviewIndex + 1;
 
           return (
-            <div key={index} className={`review ${isActive ? 'active' : ''} ${shouldSlideIn ? 'slide-in' : ''}`} style={{ transform: `translateX(${(index - currentReviewIndex) * 100}%)`, }}>
+            <div key={index} className={`review ${isActive ? 'active' : ''} ${shouldSlideIn ? 'slide-in' : ''}`} style={{ transform: `translateX(${(index - currentReviewIndex) * 100}%)` }}>
               <h2>Job Title: {review.Job}</h2> <br /><br />
               <p className="review-text">{"\"" + review.text + "\""}</p>
-              <br />
               <p className="author">- {review.author}</p>
             </div>
           );

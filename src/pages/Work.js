@@ -1,5 +1,4 @@
 import React from 'react'
-import Grid from '../components/Grid';
 import SideBird from '../assets/images/project/Sidebird-Twitter-fanbase-builder.png'
 import ClearBit from '../assets/images/project/Clearbit.png'
 import Compressor from '../assets/images/project/Compressor-io.png'

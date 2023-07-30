@@ -119,7 +119,7 @@ export default function Home() {
       author: "Yang Henry",
     },
     {
-      Job: "Experienced Developer Needed to Add Features to Account, Chat System and Upgrade Admin Dashboard",
+      Job: "To Add Features to Account, Chat System and Upgrade Admin Dashboard",
       text: "Very Patient and talented. This work was extended for a month because I was continuously asking for changes, but Jatin was always very patient and successfully completed all the work that I asked for. I really appreciate his hard work. Meanwhile, he spent a lot of time communicating with me regarding to the project. His way of expressing was pretty clear and polite.  I would highly recommend hiring him for your project.",
       author: "Yang Henry",
     },
