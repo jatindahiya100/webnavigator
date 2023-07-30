@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b53aa374.css",
-    "main.js": "/static/js/main.b5c09349.js",
+    "main.js": "/static/js/main.3c470884.js",
     "static/media/Luxy-Hair.png": "/static/media/Luxy-Hair.f898d1e628e2274d627f.png",
     "static/media/Proper.png": "/static/media/Proper.7e02eb508d590ece1e00.png",
     "static/media/Clearbit.png": "/static/media/Clearbit.00352c9caf578fbdedbc.png",
@@ -10,17 +10,14 @@
     "static/media/Sidebird-Twitter-fanbase-builder.png": "/static/media/Sidebird-Twitter-fanbase-builder.24794fb8ede4e3fe0e40.png",
     "static/media/Compressor-io.png": "/static/media/Compressor-io.01fec784678adcdd699c.png",
     "static/media/digital-marketing-cover.jpg": "/static/media/digital-marketing-cover.f1546cc593a7929dadd8.jpg",
-    "static/media/web-development-cover.png": "/static/media/web-development-cover.a8eaa04bcc0462392227.png",
-    "static/media/ecommerce-cover.png": "/static/media/ecommerce-cover.e3b44ed0ab2cfdd50a66.png",
     "static/media/hosting-cover.png": "/static/media/hosting-cover.303c7fe4b44f9fdc724f.png",
-    "static/media/seo-adwords-cover.png": "/static/media/seo-adwords-cover.f6a869cca9d9387fa5b5.png",
     "static/media/web-design-cover.png": "/static/media/web-design-cover.adc5d35efca70c9672f5.png",
     "index.html": "/index.html",
     "main.b53aa374.css.map": "/static/css/main.b53aa374.css.map",
-    "main.b5c09349.js.map": "/static/js/main.b5c09349.js.map"
+    "main.3c470884.js.map": "/static/js/main.3c470884.js.map"
   },
   "entrypoints": [
     "static/css/main.b53aa374.css",
-    "static/js/main.b5c09349.js"
+    "static/js/main.3c470884.js"
   ]
 }
