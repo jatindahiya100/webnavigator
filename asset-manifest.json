@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.94346e12.css",
-    "main.js": "/static/js/main.0104e5ca.js",
+    "main.css": "/static/css/main.5771dd2c.css",
+    "main.js": "/static/js/main.31a132b4.js",
     "static/media/Luxy-Hair.png": "/static/media/Luxy-Hair.f898d1e628e2274d627f.png",
     "static/media/Proper.png": "/static/media/Proper.7e02eb508d590ece1e00.png",
     "static/media/Clearbit.png": "/static/media/Clearbit.00352c9caf578fbdedbc.png",
@@ -16,11 +16,11 @@
     "static/media/seo-adwords-cover.png": "/static/media/seo-adwords-cover.f6a869cca9d9387fa5b5.png",
     "static/media/web-design-cover.png": "/static/media/web-design-cover.adc5d35efca70c9672f5.png",
     "index.html": "/index.html",
-    "main.94346e12.css.map": "/static/css/main.94346e12.css.map",
-    "main.0104e5ca.js.map": "/static/js/main.0104e5ca.js.map"
+    "main.5771dd2c.css.map": "/static/css/main.5771dd2c.css.map",
+    "main.31a132b4.js.map": "/static/js/main.31a132b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.94346e12.css",
-    "static/js/main.0104e5ca.js"
+    "static/css/main.5771dd2c.css",
+    "static/js/main.31a132b4.js"
   ]
 }
