@@ -8,6 +8,7 @@ import SocialMediaLottie from '../assets/images/Lottie/Social-Media-Lottie-01.js
 import AdsCampaignLottie from '../assets/images/Lottie/Ads-Campaign-Lottie-01.json';
 import ReviewsLottie from '../assets/images/Lottie/Reviews-Lottie-01.json';
 import { useNavigate } from 'react-router-dom';
+import ClientReviewsSlideshow from '../components/ClientReviewsSlideshow';
 
 
 export default function Home() {
@@ -97,6 +98,26 @@ export default function Home() {
     // Add more grid data objects as needed
   ];
 
+  const reviewsData = [
+    {
+      text: "Great service, very professional!",
+      author: "John Doe",
+    },
+    {
+      text: "I am extremely satisfied with their work.",
+      author: "Jane Smith",
+    },
+    {
+      text: "I am extremely satisfied with their work.",
+      author: "Jane Smith",
+    },
+    {
+      text: "I am extremely satisfied with their work.",
+      author: "Jane Smith",
+    },
+    // Add more reviews as needed
+  ];
+
   // 'gridData' is an array containing the data for each Grid component
   const gridComponents = gridData.map((data, index) => (
     <Grid key={index} gridData={data} />
@@ -105,6 +126,7 @@ export default function Home() {
   return (
     <>
       {gridComponents}
+      <ClientReviewsSlideshow reviews={reviewsData} />
     </>
   );
 }
