@@ -23,7 +23,7 @@ const Grid = (props) => {
   const isEven = props.gridData.index % 2 === 0;
 
   const renderTextItem = () => (
-    <div className="grid-item text" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-offset="350">
+    <div className="grid-item text" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-offset="300">
       <h1 className='primary-text-light-mode'>{props.gridData.heading}</h1>
       {
         props.gridData.text ?
