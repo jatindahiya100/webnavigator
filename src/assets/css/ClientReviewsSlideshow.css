@@ -7,12 +7,11 @@
 }
 
 .client-reviews {
-    /* background-color: var(--accent); */
-    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    background-color: var(--accent);
     overflow: hidden;
     position: relative;
     width: 90%;
-    height: 400px;
+    min-height: 400px;
     margin: 0 auto;
     border-radius: 1em;
     /* Adjust the height as per your requirement */
@@ -31,6 +30,7 @@
     opacity: 0;
     transition: transform 1s ease, opacity 0.5s ease;
     color: var(--primary-color);
+    padding: 1em;
 }
 
 .review.active {
@@ -43,8 +43,9 @@
 
 .review-text {
     font-style: italic;
-    font-size: xx-large;
+    font-size: large;
     text-align: center;
+    line-height: 1.6em;
 }
 
 .dots-container {
@@ -68,4 +69,14 @@
 
 .dot.active {
     transform: scale(1.5);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 800px) {
+    .review-text {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
 }
