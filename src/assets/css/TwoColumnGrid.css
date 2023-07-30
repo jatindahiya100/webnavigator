@@ -1,11 +1,17 @@
+.component-wrapper {
+  background-color: #F7F6F3;
+}
+
 /* Default styles for the two-column grid */
 .two-column-grid-container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
-  background-color: #F7F6F3;
-   /* Add animation properties */
-   animation: fade-in 2.5s ease;
+  /* Add animation properties */
+  animation: fade-in 2.5s ease;
 }
 
 .two-column-grid-item {
@@ -17,6 +23,7 @@
   .two-column-grid-container {
     grid-template-columns: 1fr;
   }
+
   .two-column-grid-item {
     padding: 1em;
   }

@@ -5,6 +5,7 @@ footer {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    background-color: #F7F6F3;
 }
 
 .footer-top {
@@ -15,7 +16,6 @@ footer {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    background-color: #F7F6F3;
     gap: 2em;
 }
 
