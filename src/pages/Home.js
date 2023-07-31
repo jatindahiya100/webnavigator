@@ -154,17 +154,35 @@ export default function Home() {
     // Add more grid data objects as needed
   ];
 
+  const isMobileDevice = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    window.navigator.userAgent
+  );
 
   return (
     <>
       <ComponentGrid>
         {gridData.map((item, index) => (
           <React.Fragment key={index}>
-            {/* Render CustomComponent */}
-            <CustomComponent {...item.CustomComponent} />
-
-            {/* Render MediaComponent */}
-            <MediaComponent {...item.MediaComponent} />
+            {isMobileDevice ? (
+              // Render CustomComponent and MediaComponent in the same order for mobile devices
+              <>
+                <CustomComponent {...item.CustomComponent} />
+                <MediaComponent {...item.MediaComponent} />
+              </>
+            ) : (
+              // Alternate the order of rendering for non-mobile devices
+              index % 2 === 0 ? (
+                <>
+                  <CustomComponent {...item.CustomComponent} />
+                  <MediaComponent {...item.MediaComponent} />
+                </>
+              ) : (
+                <>
+                  <MediaComponent {...item.MediaComponent} />
+                  <CustomComponent {...item.CustomComponent} />
+                </>
+              )
+            )}
           </React.Fragment>
         ))}
       </ComponentGrid>
