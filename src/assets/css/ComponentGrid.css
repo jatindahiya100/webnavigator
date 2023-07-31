@@ -3,6 +3,8 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 1em;
+    grid-gap: 1em;
+    /* Adjust the value as needed */
 }
 
 @media screen and (max-width: 800px) {
