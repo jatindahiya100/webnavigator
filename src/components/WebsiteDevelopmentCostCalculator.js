@@ -206,7 +206,6 @@ const WebsiteDevelopmentCostCalculator = () => {
                 },
             ],
             type: "radio", // User can select only one option
-            condition: (answers) => answers[1] === "Custom Theme", // Show this question only if Custom Theme is selected
         },
     ];
 

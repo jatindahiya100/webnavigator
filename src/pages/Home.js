@@ -4,6 +4,7 @@ import ComponentGrid from '../components/ComponentGrid';
 import CustomComponent from '../components/CustomComponent'
 import MediaComponent from '../components/MediaComponent'
 import ClientReviewsSlideshow from '../components/ClientReviewsSlideshow';
+import WebsiteDevelopmentCostCalculator from '../components/WebsiteDevelopmentCostCalculator';
 // Lottie Imports
 import Lottie01 from '../assets/images/Lottie/Thewebnavigators-Agency-Lottie-01.json';
 import Lottie02 from '../assets/images/Lottie/Lottie02.json';
@@ -187,6 +188,12 @@ export default function Home() {
         ))}
       </ComponentGrid>
       <ClientReviewsSlideshow />
+      <ComponentGrid>
+        <React.Fragment>
+          <CustomComponent title="Introducing the Website Development Cost Calculator" description="Estimate your website development costs effortlessly with our integrated Website Development Cost Calculator. Plan and budget for your dream website with ease, whether you're a business owner or an individual. Get started on your digital journey today!" />
+          <WebsiteDevelopmentCostCalculator />
+        </React.Fragment>
+      </ComponentGrid>
     </>
   );
 }

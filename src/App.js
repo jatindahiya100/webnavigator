@@ -59,8 +59,8 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/work' element={<Work />} />
         <Route path='/what-we-do' element={<WhatWeDo />} />
+        <Route path='/work' element={<Work />} />
         <Route path='/start-project' element={<Hire />} />
       </Routes>
       <Footer />

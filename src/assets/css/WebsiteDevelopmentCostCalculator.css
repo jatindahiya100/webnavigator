@@ -6,7 +6,6 @@
     justify-content: center;
     align-items: center;
     gap: 2em;
-    padding: 1em;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
     /* Adjust the transition duration as needed */
@@ -90,7 +89,7 @@
 /* Cost Summary  */
 /* Styling for the render-cost-summary container */
 .render-cost-summary {
-    margin: 20px;
+    /* margin: 20px; */
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -105,7 +104,7 @@
 
 /* Styling for the cost-summary table headers */
 .cost-summary-table th {
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     padding: 10px;
     text-align: left;
     font-weight: bold;
