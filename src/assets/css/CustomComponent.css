@@ -26,3 +26,24 @@
     line-height: 2em;
     color: var(--dark-gray);
 }
+
+/* Media query for screens up to 800px */
+@media screen and (max-width: 800px) {
+    .custom-component {
+        padding: 0.5em;
+    }
+
+    .custom-component h1 {
+        font-size: 2rem;
+    }
+
+    .custom-component p {
+        font-size: small;
+        line-height: 1.6em;
+    }
+
+    .custom-component ul {
+        font-size: small;
+        line-height: 1.8em;
+    }
+}
