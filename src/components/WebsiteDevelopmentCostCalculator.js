@@ -214,6 +214,7 @@ const WebsiteDevelopmentCostCalculator = () => {
         currentStep: 0,
         userAnswers: {},
         totalCost: 0,
+        isVisible: true, // Add a state variable to control question visibility
     });
 
     const { currentStep, userAnswers, totalCost } = state;
@@ -226,11 +227,21 @@ const WebsiteDevelopmentCostCalculator = () => {
     };
 
     const handleNextStep = () => {
-        setState((prevState) => ({ ...prevState, currentStep: prevState.currentStep + 1 }));
+        // Hide the current question with a smooth fade-out effect
+        setState((prevState) => ({ ...prevState, isVisible: false }));
+        setTimeout(() => {
+            // After the fade-out transition is complete, move to the next question and show it with a smooth fade-in effect
+            setState((prevState) => ({ ...prevState, currentStep: prevState.currentStep + 1, isVisible: true }));
+        }, 300); // You can adjust the duration of the fade-out transition as needed
     };
 
     const handlePreviousStep = () => {
-        setState((prevState) => ({ ...prevState, currentStep: prevState.currentStep - 1 }));
+        // Hide the current question with a smooth fade-out effect
+        setState((prevState) => ({ ...prevState, isVisible: false }));
+        setTimeout(() => {
+            // After the fade-out transition is complete, move to the previous question and show it with a smooth fade-in effect
+            setState((prevState) => ({ ...prevState, currentStep: prevState.currentStep - 1, isVisible: true }));
+        }, 300); // You can adjust the duration of the fade-out transition as needed
     };
 
     const calculateTotalCost = () => {
@@ -291,6 +302,14 @@ const WebsiteDevelopmentCostCalculator = () => {
                                         </tr>
                                     );
                                 }
+                            } else if (question.type === 'number') {
+                                return (
+                                    <tr key={questionIndex}>
+                                        <td>{question.question}</td>
+                                        <td>{answer}</td>
+                                        <td>${parseInt(answer, 10) || 0}</td>
+                                    </tr>
+                                );
                             }
                             return null;
                         })}
@@ -325,7 +344,7 @@ const WebsiteDevelopmentCostCalculator = () => {
         }
 
         return (
-            <div className='website-development-cost-calculator'>
+            <div className={`website-development-cost-calculator ${state.isVisible ? 'fade-in' : 'fade-out'}`}>
                 <h2>{currentQuestion.question}</h2>
 
                 <div className="inputs">

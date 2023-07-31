@@ -1,14 +1,29 @@
 .website-development-cost-calculator {
     width: 100%;
     min-height: 400px;
-    border: 2px solid var(--accent);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     gap: 2em;
     padding: 1em;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    /* Adjust the transition duration as needed */
 }
+
+.website-development-cost-calculator.fade-out {
+    opacity: 0;
+    pointer-events: none;
+    /* Disable interactions with the element while it's faded out */
+}
+
+.website-development-cost-calculator.fade-in {
+    opacity: 1;
+    pointer-events: auto;
+    /* Re-enable interactions with the element after it's faded in */
+}
+
 
 .website-development-cost-calculator .inputs {
     display: flex;
