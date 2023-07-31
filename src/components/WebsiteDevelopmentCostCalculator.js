@@ -303,7 +303,7 @@ const WebsiteDevelopmentCostCalculator = () => {
                 <h2>Cost Summary</h2>
                 <table className="cost-summary-table">
                     <thead>
-                        <tr className="total-cost-row">
+                        <tr>
                             <th>Question</th>
                             <th>Selected Option</th>
                             <th>Cost</th>
@@ -338,7 +338,7 @@ const WebsiteDevelopmentCostCalculator = () => {
                         })}
                         <tr className="total-cost-row">
                             <td>Total Cost of Website Development:</td>
-                            <td colSpan="2">${totalCost}</td>
+                            <td colSpan="2" style={{ textAlign: "end" }}>${totalCost}</td>
                         </tr>
                     </tbody>
                 </table>
