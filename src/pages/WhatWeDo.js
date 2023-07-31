@@ -20,10 +20,6 @@ export default function WhatWeDo() {
           "Content Management Systems (CMS): Implementing systems like WordPress, Joomla, or Drupal for easy website management.",
           "Website Maintenance: Ensuring your website stays up-to-date, secure, and optimized for peak performance.",
         ],
-        buttonText: "Let's Begin Your Journey",
-        onClick: () => {
-          alert("hi from CustomComponent 1");
-        },
       },
       MediaComponent: {
         mediaType: "image",
@@ -40,10 +36,6 @@ export default function WhatWeDo() {
           "Email Marketing: Crafting compelling email campaigns to nurture leads and drive conversions.",
           "Analytics and Conversion Tracking: Monitoring and analyzing website data to enhance marketing strategies.",
         ],
-        buttonText: "Digital Marketing Services",
-        onClick: () => {
-          alert("hi from CustomComponent 2");
-        },
       },
       MediaComponent: {
         mediaType: "image",
@@ -58,10 +50,6 @@ export default function WhatWeDo() {
           "Web Hosting: Providing reliable hosting solutions with optimal server performance and security.",
           "SSL Certificates: Ensuring secure data transmission with SSL certificates for enhanced trust.",
         ],
-        buttonText: "Explore Domain and Hosting",
-        onClick: () => {
-          alert("hi from CustomComponent 3");
-        },
       },
       MediaComponent: {
         mediaType: "image",
