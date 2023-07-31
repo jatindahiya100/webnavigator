@@ -7,7 +7,7 @@ const MediaComponent = ({ mediaType, imageUrl, lottieOptions }) => {
 
     return (
         <div>
-            {isImage && imageUrl && <img src={imageUrl} alt="Image" />}
+            {isImage && imageUrl && <img src={imageUrl} alt="" />}
             {isLottie && lottieOptions && <Lottie animationData={lottieOptions.animationData} />}
         </div>
     );

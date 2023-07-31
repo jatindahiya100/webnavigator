@@ -18,7 +18,7 @@ const CustomComponent = (props) => {
                     ))}
                 </ul>
             )}
-            {props.buttonText && <button onClick={props.onClick}>{props.buttonText}</button>}
+            {props.buttonText && <button className='button' onClick={props.onClick}>{props.buttonText}</button>}
         </div>
     );
 };
