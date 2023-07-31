@@ -3,9 +3,15 @@ import '../assets/css/ComponentGrid.css';
 
 const ComponentGrid = ({ children }) => {
   return (
-    <div className='grid-wrapper'>
-      <div className="grid-container">{children}</div>
-    </div>
+    <>
+      {
+        React.Children.map(children, (child, index) => (
+          <div key={index} className='grid-wrapper' style={{ backgroundColor: index % 2 === 0 ? "" : " #F1F0EA" }}>
+            <div className="grid-container">{child}</div>
+          </div>
+        ))
+      }
+    </>
   );
 };
 
