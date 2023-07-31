@@ -264,8 +264,7 @@ const WebsiteDevelopmentCostCalculator = () => {
     };
 
     const calculateTotalCost = () => {
-        let cost = 0;
-        Object.keys(userAnswers).forEach((questionIndex) => {
+        return Object.keys(userAnswers).reduce((cost, questionIndex) => {
             const question = websiteDevelopmentQuestions[questionIndex];
             const answer = userAnswers[questionIndex];
 
@@ -277,8 +276,9 @@ const WebsiteDevelopmentCostCalculator = () => {
             } else if (question.type === 'number') {
                 cost += parseInt(answer, 10) || 0;
             }
-        });
-        return cost;
+
+            return cost;
+        }, 0);
     };
 
     const handleCalculate = () => {
