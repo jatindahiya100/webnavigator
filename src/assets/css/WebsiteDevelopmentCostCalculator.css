@@ -1,41 +1,83 @@
+.fade-in-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Adjust the duration as needed */
+}
+
+.fade-in-out.fade-in {
+    opacity: 1;
+}
+
+
 .website-development-cost-calculator {
     width: 100%;
     min-height: 400px;
-    background: #cfcecea7;
+    border: 2px solid var(--accent);
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: column nowrap;
     justify-content: center;
-    gap: 1em;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
 }
 
-.website-development-cost-calculator .form {
+.website-development-cost-calculator .inputs {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: center;
     gap: 1em;
+    min-height: 150px;
 }
 
-.isHidden {
-    display: none;
-    /* hide radio buttons */
-}
+/* Styling Inputs */
 
-.label {
+.radio-container {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
-    padding: 1em;
-    border: 2px solid gray;
-    border-radius: 0.4em;
-    transition: 0.6s;
+    justify-content: center;
+    gap: 2.4em;
 }
 
-.label:hover {
-    border: 2px solid var(--secondary-color);
+/* Hide the actual radio buttons */
+.radio-container input[type="radio"] {
+    display: none;
 }
 
-.radio:checked+.label {
-    /* target next sibling (+) label */
-    border: 22px solid var(--secondary-color);
+/* Style the labels to look like clickable elements */
+.radio-container label {
+    cursor: pointer;
+    padding: 0.8em 1em;
+    border: none;
+    border-radius: 4em;
+    background-color: rgba(33, 122, 255, 0.095);
+    color: var(--accent);
+    font-size: medium;
+    transition: 0.8s;
+}
+
+.radio-container label:hover {
+    background-color: rgb(49, 130, 255);
+    color: var(--primary-color);
+    transition: 0.8s;
+}
+
+/* Change the label appearance when the associated radio button is selected */
+.radio-container input[type="radio"]:checked+label {
+    background-color: rgb(49, 130, 255);
+    color: var(--primary-color);
+    transition: 0.8s;
+    /* Example background color for when selected */
+    /* Add any other styling for the selected state here */
+}
+
+/* Styling Action Button */
+
+.actions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
 }

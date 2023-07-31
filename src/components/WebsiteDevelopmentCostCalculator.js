@@ -190,10 +190,6 @@ const Test = () => {
             type: "number", // User enters a numeric value
         },
         {
-            question: "Budget",
-            type: "number", // User enters a numeric value
-        },
-        {
             question: "Developer Skill Level",
             options: [
                 {
@@ -211,14 +207,6 @@ const Test = () => {
             ],
             type: "radio", // User can select only one option
             condition: (answers) => answers[1] === "Custom Theme", // Show this question only if Custom Theme is selected
-        },
-        {
-            question: "Additional Features",
-            type: "text", // User can provide an open-ended text input
-        },
-        {
-            question: "Timeline",
-            type: "date", // User can provide a date input
         },
     ];
 
@@ -243,26 +231,6 @@ const Test = () => {
 
     const handlePreviousStep = () => {
         setState((prevState) => ({ ...prevState, currentStep: prevState.currentStep - 1 }));
-    };
-
-    const handleCheckboxChange = (questionIndex, option, checked) => {
-        setState((prevState) => {
-            const prevOptions = prevState.userAnswers[questionIndex] || [];
-            if (checked) {
-                return {
-                    ...prevState,
-                    userAnswers: { ...prevState.userAnswers, [questionIndex]: [...prevOptions, option] },
-                };
-            } else {
-                return {
-                    ...prevState,
-                    userAnswers: {
-                        ...prevState.userAnswers,
-                        [questionIndex]: prevOptions.filter((item) => item !== option),
-                    },
-                };
-            }
-        });
     };
 
     const calculateTotalCost = () => {
@@ -294,6 +262,49 @@ const Test = () => {
         setState({ ...state, totalCost: cost, currentStep: websiteDevelopmentQuestions.length });
     };
 
+    // Function to render the cost summary
+    const renderCostSummary = () => {
+        return (
+            <div>
+                <h2>Cost Summary</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Question</th>
+                            <th>Selected Option</th>
+                            <th>Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {Object.keys(userAnswers).map((questionIndex) => {
+                            const question = websiteDevelopmentQuestions[questionIndex];
+                            const answer = userAnswers[questionIndex];
+
+                            if (question.type === 'radio') {
+                                const selectedOption = question.options.find((option) => option.label === answer);
+                                if (selectedOption) {
+                                    return (
+                                        <tr key={questionIndex}>
+                                            <td>{question.question}</td>
+                                            <td>{selectedOption.label}</td>
+                                            <td>${selectedOption.cost}</td>
+                                        </tr>
+                                    );
+                                }
+                            }
+                            return null;
+                        })}
+                        <tr>
+                            <td>Total Cost of Website Development:</td>
+                            <td colSpan="2">${totalCost}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        );
+    };
+
+
     const renderForm = () => {
         const currentQuestion = websiteDevelopmentQuestions[currentStep];
 
@@ -301,11 +312,9 @@ const Test = () => {
             return (
                 <div>
                     {renderCostSummary()} {/* Add this line to display the cost summary */}
-                    <h2>Thank you for filling out the form!</h2>
                 </div>
             );
         }
-
 
         const conditionMet = !currentQuestion.condition || currentQuestion.condition(userAnswers);
 
@@ -317,22 +326,33 @@ const Test = () => {
 
         return (
             <div className='website-development-cost-calculator'>
-                <div className="form">
-                    <h2>{currentQuestion.question}</h2>
-                    {currentQuestion.type === 'dropdown' && (
-                        <select
-                            value={userAnswers[currentStep] || ''}
-                            onChange={(e) => handleAnswerChange(currentStep, e.target.value)}
-                        >
-                            <option value="">Select an option</option>
+                <h2>{currentQuestion.question}</h2>
+
+                <div className="inputs">
+
+                    {/* Radio Buttons */}
+
+                    {currentQuestion.type === 'radio' && (
+                        <div className="radio-container">
                             {currentQuestion.options.map((option, index) => (
-                                <option key={index} value={option.label}>
-                                    {option.label}
-                                </option>
+
+                                <div key={index}>
+                                    <input
+                                        type="radio"
+                                        id={option.label.replace(/ /g, '')}
+                                        name={currentQuestion.question.replace(/ /g, '')}
+                                        value={option.label}
+                                        checked={userAnswers[currentStep] === option.label}
+                                        onChange={(e) => handleAnswerChange(currentStep, e.target.value)} />
+
+                                    <label htmlFor={option.label.replace(/ /g, '')}>{option.label}</label>
+                                </div>
+
                             ))}
-                        </select>
+                        </div>
                     )}
 
+                    {/* Number Input */}
                     {currentQuestion.type === 'number' && (
                         <input
                             type="number"
@@ -341,123 +361,24 @@ const Test = () => {
                         />
                     )}
 
-                    {currentQuestion.type === 'radio' && (
-                        <div>
-                            {currentQuestion.options.map((option, index) => (
-
-                                <div key={index}>
-                                    <input
-                                        type="radio"
-                                        name={currentQuestion.question.replace(/ /g, '')}
-                                        id={option.label.replace(/ /g, '')}
-                                        value={option.label.replace(/ /g, '')}
-                                        checked={userAnswers[currentStep] === option.label}
-                                        onChange={(e) => handleAnswerChange(currentStep, e.target.value)}
-                                        className="radio" />
-                                    <label
-                                        htmlFor={option.label.replace(/ /g, '')}
-                                        className='label'>{option.label}</label>
-                                </div>
-
-                            ))}
-                        </div>
-                    )}
-
-                    {currentQuestion.type === 'checkbox' && (
-                        <div>
-                            {currentQuestion.options.map((option, index) => (
-                                <label key={index}>
-                                    <input
-                                        type="checkbox"
-                                        value={option.label}
-                                        checked={userAnswers[currentStep]?.includes(option.label)}
-                                        onChange={(e) =>
-                                            handleCheckboxChange(currentStep, option.label, e.target.checked)
-                                        }
-                                    />
-                                    {option.label}
-                                </label>
-                            ))}
-                        </div>
-                    )}
-
-                    {currentQuestion.type === 'text' && (
-                        <textarea
-                            value={userAnswers[currentStep] || ''}
-                            onChange={(e) => handleAnswerChange(currentStep, e.target.value)}
-                        />
-                    )}
-
-                    {currentQuestion.type === 'date' && (
-                        <input
-                            type="date"
-                            value={userAnswers[currentStep] || ''}
-                            onChange={(e) => handleAnswerChange(currentStep, e.target.value)}
-                        />
-                    )}
                 </div>
 
                 <div className="actions">
+                    {/* Previous Button */}
                     {currentStep > 0 && (
                         <button className='button' onClick={handlePreviousStep}>Previous</button>
                     )}
+
+                    {/* Next Button */}
                     {currentStep < websiteDevelopmentQuestions.length - 1 && (
                         <button className='button' onClick={handleNextStep}>Next</button>
                     )}
+
+                    {/* Calculate Button */}
                     {currentStep === websiteDevelopmentQuestions.length - 1 && (
                         <button className='button' onClick={handleCalculate}>Calculate</button>
                     )}
                 </div>
-            </div>
-        );
-    };
-
-    // Function to render the cost summary
-    const renderCostSummary = () => {
-        const totalCost = calculateTotalCost();
-
-        return (
-            <div>
-                <h2>Cost Summary</h2>
-                {Object.keys(userAnswers).map((questionIndex) => {
-                    const question = websiteDevelopmentQuestions[questionIndex];
-                    const answer = userAnswers[questionIndex];
-
-                    if (question.type === 'dropdown' || question.type === 'radio') {
-                        const selectedOption = question.options.find((option) => option.label === answer);
-                        if (selectedOption) {
-                            return (
-                                <p key={questionIndex}>
-                                    {question.question}: {selectedOption.label} - ${selectedOption.cost}
-                                </p>
-                            );
-                        }
-                    } else if (question.type === 'checkbox') {
-                        const selectedOptions = question.options.filter((option) => answer.includes(option.label));
-                        if (selectedOptions.length > 0) {
-                            return (
-                                <div key={questionIndex}>
-                                    <p>{question.question}:</p>
-                                    <ul>
-                                        {selectedOptions.map((option) => (
-                                            <li key={option.label}>
-                                                {option.label} - ${option.cost}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            );
-                        }
-                    } else if (question.type === 'number') {
-                        return (
-                            <p key={questionIndex}>
-                                {question.question}: {answer} - ${parseInt(answer, 10) || 0}
-                            </p>
-                        );
-                    }
-                    return null;
-                })}
-                <h3>Total Cost of Website Development: ${totalCost}</h3>
             </div>
         );
     };

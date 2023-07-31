@@ -9,7 +9,7 @@ import AdsCampaignLottie from '../assets/images/Lottie/Ads-Campaign-Lottie-01.js
 import ReviewsLottie from '../assets/images/Lottie/Reviews-Lottie-01.json';
 import { useNavigate } from 'react-router-dom';
 import ClientReviewsSlideshow from '../components/ClientReviewsSlideshow';
-// import WebsiteDevelopmentCostCalculator from '../components/WebsiteDevelopmentCostCalculator';
+import WebsiteDevelopmentCostCalculator from '../components/WebsiteDevelopmentCostCalculator';
 
 
 export default function Home() {
@@ -164,7 +164,7 @@ export default function Home() {
 
   return (
     <>
-      {/* <WebsiteDevelopmentCostCalculator /> */}
+      <WebsiteDevelopmentCostCalculator />
       {gridComponents}
       <ClientReviewsSlideshow reviews={reviewsData} />
       <br /><br /><br />
