@@ -1,0 +1,25 @@
+.custom-component {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.4em;
+}
+
+.custom-component h1 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: var(--secondary-color);
+}
+
+.custom-component p {
+    font-size: medium;
+    line-height: 1.8em;
+    color: var(--dark-gray);
+}
+
+.custom-component ul {
+    list-style-type: unset;
+    font-size: medium;
+    line-height: 2em;
+    color: var(--dark-gray);
+}
