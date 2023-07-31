@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/css/WebsiteDevelopmentCostCalculator.css'
 
-const Test = () => {
+const WebsiteDevelopmentCostCalculator = () => {
     const websiteDevelopmentQuestions = [
         {
             question: "Type of Website",
@@ -390,4 +390,4 @@ const Test = () => {
     );
 };
 
-export default Test;
+export default WebsiteDevelopmentCostCalculator;

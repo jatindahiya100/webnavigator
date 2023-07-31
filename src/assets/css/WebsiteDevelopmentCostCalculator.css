@@ -1,13 +1,3 @@
-.fade-in-out {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out; /* Adjust the duration as needed */
-}
-
-.fade-in-out.fade-in {
-    opacity: 1;
-}
-
-
 .website-development-cost-calculator {
     width: 100%;
     min-height: 400px;
