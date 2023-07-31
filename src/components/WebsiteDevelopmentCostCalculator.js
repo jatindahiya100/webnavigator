@@ -226,14 +226,33 @@ const WebsiteDevelopmentCostCalculator = () => {
         }));
     };
 
-    const handleNextStep = () => {
-        // Hide the current question with a smooth fade-out effect
-        setState((prevState) => ({ ...prevState, isVisible: false }));
-        setTimeout(() => {
-            // After the fade-out transition is complete, move to the next question and show it with a smooth fade-in effect
-            setState((prevState) => ({ ...prevState, currentStep: prevState.currentStep + 1, isVisible: true }));
-        }, 300); // You can adjust the duration of the fade-out transition as needed
+    const isQuestionAnswered = (question) => {
+        const answer = state.userAnswers[state.currentStep];
+        if (question.type === 'radio') {
+            return answer !== undefined && answer !== '';
+        } else if (question.type === 'number') {
+            return answer !== undefined && !isNaN(parseInt(answer));
+        }
+        return false;
     };
+
+
+    const handleNextStep = () => {
+        const currentQuestion = websiteDevelopmentQuestions[currentStep];
+        if (isQuestionAnswered(currentQuestion)) {
+            setState((prevState) => ({ ...prevState, isVisible: false }));
+            setTimeout(() => {
+                setState((prevState) => ({
+                    ...prevState,
+                    currentStep: prevState.currentStep + 1,
+                    isVisible: true,
+                }));
+            }, 300);
+        } else {
+            alert('Please select a valid option or provide valid input.');
+        }
+    };
+
 
     const handlePreviousStep = () => {
         // Hide the current question with a smooth fade-out effect
@@ -250,17 +269,11 @@ const WebsiteDevelopmentCostCalculator = () => {
             const question = websiteDevelopmentQuestions[questionIndex];
             const answer = userAnswers[questionIndex];
 
-            if (question.type === 'dropdown' || question.type === 'radio') {
+            if (question.type === 'radio') {
                 const selectedOption = question.options.find((option) => option.label === answer);
                 if (selectedOption) {
                     cost += selectedOption.cost;
                 }
-            } else if (question.type === 'checkbox') {
-                question.options.forEach((option) => {
-                    if (answer.includes(option.label)) {
-                        cost += option.cost;
-                    }
-                });
             } else if (question.type === 'number') {
                 cost += parseInt(answer, 10) || 0;
             }
@@ -269,18 +282,29 @@ const WebsiteDevelopmentCostCalculator = () => {
     };
 
     const handleCalculate = () => {
-        const cost = calculateTotalCost();
-        setState({ ...state, totalCost: cost, currentStep: websiteDevelopmentQuestions.length });
+        const areAllQuestionsAnswered = websiteDevelopmentQuestions.every(
+            (question, index) =>
+                state.userAnswers[index] !== undefined &&
+                (question.type !== 'number' || !isNaN(parseInt(state.userAnswers[index])))
+        );
+
+        if (areAllQuestionsAnswered) {
+            const cost = calculateTotalCost();
+            setState({ ...state, totalCost: cost, currentStep: websiteDevelopmentQuestions.length });
+        } else {
+            alert('Please answer all questions before calculating the cost.');
+        }
     };
+
 
     // Function to render the cost summary
     const renderCostSummary = () => {
         return (
-            <div>
+            <div className='render-cost-summary'>
                 <h2>Cost Summary</h2>
-                <table>
+                <table className="cost-summary-table">
                     <thead>
-                        <tr>
+                        <tr className="total-cost-row">
                             <th>Question</th>
                             <th>Selected Option</th>
                             <th>Cost</th>
@@ -295,7 +319,7 @@ const WebsiteDevelopmentCostCalculator = () => {
                                 const selectedOption = question.options.find((option) => option.label === answer);
                                 if (selectedOption) {
                                     return (
-                                        <tr key={questionIndex}>
+                                        <tr className="total-cost-row" key={questionIndex}>
                                             <td>{question.question}</td>
                                             <td>{selectedOption.label}</td>
                                             <td>${selectedOption.cost}</td>
@@ -304,7 +328,7 @@ const WebsiteDevelopmentCostCalculator = () => {
                                 }
                             } else if (question.type === 'number') {
                                 return (
-                                    <tr key={questionIndex}>
+                                    <tr className="total-cost-row" key={questionIndex}>
                                         <td>{question.question}</td>
                                         <td>{answer}</td>
                                         <td>${parseInt(answer, 10) || 0}</td>
@@ -313,7 +337,7 @@ const WebsiteDevelopmentCostCalculator = () => {
                             }
                             return null;
                         })}
-                        <tr>
+                        <tr className="total-cost-row">
                             <td>Total Cost of Website Development:</td>
                             <td colSpan="2">${totalCost}</td>
                         </tr>
