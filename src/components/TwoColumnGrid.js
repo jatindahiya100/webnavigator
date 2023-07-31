@@ -1,20 +1,17 @@
 import React from 'react';
 import '../assets/css/TwoColumnGrid.css'; // Import the CSS file
-import Card from '../components/Card'
 
-const TwoColumnGrid = ({ items }) => {
+const TwoColumnGrid = ({ children }) => {
     return (
         <div className="component-wrapper">
             <div className="two-column-grid-container">
-                {items.map((item, index) => (
+                {React.Children.map(children, (child, index) => (
                     <div className="two-column-grid-item" key={index}>
-                        <Card
-                            imageSrc={item.imageSrc}
-                            heading={item.heading}
-                            description={item.description}
-                            buttonText={item.buttonText}
-                            websiteUrl={item.websiteUrl}
-                        />
+                        {React.isValidElement(child) ? (
+                            child
+                        ) : (
+                            <div className="card">{child}</div>
+                        )}
                     </div>
                 ))}
             </div>

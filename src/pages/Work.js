@@ -7,9 +7,9 @@ import LuxyHair from '../assets/images/project/Luxy-Hair.png'
 import JPLewis from '../assets/images/project/JP-Lewis-Group.png'
 import customDashboardUI from '../assets/images/project/customDashboardUI.png'
 import TwoColumnGrid from '../components/TwoColumnGrid';
+import Card from '../components/Card'; // Assuming the Card component is imported here
 
-
-export default function Work() {
+const Work = () => {
   const cardData = [
     {
       imageSrc: SideBird,
@@ -62,9 +62,24 @@ export default function Work() {
     },
     // Add more card data objects as needed
   ];
+
   return (
     <>
-      <TwoColumnGrid items={cardData} />
+      <TwoColumnGrid>
+        {/* Render Card components using cardData */}
+        {cardData.map((item, index) => (
+          <Card
+            key={index}
+            imageSrc={item.imageSrc}
+            heading={item.heading}
+            description={item.description}
+            buttonText={item.buttonText}
+            websiteUrl={item.websiteUrl}
+          />
+        ))}
+      </TwoColumnGrid>
     </>
-  )
-}
+  );
+};
+
+export default Work;
