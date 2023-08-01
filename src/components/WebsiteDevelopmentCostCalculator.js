@@ -95,7 +95,7 @@ const WebsiteDevelopmentCostCalculator = () => {
                     cost: 3000,
                 },
                 {
-                    label: "Using a Website Builder (e.g., WordPress, Wix, Squarespace, etc.)",
+                    label: "Using Website Builder ( WordPress, Wix etc.)",
                     cost: 1000,
                 },
             ],
