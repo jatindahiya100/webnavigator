@@ -31,7 +31,7 @@
 @media screen and (max-width: 800px) {
     .custom-component {
         padding: 0.5em;
-        min-height: unset;
+        min-height: calc(100vh - 40%);
     }
 
     .custom-component h1 {
