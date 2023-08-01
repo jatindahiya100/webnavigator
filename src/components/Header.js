@@ -22,7 +22,7 @@ export default function Header() {
     <header>
 
       <div className="logo">
-        <Link to='/'><ion-icon name="compass"></ion-icon>Web&nbsp;<span>Navigators</span></Link>
+        <Link to='/'><span>&#9775; Web</span><span>Navigators</span></Link>
       </div>
 
       <nav className={isNavOpen === true ? 'mobile-menu' : 'desktop-menu'}>
