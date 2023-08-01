@@ -26,7 +26,7 @@ export default function Home() {
           "Welcome to Web Navigators, where we transform your digital dreams into reality! As a premier digital service agency, we are driven by your success. Prepare to embark on an extraordinary journey with our dedicated team of visionaries and tech enthusiasts, as we empower your brand to conquer the digital realm.",
         buttonText: "Let's Begin Your Journey",
         onClick: () => {
-          alert("hi from CustomComponent 1");
+         
         },
       },
       MediaComponent: {
