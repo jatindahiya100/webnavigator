@@ -8,10 +8,12 @@ import JPLewis from '../assets/images/project/JP-Lewis-Group.png'
 import customDashboardUI from '../assets/images/project/customDashboardUI.png'
 import TwoColumnGrid from '../components/TwoColumnGrid';
 import Card from '../components/Card'; // Assuming the Card component is imported here
+import { useEffect } from 'react'
 
 const Work = () => {
-  document.title = "The Web Navigators | Previous Work";
-
+  useEffect(() => {
+    document.title = "The Web Navigators | Previous Work";
+  }, [])
   const cardData = [
     {
       imageSrc: SideBird,

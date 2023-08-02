@@ -14,10 +14,12 @@ import SocialMediaLottie from '../assets/images/Lottie/Social-Media-Lottie-01.js
 import AdsCampaignLottie from '../assets/images/Lottie/Ads-Campaign-Lottie-01.json';
 import ReviewsLottie from '../assets/images/Lottie/Reviews-Lottie-01.json';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function Home() {
-  document.title = "The Web Navigators | Crafting Digital Experiences for Brand Success";
-
+  useEffect(() => {
+    document.title = "The Web Navigators | Crafting Digital Experiences for Brand Success";
+  }, [])
   const navigate = useNavigate();
 
   const gridData = [

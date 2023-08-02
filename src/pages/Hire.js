@@ -7,9 +7,12 @@ import MediaComponent from '../components/MediaComponent'
 import ChatLottie from '../assets/images/Lottie/Chat-Lottie-01.json';
 import HireOnUpworkLottie from '../assets/images/Lottie/Hire-On-Upwork-Lottie-01.json';
 import HowToHireOnUpworkLottie from '../assets/images/Lottie/How-To-Hire-On-Upwork-Lottie-01.json';
+import { useEffect } from 'react';
 
 export default function Hire() {
-    document.title = "The Web Navigators | Start Project";
+    useEffect(() => {
+        document.title = "The Web Navigators | Start Project";
+    }, [])
 
     const gridData = [
         {

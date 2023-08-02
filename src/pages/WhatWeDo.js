@@ -7,10 +7,13 @@ import MediaComponent from '../components/MediaComponent'
 import WebDesignCover from '../assets/images/what-we-do/web-design-cover.png'
 import DigitalMarketingCover from '../assets/images/what-we-do/digital-marketing-cover.jpg'
 import HostingCover from '../assets/images/what-we-do/hosting-cover.png'
+import { useEffect } from 'react';
 
 export default function WhatWeDo() {
-  document.title = "The Web Navigators | What We Do";
-
+  useEffect(() => {
+    document.title = "The Web Navigators | What We Do";
+  }, [])
+  
   const gridData = [
     {
       CustomComponent: {
