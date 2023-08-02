@@ -9,6 +9,8 @@ import DigitalMarketingCover from '../assets/images/what-we-do/digital-marketing
 import HostingCover from '../assets/images/what-we-do/hosting-cover.png'
 
 export default function WhatWeDo() {
+  document.title = "The Web Navigators | What We Do";
+
   const gridData = [
     {
       CustomComponent: {

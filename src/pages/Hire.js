@@ -9,6 +9,8 @@ import HireOnUpworkLottie from '../assets/images/Lottie/Hire-On-Upwork-Lottie-01
 import HowToHireOnUpworkLottie from '../assets/images/Lottie/How-To-Hire-On-Upwork-Lottie-01.json';
 
 export default function Hire() {
+    document.title = "The Web Navigators | Start Project";
+
     const gridData = [
         {
             CustomComponent: {

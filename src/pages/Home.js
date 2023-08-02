@@ -16,6 +16,8 @@ import ReviewsLottie from '../assets/images/Lottie/Reviews-Lottie-01.json';
 import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
+  document.title = "The Web Navigators | Crafting Digital Experiences for Brand Success";
+
   const navigate = useNavigate();
 
   const gridData = [
@@ -23,10 +25,10 @@ export default function Home() {
       CustomComponent: {
         title: "Unleash Your Digital Triumph!",
         description:
-          "Welcome to Web Navigators, where we transform your digital dreams into reality! As a premier digital service agency, we are driven by your success. Prepare to embark on an extraordinary journey with our dedicated team of visionaries and tech enthusiasts, as we empower your brand to conquer the digital realm.",
+          "Welcome to The Web Navigators, where we transform your digital dreams into reality! As a premier digital service agency, we are driven by your success. Prepare to embark on an extraordinary journey with our dedicated team of visionaries and tech enthusiasts, as we empower your brand to conquer the digital realm.",
         buttonText: "Let's Begin Your Journey",
         onClick: () => {
-         
+
         },
       },
       MediaComponent: {
@@ -137,7 +139,7 @@ export default function Home() {
       CustomComponent: {
         title: "Client Love: Hear What Our Clients Say",
         description:
-          "Our success is measured by the satisfaction of our clients. Discover what our previous partners have to say about their experience with Web Navigators. We take pride in delivering exceptional results and building lasting relationships, and our clients' testimonials speak volumes about the dedication and excellence we bring to every project.",
+          "Our success is measured by the satisfaction of our clients. Discover what our previous partners have to say about their experience with The Web Navigators. We take pride in delivering exceptional results and building lasting relationships, and our clients' testimonials speak volumes about the dedication and excellence we bring to every project.",
         buttonText: "Read Testimonials",
         onClick: () => {
           navigate("/start-project");

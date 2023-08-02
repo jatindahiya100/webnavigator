@@ -10,6 +10,8 @@ import TwoColumnGrid from '../components/TwoColumnGrid';
 import Card from '../components/Card'; // Assuming the Card component is imported here
 
 const Work = () => {
+  document.title = "The Web Navigators | Previous Work";
+
   const cardData = [
     {
       imageSrc: SideBird,
