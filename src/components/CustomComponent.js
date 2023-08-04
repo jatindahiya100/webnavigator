@@ -9,7 +9,7 @@ AOS.init();
 const CustomComponent = (props) => {
     return (
         <div className='custom-component' data-aos="zoom-in-right" data-aos-duration="1000" data-aos-offset="300">
-            {props.title && <h1>{props.title}</h1>}
+            {props.title && <h2>{props.title}</h2>}
             {props.description && <p>{props.description}</p>}
             {props.listItems && (
                 <ul>

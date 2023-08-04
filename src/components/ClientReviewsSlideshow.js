@@ -108,7 +108,7 @@ const ClientReviewsSlideshow = () => {
 
           return (
             <div key={index} className={`review ${isActive ? 'active' : ''} ${shouldSlideIn ? 'slide-in' : ''}`} style={{ transform: `translateX(${(index - currentReviewIndex) * 100}%)` }}>
-              <h2>Job Title: {review.Job}</h2> <br /><br />
+              <h3>Job Title: {review.Job}</h3> <br /><br />
               <p className="review-text">{"\"" + review.text + "\""}</p>
               <p className="author">- {review.author}</p>
             </div>

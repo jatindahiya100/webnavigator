@@ -300,7 +300,7 @@ const WebsiteDevelopmentCostCalculator = () => {
     const renderCostSummary = () => {
         return (
             <div className='render-cost-summary'>
-                <h2>Cost Summary</h2>
+                <h4>Cost Summary</h4>
                 <table className="cost-summary-table">
                     <thead>
                         <tr>
@@ -368,7 +368,7 @@ const WebsiteDevelopmentCostCalculator = () => {
 
         return (
             <div className={`website-development-cost-calculator ${state.isVisible ? 'fade-in' : 'fade-out'}`}>
-                <h2>{currentQuestion.question}</h2>
+                <h3>{currentQuestion.question}</h3>
 
                 <div className="inputs">
 

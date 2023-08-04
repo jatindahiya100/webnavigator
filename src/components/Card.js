@@ -6,7 +6,7 @@ const Card = ({ imageSrc, heading, description, buttonText, websiteUrl }) => {
         <div className="card">
             <img src={imageSrc} alt="Card" className="card-image" />
             <div className="card-content">
-                <h2 className="card-heading">{heading}</h2>
+                <h3 className="card-heading">{heading}</h3>
                 <p className="card-description">{description}</p>
                 <button className="button" onClick={() => { window.open(websiteUrl) }}>{buttonText}</button>
             </div>

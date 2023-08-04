@@ -13,7 +13,7 @@ export default function Footer() {
     <footer>
       <div className="footer-top">
         <Lottie animationData={Lottie01} style={{height: "200px"}} />
-        <h2>Ready To Start A <br /> Project?</h2>
+        <h3>Ready To Start A <br /> Project?</h3>
         <button className='button' onClick={() => { navigate('/start-project'); }}>Let's Do This</button>
       </div>
       <div className="footer-bottom">
