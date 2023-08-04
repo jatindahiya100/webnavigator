@@ -17,6 +17,7 @@ export default function Hire() {
     const gridData = [
         {
             CustomComponent: {
+                gravity: "heavy",
                 title: "Ready to Get Started? Shoot Us a Chat!",
                 description:
                     "Are you in need of top-notch digital solutions for your business? Look no further! At Web Navigators, we are committed to crafting digital experiences that drive success for your brand. Whether you require a stunning custom website, an SEO strategy that boosts your online presence, captivating social media management, or powerful ads campaigns, we've got you covered.",
@@ -38,6 +39,7 @@ export default function Hire() {
         },
         {
             CustomComponent: {
+                gravity: "low",
                 title: "Hire Us on Upwork for Secure Payments and More!",
                 description: "",
                 listItems: [
@@ -62,6 +64,7 @@ export default function Hire() {
         },
         {
             CustomComponent: {
+                gravity: "low",
                 title: "How to Hire Us on Upwork?",
                 description: "",
                 listItems: [

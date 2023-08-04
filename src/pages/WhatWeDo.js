@@ -17,6 +17,7 @@ export default function WhatWeDo() {
   const gridData = [
     {
       CustomComponent: {
+        gravity: "heavy",
         title: "Web Design and Development",
         listItems: [
           "Custom Website Design: Tailored designs to represent your brand and meet your specific needs.",
@@ -33,6 +34,7 @@ export default function WhatWeDo() {
     },
     {
       CustomComponent: {
+        gravity: "low",
         title: "Digital Marketing",
         listItems: [
           "Paid Advertising (PPC): Creating and managing effective pay-per-click campaigns to drive targeted traffic.",
@@ -49,6 +51,7 @@ export default function WhatWeDo() {
     },
     {
       CustomComponent: {
+        gravity: "low",
         title: "Domain and Hosting Services",
         listItems: [
           "Domain Registration: Assisting clients in finding and registering suitable domain names for their websites.",
