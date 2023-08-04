@@ -7,9 +7,15 @@
     padding: 1em;
 }
 
-.custom-component h1,
-.custom-component h2 {
+.custom-component h1 {
     font-size: 4rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: var(--secondary-color);
+}
+
+.custom-component h2 {
+    font-size: 3rem;
     text-transform: capitalize;
     font-weight: 800;
     color: var(--secondary-color);
@@ -35,9 +41,12 @@
         min-height: calc(100vh - 100px);
     }
 
-    .custom-component h1,
+    .custom-component h1 {
+        font-size: 3rem;
+    }
+
     .custom-component h2 {
-        font-size: 2.6rem;
+        font-size: 2rem;
     }
 
     .custom-component p {
