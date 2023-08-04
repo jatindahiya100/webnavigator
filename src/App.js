@@ -34,7 +34,7 @@ function App() {
     // Fallback in case the event doesn't fire (useful if all resources are already cached)
     const timeoutId = setTimeout(() => {
       checkResourcesLoaded();
-    }, 2000); // Wait for 2 seconds, adjust the time as needed
+    }, 500); // Wait for .5 seconds, adjust the time as needed
 
     // Cleanup the event listener and timeout on component unmount
     return () => {
