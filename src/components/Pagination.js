@@ -8,6 +8,13 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
     return (
         <div className="center">
             <div className="pagination">
+                <button
+                    className={`pagination-link ${currentPage === 1 ? 'disabled' : ''}`}
+                    onClick={() => onPageChange(currentPage - 1)}
+                    disabled={currentPage === 1}
+                >
+                    &laquo;
+                </button>
                 {pageNumbers.map((pageNumber) => (
                     <button
                         key={pageNumber}
@@ -17,6 +24,13 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
                         {pageNumber}
                     </button>
                 ))}
+                <button
+                    className={`pagination-link ${currentPage === totalPages ? 'disabled' : ''}`}
+                    onClick={() => onPageChange(currentPage + 1)}
+                    disabled={currentPage === totalPages}
+                >
+                    &raquo;
+                </button>
             </div>
         </div>
     );

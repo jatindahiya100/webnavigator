@@ -12,21 +12,6 @@ const mockBlogPosts = [
         heading: 'Blog Post 1',
         text: 'Lorem ipsum dolor sit amet...',
     },
-    {
-        image: 'image-url-2.jpg',
-        heading: 'Blog Post 2',
-        text: 'Consectetur adipiscing elit...',
-    },
-    {
-        image: 'image-url-2.jpg',
-        heading: 'Blog Post 2',
-        text: 'Consectetur adipiscing elit...',
-    },
-    {
-        image: 'image-url-2.jpg',
-        heading: 'Blog Post 2',
-        text: 'Consectetur adipiscing elit...',
-    },
     // Add more blog posts as needed
 ];
 
