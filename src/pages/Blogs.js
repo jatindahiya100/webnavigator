@@ -18,7 +18,6 @@ const LottieData = {
     },
 }
 
-
 const ITEMS_PER_PAGE = 3; // Number of blog posts per page
 
 function Blogs() {
