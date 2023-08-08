@@ -1,5 +1,5 @@
 // Blogs.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../assets/css/Blogs.css'
 import BlogPostCard from './BlogPostCard';
 import mockBlogPosts from './mockBlogPosts';
@@ -23,6 +23,10 @@ const LottieData = {
 const ITEMS_PER_PAGE = 3; // Number of blog posts per page
 
 function Blogs() {
+    useEffect(() => {
+        document.title = "The Web Navigators | Blogs";
+    }, [])
+
     const [currentPage, setCurrentPage] = useState(1);
     const totalItems = mockBlogPosts.length;
     const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
