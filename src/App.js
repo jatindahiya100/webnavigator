@@ -64,7 +64,7 @@ function App() {
         <Route path='/what-we-do' element={<WhatWeDo />} />
         <Route path='/work' element={<Work />} />
         <Route path='/blogs' element={<Blogs />} />
-        <Route path="/blog/:postId" element={<FullBlogPost />} />
+        <Route path="/blogs/:postId" element={<FullBlogPost />} />
         <Route path='/start-project' element={<Hire />} />
       </Routes>
       <Footer />

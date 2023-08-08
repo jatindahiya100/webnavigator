@@ -41,7 +41,7 @@ function Blogs() {
                     {currentItems.map((post, index) => (
                         <Link
                             key={index}
-                            to={`/blog/${post.id}`} // Modify the link to include the post id in the URL
+                            to={`/blogs/${post.id}`} // Modify the link to include the post id in the URL
                             className="blog-post-link"
                         >
                             <BlogPostCard {...post} />
