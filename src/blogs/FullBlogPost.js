@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import mockBlogPosts from '../components/mockBlogPosts';
+import mockBlogPosts from './mockBlogPosts';
 import '../assets/css/FullBlogPost.css'; // Import the CSS file
 
 function FullBlogPost() {

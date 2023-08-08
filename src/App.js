@@ -5,11 +5,11 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import WhatWeDo from './pages/WhatWeDo';
 import Work from './pages/Work';
-import Blogs from './pages/Blogs';
-import FullBlogPost from './components/FullBlogPost';
+import Blogs from './blogs/Blogs';
 import Hire from './pages/Hire';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
+import FullBlogPost from './blogs/FullBlogPost';
 
 function App() {
   const [resourcesLoaded, setResourcesLoaded] = useState(false);

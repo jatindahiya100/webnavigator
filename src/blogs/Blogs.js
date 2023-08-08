@@ -1,12 +1,14 @@
 // Blogs.js
 import React, { useState } from 'react';
-import BlogPostCard from '../components/BlogPostCard';
 import '../assets/css/Blogs.css'
+import BlogPostCard from './BlogPostCard';
+import mockBlogPosts from './mockBlogPosts';
+
 import MediaComponent from '../components/MediaComponent'
 import BlogsLottie from '../assets/images/Lottie/Blogs-Lottie-01.json';
-import Pagination from '../components/Pagination'; // Add the import statement for Pagination
+import Pagination from './Pagination'; // Add the import statement for Pagination
 import { Link } from 'react-router-dom';
-import mockBlogPosts from '../components/mockBlogPosts';
+
 
 
 const LottieData = {
