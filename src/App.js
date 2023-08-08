@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import WhatWeDo from './pages/WhatWeDo';
 import Work from './pages/Work';
 import Blogs from './pages/Blogs';
+import FullBlogPost from './components/FullBlogPost';
 import Hire from './pages/Hire';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
@@ -63,6 +64,7 @@ function App() {
         <Route path='/what-we-do' element={<WhatWeDo />} />
         <Route path='/work' element={<Work />} />
         <Route path='/blogs' element={<Blogs />} />
+        <Route path="/blog/:postId" element={<FullBlogPost />} />
         <Route path='/start-project' element={<Hire />} />
       </Routes>
       <Footer />

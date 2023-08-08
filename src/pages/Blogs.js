@@ -2,20 +2,21 @@
 import React, { useState } from 'react';
 import BlogPostCard from '../components/BlogPostCard';
 import '../assets/css/Blogs.css'
-import CategoriesList from '../components/CategoriesList';
+import MediaComponent from '../components/MediaComponent'
+import BlogsLottie from '../assets/images/Lottie/Blogs-Lottie-01.json';
 import Pagination from '../components/Pagination'; // Add the import statement for Pagination
+import { Link } from 'react-router-dom';
+import mockBlogPosts from '../components/mockBlogPosts';
 
 
-const mockBlogPosts = [
-    {
-        image: 'image-url-1.jpg',
-        heading: 'Blog Post 1',
-        text: 'Lorem ipsum dolor sit amet...',
+const LottieData = {
+    mediaType: "lottie",
+    lottieOptions: {
+        loop: true,
+        autoplay: true,
+        animationData: BlogsLottie,
     },
-    // Add more blog posts as needed
-];
-
-const mockCategories = ['Category 1', 'Category 2', 'Category 3'];
+}
 
 
 const ITEMS_PER_PAGE = 3; // Number of blog posts per page
@@ -37,7 +38,13 @@ function Blogs() {
             <div className="content-container">
                 <div className="blog-posts">
                     {currentItems.map((post, index) => (
-                        <BlogPostCard key={index} {...post} />
+                        <Link
+                            key={index}
+                            to={`/blog/${post.id}`} // Modify the link to include the post id in the URL
+                            className="blog-post-link"
+                        >
+                            <BlogPostCard {...post} />
+                        </Link>
                     ))}
                     <Pagination
                         currentPage={currentPage}
@@ -45,8 +52,8 @@ function Blogs() {
                         onPageChange={handlePageChange}
                     />
                 </div>
-                <div className="categories">
-                    <CategoriesList categories={mockCategories} />
+                <div>
+                    <MediaComponent mediaType={LottieData.mediaType} lottieOptions={LottieData.lottieOptions} />
                 </div>
             </div>
         </div>

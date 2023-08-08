@@ -1,15 +1,13 @@
-// BlogPostCard.js
 import React from 'react';
-import '../assets/css/BlogPostCard.css'
+import '../assets/css/BlogPostCard.css';
 
-
-function BlogPostCard({ image, heading, text }) {
+function BlogPostCard({ image, heading, shortDescription }) {
   return (
     <div className="blog-post-card">
-      <img src={image} alt="Blog Post" />
+      <img src={image} alt="Blog Post" className="thumbnail" />
       <div className="content">
-        <h2>{heading}</h2>
-        <p>{text}</p>
+        <h2 className="heading">{heading}</h2>
+        <p className="short-description">{shortDescription}</p>
       </div>
     </div>
   );
