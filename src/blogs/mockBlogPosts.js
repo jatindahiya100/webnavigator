@@ -1,9 +1,7 @@
-import TheWebNavigatorsThumbnail from '../assets/images/blogs/the-web-navigators.jpg';
-
 const mockBlogPosts = [
     {
         id: 1,
-        featuredImage: TheWebNavigatorsThumbnail,
+        featuredImage: 'https://images.pexels.com/photos/3316924/pexels-photo-3316924.jpeg',
         heading: 'Introducing The Web Navigators: Your Partners in Web Design, Development, and Marketing',
         shortDescription: 'Discover how The Web Navigators can guide your business to success...',
         mainContent: (
