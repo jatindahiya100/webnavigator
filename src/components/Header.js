@@ -29,7 +29,7 @@ export default function Header() {
         <NavLink to='/' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="home"></ion-icon> Home</NavLink>
         <NavLink to='/what-we-do' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="shapes"></ion-icon> What We Do?</NavLink>
         <NavLink to='/work' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="ribbon"></ion-icon> Work</NavLink>
-        <NavLink to='/blogs' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="eye"></ion-icon> Blogs</NavLink>
+        <NavLink to='/blogs' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="document"></ion-icon> Blogs</NavLink>
         <NavLink to='/start-project' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="infinite"></ion-icon> Start Project</NavLink>
       </nav>
 
