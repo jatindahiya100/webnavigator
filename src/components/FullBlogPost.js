@@ -13,8 +13,9 @@ function FullBlogPost() {
 
     return (
         <div>
+            <img src={selectedPost.featuredImage} alt="Featured" />
             <h2>{selectedPost.heading}</h2>
-            {/* Render the rest of the content here */}
+            {selectedPost.mainContent}
         </div>
     );
 }

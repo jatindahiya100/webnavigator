@@ -3,7 +3,7 @@ import TheWebNavigatorsThumbnail from '../assets/images/blogs/the-web-navigators
 const mockBlogPosts = [
     {
         id: 1,
-        image: TheWebNavigatorsThumbnail,
+        featuredImage: TheWebNavigatorsThumbnail,
         heading: 'Introducing The Web Navigators: Your Partners in Web Design, Development, and Marketing',
         shortDescription: 'Discover how The Web Navigators can guide your business to success...',
         mainContent: (
