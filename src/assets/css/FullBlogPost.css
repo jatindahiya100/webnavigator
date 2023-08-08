@@ -4,7 +4,7 @@
 .blog-container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px; /* Increased padding for more space around the content */
 }
 
 /* Style for the featured image */
@@ -13,6 +13,7 @@
     max-height: 300px;
     object-fit: cover;
     border-radius: 0.6em;
+    margin-bottom: 20px; /* Added margin to separate image from heading */
 }
 
 /* Style for the blog heading */
@@ -29,7 +30,8 @@
 
 /* Style for paragraphs within main content */
 .blog-main-content p {
-    margin: 10px 0;
+    margin: 15px 0; /* Increased margin for paragraphs */
+    line-height: 1.6em;
 }
 
 /* Style for headings within main content */
@@ -39,8 +41,9 @@
 .blog-main-content h4,
 .blog-main-content h5,
 .blog-main-content h6 {
-    margin: 15px 0;
+    margin: 20px 0; /* Increased margin for headings */
     font-weight: bold;
+    line-height: 2em;
 }
 
 /* Style for images within main content */
@@ -48,7 +51,7 @@
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px auto;
+    margin: 15px auto; /* Increased margin for images */
     border-radius: 0.6em;
 }
 
@@ -62,12 +65,12 @@
 .blog-main-content ul {
     list-style-type: disc;
     padding-left: 20px;
-    margin: 10px 0;
+    margin: 15px 0; /* Increased margin for unordered lists */
 }
 
 /* Style for list items within main content */
 .blog-main-content li {
-    margin: 5px 0;
+    margin: 10px 0; /* Increased margin for list items */
 }
 
 /* Additional styles as needed */

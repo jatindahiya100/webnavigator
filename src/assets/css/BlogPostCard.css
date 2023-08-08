@@ -27,12 +27,14 @@
 .blog-post-card h2 {
     margin-top: 0;
     color: var(--secondary-color);
-
+    line-height: 1.4em;
 }
 
 .blog-post-card p {
     margin: 0;
-    color: var(--secondary-color);
+    color: rgb(59, 59, 59);
+    font-size: small;
+    line-height: 1.6em;
 }
 
 @media (max-width: 768px) {
