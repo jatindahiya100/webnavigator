@@ -48,7 +48,7 @@ header {
 .desktop-menu {
     display: inline-flex;
     align-items: center;
-    gap: 2.4em;
+    gap: 1.6em;
     /* Add animation properties */
     animation: fade-in 2s ease;
 }

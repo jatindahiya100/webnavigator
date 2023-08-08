@@ -5,6 +5,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import WhatWeDo from './pages/WhatWeDo';
 import Work from './pages/Work';
+import Blogs from './pages/Blogs';
 import Hire from './pages/Hire';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
@@ -61,6 +62,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/what-we-do' element={<WhatWeDo />} />
         <Route path='/work' element={<Work />} />
+        <Route path='/blogs' element={<Blogs />} />
         <Route path='/start-project' element={<Hire />} />
       </Routes>
       <Footer />
