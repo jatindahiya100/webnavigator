@@ -1,0 +1,35 @@
+/* FullBlogPost.css */
+
+/* Style for the blog container */
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for the featured image */
+.blog-featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Style for the blog heading */
+.blog-heading {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Style for the main content */
+.blog-main-content {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Style for list items */
+.blog-main-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Additional styles as needed */
