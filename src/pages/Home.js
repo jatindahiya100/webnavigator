@@ -201,7 +201,7 @@ export default function Home() {
       <ClientReviewsSlideshow />
       <ComponentGrid>
         <React.Fragment>
-          <CustomComponent gravity="low" title="Introducing the Website Development Cost Calculator" description="Estimate your website development costs effortlessly with our integrated Website Development Cost Calculator. Plan and budget for your dream website with ease, whether you're a business owner or an individual. Get started on your digital journey today!" />
+          <CustomComponent gravity="low" title="Introducing Website Development Cost Calculator" description="Estimate your website development costs effortlessly with our integrated Website Development Cost Calculator. Plan and budget for your dream website with ease, whether you're a business owner or an individual. Get started on your digital journey today!" />
           <WebsiteDevelopmentCostCalculator />
         </React.Fragment>
       </ComponentGrid>

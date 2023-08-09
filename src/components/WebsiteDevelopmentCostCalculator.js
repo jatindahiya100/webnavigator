@@ -92,11 +92,11 @@ const WebsiteDevelopmentCostCalculator = () => {
             options: [
                 {
                     label: "From Scratch (Custom Development)",
-                    cost: 3000,
+                    cost: 1000,
                 },
                 {
                     label: "Using Website Builder ( WordPress, Wix etc.)",
-                    cost: 1000,
+                    cost: 500,
                 },
             ],
             type: "radio", // User can select only one option
@@ -134,7 +134,7 @@ const WebsiteDevelopmentCostCalculator = () => {
             options: [
                 {
                     label: "Yes, I need SEO services.",
-                    cost: 1000,
+                    cost: 500,
                 },
                 {
                     label: "No, SEO is not required.",
@@ -148,7 +148,7 @@ const WebsiteDevelopmentCostCalculator = () => {
             options: [
                 {
                     label: "Yes, I need a payment gateway integrated.",
-                    cost: 1000,
+                    cost: 500,
                 },
                 {
                     label: "No, I don't need a payment gateway.",
@@ -162,7 +162,7 @@ const WebsiteDevelopmentCostCalculator = () => {
             options: [
                 {
                     label: "Yes, I need API integration.",
-                    cost: 1000,
+                    cost: 400,
                 },
                 {
                     label: "No, I don't need API integration.",
@@ -176,7 +176,7 @@ const WebsiteDevelopmentCostCalculator = () => {
             options: [
                 {
                     label: "Yes, I need a chatbot integrated.",
-                    cost: 1000,
+                    cost: 300,
                 },
                 {
                     label: "No, I don't need a chatbot.",
@@ -194,15 +194,15 @@ const WebsiteDevelopmentCostCalculator = () => {
             options: [
                 {
                     label: "Beginner",
-                    cost: 1000,
+                    cost: 500,
                 },
                 {
                     label: "Intermediate",
-                    cost: 2000,
+                    cost: 1000,
                 },
                 {
                     label: "Expert",
-                    cost: 3000,
+                    cost: 1500,
                 },
             ],
             type: "radio", // User can select only one option
