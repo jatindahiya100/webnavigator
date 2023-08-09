@@ -4,8 +4,16 @@ import mockBlogPosts from './mockBlogPosts';
 import '../assets/css/FullBlogPost.css';
 
 function FullBlogPost() {
-    const { postId } = useParams();
-    const selectedPost = mockBlogPosts.find(post => post.id === parseInt(postId, 10));
+
+    function createValidSlug(str) {
+        return str
+            .replace(/[^\w\s-]/g, '')    // Remove special characters
+            .replace(/\s+/g, '-')       // Replace spaces with hyphens
+            .toLowerCase();             // Convert to lowercase
+    }
+
+    const { slug } = useParams();
+    const selectedPost = mockBlogPosts.find(post => createValidSlug(post.heading) === slug);
 
     useEffect(() => {
         if (selectedPost) {

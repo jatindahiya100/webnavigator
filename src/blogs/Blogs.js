@@ -38,6 +38,13 @@ function Blogs() {
         setCurrentPage(pageNumber);
     };
 
+    function createValidSlug(str) {
+        return str
+            .replace(/[^\w\s-]/g, '')    // Remove special characters
+            .replace(/\s+/g, '-')       // Replace spaces with hyphens
+            .toLowerCase();             // Convert to lowercase
+    }
+
     return (
         <div className="blogs-container">
             <div className="content-container">
@@ -45,7 +52,7 @@ function Blogs() {
                     {currentItems.map((post, index) => (
                         <Link
                             key={index}
-                            to={`/blogs/${post.id}`} // Modify the link to include the post id in the URL
+                            to={`/blogs/${createValidSlug(post.heading)}`} // Modify the link to include the post id in the URL
                             className="blog-post-link"
                         >
                             <BlogPostCard {...post} />
