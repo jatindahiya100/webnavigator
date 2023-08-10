@@ -35,7 +35,7 @@ export default function Header() {
 
         <div className="header-buttons">
 
-          <NavLink style={{ background: isNavOpen ? 'var(--secondary-color)' : 'var(--accent)' }} className='nav-item' to='start-project'>Start Project</NavLink>
+          <NavLink style={{ background: isNavOpen ? 'var(--secondary-color)' : 'var(--accent)' }} className='nav-item' to='start-project' onClick={isNavOpen ? toggleMenu : ''}>Start Project</NavLink>
 
           <div className={`toggle-menu ${isNavOpen ? 'change' : ''}`} onClick={toggleMenu}>
             <div style={{ background: isNavOpen ? 'var(--primary-color)' : 'var(--secondary-color)' }} className="bar1"></div>
