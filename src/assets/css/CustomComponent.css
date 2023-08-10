@@ -2,9 +2,8 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 1.4em;
-    min-height: calc(100vh - 70px);
     justify-content: center;
-    padding: 1em;
+    padding: 10em 1em;
 }
 
 .custom-component h1 {
@@ -37,8 +36,7 @@
 /* Media query for screens up to 800px */
 @media screen and (max-width: 800px) {
     .custom-component {
-        padding: 0.5em;
-        min-height: calc(100vh - 100px);
+        padding: 5em 0.5em;
     }
 
     .custom-component h1 {
