@@ -23,7 +23,7 @@ export default function Header() {
   }
 
   const sidenavStyle = {
-    width: isNavOpen ? '100%' : '0%',
+    display: isNavOpen ? 'flex' : 'none',
   };
 
   return (
