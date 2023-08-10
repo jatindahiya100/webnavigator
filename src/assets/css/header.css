@@ -113,12 +113,6 @@
     }
 
     .sidenav .nav-item {
-        font-size: xx-large;
-    }
-}
-
-@media screen and (max-height: 600px) {
-    .sidenav .nav-item {
-        font-size: large;
+        font-size: medium;
     }
 }
