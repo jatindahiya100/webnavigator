@@ -30,7 +30,7 @@ export default function Header() {
     <>
       <div className='header' style={headerStyle}>
         <div className="logo">
-          <Link to='/'><span>&#9775; Web</span><span>Navigators</span></Link>
+          <Link to='/' onClick={isNavOpen ? toggleMenu : ''} ><span>&#9775; Web</span><span>Navigators</span></Link>
         </div>
 
         <div className="header-buttons">
