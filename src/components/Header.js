@@ -1,46 +1,58 @@
-import React, { useState } from 'react'
-import '../assets/css/Header.css'
-import { Link, NavLink } from 'react-router-dom'
+import React, { useState } from 'react';
+import '../assets/css/Header.css';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Header() {
-
   const [isNavOpen, setNavOpen] = useState(false);
-
-  window.addEventListener("resize", function () {
-    if (window.innerWidth >= 800) {
-      var menu = document.querySelector("nav");
-      menu.className = "desktop-menu";
-      setNavOpen(false);
-    }
-  })
 
   const toggleMenu = () => {
     setNavOpen(!isNavOpen);
+
+    // Toggle body scroll based on navigation state
+    if (!isNavOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  };
+
+  const headerStyle = {
+    backgroundColor: isNavOpen ? 'var(--accent)' : 'var(--primary-color)',
+    color: isNavOpen ? 'var(--primary-color)' : 'var(--secondary-color)',
+    transition: 'color 0.6s',
   }
 
+  const sidenavStyle = {
+    width: isNavOpen ? '100%' : '0%',
+  };
+
   return (
-    <header>
+    <>
+      <div className='header' style={headerStyle}>
+        <div className="logo">
+          <Link to='/'><span>&#9775; Web</span><span>Navigators</span></Link>
+        </div>
 
-      <div className="logo">
-        <Link to='/'><span>&#9775; Web</span><span>Navigators</span></Link>
+        <div className="header-buttons">
+
+          <NavLink style={{ background: isNavOpen ? 'var(--secondary-color)' : 'var(--accent)' }} className='nav-item' to='start-project'>Start Project</NavLink>
+
+          <div className={`toggle-menu ${isNavOpen ? 'change' : ''}`} onClick={toggleMenu}>
+            <div style={{ background: isNavOpen ? 'var(--primary-color)' : 'var(--secondary-color)' }} className="bar1"></div>
+            <div style={{ background: isNavOpen ? 'var(--primary-color)' : 'var(--secondary-color)' }} className="bar2"></div>
+            <div style={{ background: isNavOpen ? 'var(--primary-color)' : 'var(--secondary-color)' }} className="bar3"></div>
+          </div>
+
+        </div>
       </div>
 
-      <nav className={isNavOpen === true ? 'mobile-menu' : 'desktop-menu'}>
-        <NavLink to='/' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="home"></ion-icon> Home</NavLink>
-        <NavLink to='/what-we-do' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="shapes"></ion-icon> What We Do?</NavLink>
-        <NavLink to='/work' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="ribbon"></ion-icon> Work</NavLink>
-        <NavLink to='/blogs' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="document"></ion-icon> Blogs</NavLink>
-        <NavLink to='/start-project' onClick={isNavOpen === true ? toggleMenu : ''}><ion-icon name="infinite"></ion-icon> Start Project</NavLink>
-      </nav>
-
-      <div className={`toggle-menu ${isNavOpen === false ? '' : 'change'}`} onClick={toggleMenu}>
-
-        <div className="bar1"></div>
-        <div className="bar2"></div>
-        <div className="bar3"></div>
-
+      <div className="sidenav" style={sidenavStyle}>
+        <Link className='nav-item' to='/' onClick={toggleMenu}>Home</Link>
+        <Link className='nav-item' to='/what-we-do' onClick={toggleMenu}>What We Do ?</Link>
+        <Link className='nav-item' to='/work' onClick={toggleMenu}>Previous Work</Link>
+        <Link className='nav-item' to='/blogs' onClick={toggleMenu}>Blogs</Link>
+        <Link className='nav-item' to='/start-project' onClick={toggleMenu}>Start Project</Link>
       </div>
-
-    </header>
-  )
+    </>
+  );
 }

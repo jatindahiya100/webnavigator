@@ -1,153 +1,90 @@
-/* Define the fading animation */
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    max-width: 1600px;
+.header {
     width: 100%;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 1em;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    background: var(--primary-color);
+    padding: 0.8em;
 }
 
-.logo a {
-    font-size: x-large;
-    font-weight: 600;
-    border: 6px solid black;
-    padding: 4px 0 4px 0;
-    border-radius: 2em;
-
-}
-
-.logo a span:first-child {
-    background: #000;
-    color: white;
-    padding: 4px 6px 4px 4px;
-    border-radius: 1em 0 0 1em;
-}
-
-.logo a span:nth-child(2) {
-    padding: 4px 6px 4px 6px;
-    border-radius: 0 1em 1em 0;
-}
-
-.desktop-menu {
-    display: inline-flex;
-    align-items: center;
-    gap: 1.6em;
-    /* Add animation properties */
-    animation: fade-in 2s ease;
-}
-
-.mobile-menu {
+/* Header Button */
+.header-buttons {
     display: flex;
+    align-items: center;
     gap: 2em;
-    order: 3;
-    border-radius: 0.8em;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    align-items: center;
-    flex-flow: column nowrap;
-    background: var(--primary-color);
-    padding-bottom: 2em;
-    height: 100vh;
-    /* Add animation properties */
-    animation: fade-in 1s ease;
-    padding-top: 2em;
 }
 
-nav a {
-    font-size: medium;
-    padding: 0.4em 1.6em;
-    line-height: 2em;
-    border-radius: 4em;
-    font-weight: 500;
-    color: var(--secondary-color);
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4em;
-}
-
-nav a.active {
-    color: var(--primary-color);
-    background-color: var(--accent);
-    transition: 1s;
+.header-buttons .nav-item {
+    padding: 0 1.6em;
+    line-height: 2.6em;
+    border-radius: 4rem;
+    color: white;
 }
 
 .toggle-menu {
-    display: none;
+    display: inline-block;
     cursor: pointer;
+    transition: 0.6s;
 }
 
 .bar1,
 .bar2,
 .bar3 {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px 0;
-    transition: 0.4s;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.6s;
 }
 
 .change .bar1 {
-    transform: translate(0, 7px) rotate(-45deg);
+    transform: translate(0, 11px) rotate(-45deg);
 }
 
 .change .bar2 {
     opacity: 0;
+    transition: 0.6s;
 }
 
 .change .bar3 {
-    transform: translate(0, -7px) rotate(45deg);
+    transform: translate(0, -11px) rotate(45deg);
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 1000px) {
-    .desktop-menu {
-        gap: 1.6em;
-    }
+/* Side Nav */
 
-    nav a {
-        font-size: small;
-    }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 64px;
+    left: 0;
+    background-color: var(--accent);
+    overflow-x: hidden;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
 }
 
-@media screen and (max-width: 800px) {
-    header {
-        align-items: unset;
-        padding: 1.4em 1em;
+.sidenav .nav-item {
+    color: white;
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.sidenav .nav-item:hover {
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
     }
 
-    .logo a {
-        border: 4px solid black;
-        font-size: medium;
-    }
-
-    .desktop-menu {
-        display: none;
-    }
-
-    nav a {
-        font-size: medium;
-    }
-
-    .toggle-menu {
-        display: inline-block;
+    .sidenav a {
+        font-size: 18px;
     }
 }

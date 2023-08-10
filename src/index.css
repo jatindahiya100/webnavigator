@@ -27,6 +27,11 @@ ul {
 }
 
 /* Classes */
+
+.no-scroll {
+    overflow: hidden;
+}
+
 .button {
     outline: none;
     border: none;
@@ -43,6 +48,7 @@ ul {
     color: var(--primary-color);
     background-color: var(--accent);
 }
+
 @media screen and (max-width: 620px) {
     .button {
         font-size: medium;
