@@ -37,7 +37,8 @@
 /* Media query for screens up to 800px */
 @media screen and (max-width: 800px) {
     .custom-component {
-        padding: 6rem 0.5em;
+        padding: 0.5em;
+        min-height: calc(100vh - 100px);
     }
 
     .custom-component h1 {
