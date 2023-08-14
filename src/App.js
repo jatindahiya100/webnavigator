@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from './components/Header';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Use BrowserRouter here
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; // Use HashRouter here
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import WhatWeDo from './pages/WhatWeDo';
