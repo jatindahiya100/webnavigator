@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from './components/Header';
-import { HashRouter as Router, Routes, Route } from "react-router-dom"; // Use HashRouter here
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Use BrowserRouter here
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import WhatWeDo from './pages/WhatWeDo';
@@ -66,6 +66,8 @@ function App() {
         <Route path='/blogs' element={<Blogs />} />
         <Route path="/blogs/:slug" element={<FullBlogPost />} />
         <Route path='/start-project' element={<Hire />} />
+        {/* Catch-all route for unknown routes */}
+        <Route path='*' element={<Home />} />
       </Routes>
       <Footer />
     </Router>
