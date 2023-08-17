@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5827adc.css",
-    "main.js": "/static/js/main.1335ac55.js",
-    "static/media/Luxy-Hair.png": "/static/media/Luxy-Hair.f898d1e628e2274d627f.png",
-    "static/media/Proper.png": "/static/media/Proper.7e02eb508d590ece1e00.png",
-    "static/media/Clearbit.png": "/static/media/Clearbit.00352c9caf578fbdedbc.png",
-    "static/media/JP-Lewis-Group.png": "/static/media/JP-Lewis-Group.de8a0ce5022c9724bd10.png",
-    "static/media/customDashboardUI.png": "/static/media/customDashboardUI.2198ec8cb5f761d49669.png",
-    "static/media/Sidebird-Twitter-fanbase-builder.png": "/static/media/Sidebird-Twitter-fanbase-builder.24794fb8ede4e3fe0e40.png",
-    "static/media/Compressor-io.png": "/static/media/Compressor-io.01fec784678adcdd699c.png",
-    "static/media/digital-marketing-cover.jpg": "/static/media/digital-marketing-cover.f1546cc593a7929dadd8.jpg",
-    "static/media/hosting-cover.png": "/static/media/hosting-cover.303c7fe4b44f9fdc724f.png",
-    "static/media/web-design-cover.png": "/static/media/web-design-cover.adc5d35efca70c9672f5.png",
-    "index.html": "/index.html",
-    "main.d5827adc.css.map": "/static/css/main.d5827adc.css.map",
-    "main.1335ac55.js.map": "/static/js/main.1335ac55.js.map"
+    "main.css": "/thewebnavigators/static/css/main.d5827adc.css",
+    "main.js": "/thewebnavigators/static/js/main.de67db55.js",
+    "static/media/Luxy-Hair.png": "/thewebnavigators/static/media/Luxy-Hair.f898d1e628e2274d627f.png",
+    "static/media/Proper.png": "/thewebnavigators/static/media/Proper.7e02eb508d590ece1e00.png",
+    "static/media/Clearbit.png": "/thewebnavigators/static/media/Clearbit.00352c9caf578fbdedbc.png",
+    "static/media/JP-Lewis-Group.png": "/thewebnavigators/static/media/JP-Lewis-Group.de8a0ce5022c9724bd10.png",
+    "static/media/customDashboardUI.png": "/thewebnavigators/static/media/customDashboardUI.2198ec8cb5f761d49669.png",
+    "static/media/Sidebird-Twitter-fanbase-builder.png": "/thewebnavigators/static/media/Sidebird-Twitter-fanbase-builder.24794fb8ede4e3fe0e40.png",
+    "static/media/Compressor-io.png": "/thewebnavigators/static/media/Compressor-io.01fec784678adcdd699c.png",
+    "static/media/digital-marketing-cover.jpg": "/thewebnavigators/static/media/digital-marketing-cover.f1546cc593a7929dadd8.jpg",
+    "static/media/hosting-cover.png": "/thewebnavigators/static/media/hosting-cover.303c7fe4b44f9fdc724f.png",
+    "static/media/web-design-cover.png": "/thewebnavigators/static/media/web-design-cover.adc5d35efca70c9672f5.png",
+    "index.html": "/thewebnavigators/index.html",
+    "main.d5827adc.css.map": "/thewebnavigators/static/css/main.d5827adc.css.map",
+    "main.de67db55.js.map": "/thewebnavigators/static/js/main.de67db55.js.map"
   },
   "entrypoints": [
     "static/css/main.d5827adc.css",
-    "static/js/main.1335ac55.js"
+    "static/js/main.de67db55.js"
   ]
 }
