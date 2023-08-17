@@ -56,7 +56,7 @@ function App() {
 
   // Once resources are loaded, render the main content
   return (
-    <Router>
+    <Router basename="/">
       <ScrollToTop />
       <Header />
       <Routes>
