@@ -10,6 +10,7 @@ import Hire from './pages/Hire';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
 import FullBlogPost from './blogs/FullBlogPost';
+import NotFound from './components/NotFound';
 
 function App() {
   const [resourcesLoaded, setResourcesLoaded] = useState(false);
@@ -66,6 +67,8 @@ function App() {
         <Route path='/blogs' element={<Blogs />} />
         <Route path="/blogs/:slug" element={<FullBlogPost />} />
         <Route path='/start-project' element={<Hire />} />
+        {/* Add a route for unmatched paths */}
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>
