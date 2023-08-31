@@ -5,8 +5,8 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2em;
-  padding: 1em;
+  gap: 4em;
+  padding: 1.6em;
   /* Add animation properties */
   animation: fade-in 2.5s ease;
 }
@@ -15,9 +15,5 @@
 @media screen and (max-width: 768px) {
   .two-column-grid-container {
     grid-template-columns: 1fr;
-  }
-
-  .two-column-grid-item {
-    padding: 1em;
   }
 }

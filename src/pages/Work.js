@@ -14,6 +14,7 @@ const Work = () => {
   useEffect(() => {
     document.title = "The Web Navigators | Previous Work";
   }, [])
+
   const cardData = [
     {
       imageSrc: SideBird,
@@ -67,8 +68,34 @@ const Work = () => {
     // Add more card data objects as needed
   ];
 
+  const styles = {
+    width: "100%",
+    overflowX: "scroll",
+    padding: "1em",
+    display: "flex",
+    flexFlow: "row nowrap",
+    gap: "1em",
+    cursor: "pointer",
+
+    /* Custom scrollbar styles */
+    WebkitOverflowScrolling: "touch", // For smooth scrolling on iOS
+    scrollbarWidth: "none", // Hide scrollbar on Firefox
+    "&::-webkit-scrollbar": {
+      display: "none" // Hide scrollbar on Chrome/Safari/Edge
+    }
+  };
+
+
+
   return (
     <>
+      <ul style={styles}>
+        <li style={{ lineHeight: '2em', border: "2px solid black", padding: "0 1em", borderRadius: "0.8em" }}>Full Stack Development</li>
+        <li style={{ lineHeight: '2em', border: "2px solid black", padding: "0 1em", borderRadius: "0.8em" }}>Front-End Development</li>
+        <li style={{ lineHeight: '2em', border: "2px solid black", padding: "0 1em", borderRadius: "0.8em" }}>Back-End Development</li>
+        <li style={{ lineHeight: '2em', border: "2px solid black", padding: "0 1em", borderRadius: "0.8em" }}>Dashboards</li>
+        <li style={{ lineHeight: '2em', border: "2px solid black", padding: "0 1em", borderRadius: "0.8em" }}>HTML/CSS</li>
+      </ul>
       <TwoColumnGrid>
         {/* Render Card components using cardData */}
         {cardData.map((item, index) => (
