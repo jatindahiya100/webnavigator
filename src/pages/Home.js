@@ -31,9 +31,16 @@ export default function Home() {
           "Welcome to The Web Navigators, where we transform your digital dreams into reality! As a premier digital service agency, we are driven by your success. Prepare to embark on an extraordinary journey with our dedicated team of visionaries and tech enthusiasts, as we empower your brand to conquer the digital realm.",
         buttonText: "Let's Begin Your Journey",
         onClick: () => {
+          const gridWrappers = document.querySelectorAll('.grid-wrapper'); // Select all div elements with class 'grid-wrapper'
 
+          if (gridWrappers.length > 1) {
+            const secondGridWrapper = gridWrappers[1]; // Get the second occurrence
+
+            secondGridWrapper.scrollIntoView({ behavior: 'smooth' });
+          }
         },
       },
+
       MediaComponent: {
         mediaType: "lottie",
         lottieOptions: {
@@ -149,10 +156,6 @@ export default function Home() {
         title: "Client Love: Hear What Our Clients Say",
         description:
           "Our success is measured by the satisfaction of our clients. Discover what our previous partners have to say about their experience with The Web Navigators. We take pride in delivering exceptional results and building lasting relationships, and our clients' testimonials speak volumes about the dedication and excellence we bring to every project.",
-        buttonText: "Read Testimonials",
-        onClick: () => {
-          navigate("/start-project");
-        },
       },
       MediaComponent: {
         mediaType: "lottie",
