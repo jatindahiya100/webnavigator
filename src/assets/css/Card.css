@@ -8,6 +8,7 @@
 
 .card-image {
   width: 100%;
+  min-height: 400px;
   max-height: 400px;
   object-fit: cover;
 }

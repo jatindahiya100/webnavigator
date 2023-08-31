@@ -1,5 +1,7 @@
 import React from 'react';
-import Lottie from 'lottie-react'; // Make sure to install 'react-lottie' npm package
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import Lottie from 'lottie-react';
 
 const MediaComponent = ({ mediaType, imageUrl, lottieOptions }) => {
     const isImage = mediaType === 'image';
@@ -7,8 +9,20 @@ const MediaComponent = ({ mediaType, imageUrl, lottieOptions }) => {
 
     return (
         <div>
-            {isImage && imageUrl && <img style={{ width: "100%", borderRadius: "1em", minHeight: "350px" }} src={imageUrl} alt="" />}
-            {isLottie && lottieOptions && <Lottie style={{minHeight: "350px"}} animationData={lottieOptions.animationData} />}
+            {isImage && imageUrl && (
+                <LazyLoadImage
+                    src={imageUrl}
+                    alt=""
+                    style={{ width: "100%", borderRadius: "1em", minHeight: "350px", objectFit: 'cover' }}
+                    effect="blur"
+                    visibleByDefault={false}
+                />
+            )}
+            {isLottie && lottieOptions && (
+                <div style={{ minHeight: "350px" }}>
+                    <Lottie animationData={lottieOptions.animationData} />
+                </div>
+            )}
         </div>
     );
 };
