@@ -6,7 +6,7 @@ import MediaComponent from '../components/MediaComponent'
 import ClientReviewsSlideshow from '../components/ClientReviewsSlideshow';
 import WebsiteDevelopmentCostCalculator from '../components/WebsiteDevelopmentCostCalculator';
 // Lottie Imports
-import Lottie01 from '../assets/images/Lottie/Thewebnavigators-Agency-Lottie-01.json';
+import Lottie01 from '../assets/images/Lottie/Landing-Page_Lottie-01.json';
 import Lottie02 from '../assets/images/Lottie/Lottie02.json';
 import Lottie03 from '../assets/images/Lottie/Lottie03.json';
 import SEOLottie from '../assets/images/Lottie/SEO-Lottie-01.json';
