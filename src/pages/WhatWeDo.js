@@ -18,7 +18,7 @@ export default function WhatWeDo() {
     {
       CustomComponent: {
         gravity: "heavy",
-        title: "Web Design and Development",
+        title: "Web Design & Development",
         listItems: [
           "Custom Website Design: Tailored designs to represent your brand and meet your specific needs.",
           "Responsive Web Development: Creating websites that adapt to various devices and screen sizes.",
@@ -52,7 +52,7 @@ export default function WhatWeDo() {
     {
       CustomComponent: {
         gravity: "low",
-        title: "Domain and Hosting Services",
+        title: "Domain & Hosting Services",
         listItems: [
           "Domain Registration: Assisting clients in finding and registering suitable domain names for their websites.",
           "Web Hosting: Providing reliable hosting solutions with optimal server performance and security.",

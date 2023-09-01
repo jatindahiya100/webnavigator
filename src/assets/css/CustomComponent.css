@@ -56,7 +56,7 @@
 /* Media query for screens up to 800px */
 @media screen and (max-width: 800px) {
     .custom-component {
-        padding: 5em 0.5em;
+        padding: 3em 0.5em;
     }
 
     .custom-component h1 {
