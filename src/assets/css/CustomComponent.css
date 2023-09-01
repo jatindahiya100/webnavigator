@@ -27,10 +27,30 @@
 }
 
 .custom-component ul {
-    list-style-type: unset;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+.custom-component ul li {
+    border: 2px solid black;
+    border-radius: 8px 8px 12px 12px;
+    border-bottom-width: 12px;
+    width: 200px;
     font-size: medium;
     line-height: 2em;
     color: var(--dark-gray);
+    padding: 0.6em;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Media query for screens up to 1000px */
+@media screen and (max-width: 1000px) {
+    .custom-component ul li {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Media query for screens up to 800px */
