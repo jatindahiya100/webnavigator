@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        'hero-pattern': "url('../src/assets/images/bg-gradient1.jpg')",
+      }
     },
   },
   plugins: [],
