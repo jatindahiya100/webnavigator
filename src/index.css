@@ -57,6 +57,7 @@ ul {
 
 .active:hover {
     background-color: #0F172A;
+    color: black;
     transition: 0.6s;
 }
 
