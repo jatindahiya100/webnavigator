@@ -1,15 +1,12 @@
 import React from 'react';
 import { useEffect } from 'react';
-
-// Components Imports
-import Banner from '../components/Banner';
-import ServicesSection from '../components/ServicesSection';
-
 // Lottie Imports
 import Lottie01 from '../assets/images/Lottie/Landing-Page_Lottie-01.json';
-import TestimonialsSection from '../components/TestimonialsSection';
+// Components Imports
+import Banner from '../components/Banner';
 import ExpertiseSection from '../components/ExpertiseComponent';
-
+import ServicesSection from '../components/ServicesSection';
+import TestimonialsSection from '../components/TestimonialsSection';
 
 
 export default function Home() {
@@ -174,9 +171,9 @@ export default function Home() {
         onClickfunction={() => { alert("hi") }}
         lottieData={Lottie01} // Pass your Lottie data here
       />
-      <ExpertiseSection/>
+      <ExpertiseSection />
       <ServicesSection />
-      <TestimonialsSection/>
+      <TestimonialsSection />
     </>
   );
 }
