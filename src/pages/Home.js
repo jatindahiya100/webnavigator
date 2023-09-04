@@ -16,6 +16,7 @@ import ReviewsLottie from '../assets/images/Lottie/Reviews-Lottie-01.json';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import Banner from '../components/Banner';
+import ServicesSection from '../components/ServicesSection';
 
 export default function Home() {
   useEffect(() => {
@@ -181,10 +182,10 @@ export default function Home() {
         h1Text="Welcome To The Web Navigators"
         pText="Welcome to The Web Navigators, where we bring your digital dreams to life with a dedicated team, empowering your brand online."
         buttonLabel="Get Started"
-        onClickfunction={()=>{alert("hi")}}
+        onClickfunction={() => { alert("hi") }}
         lottieData={Lottie01} // Pass your Lottie data here
       />
-
+      <ServicesSection />
       <ComponentGrid>
         {gridData.map((item, index) => (
           <React.Fragment key={index}>
