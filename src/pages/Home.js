@@ -176,7 +176,15 @@ export default function Home() {
 
   return (
     <>
-      <Banner />
+      <Banner
+        spanText="Navigating the Web's Waves with Ease"
+        h1Text="Welcome To The Web Navigators"
+        pText="Welcome to The Web Navigators, where we bring your digital dreams to life with a dedicated team, empowering your brand online."
+        buttonLabel="Get Started"
+        onClickfunction={()=>{alert("hi")}}
+        lottieData={Lottie01} // Pass your Lottie data here
+      />
+
       <ComponentGrid>
         {gridData.map((item, index) => (
           <React.Fragment key={index}>
