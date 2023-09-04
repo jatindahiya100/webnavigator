@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom'; // Make sure you import Link and NavLink
+import React, { useState, useEffect } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from '../assets/images/logo.png';
 
 export default function Header() {
@@ -12,6 +12,20 @@ export default function Header() {
     const closeMenu = () => {
         setMenuOpen(false);
     };
+
+    useEffect(() => {
+        // Add or remove the 'no-scroll' class based on the menuOpen state
+        if (menuOpen) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+
+        // Cleanup the class when the component unmounts
+        return () => {
+            document.body.classList.remove('no-scroll');
+        };
+    }, [menuOpen]);
 
     return (
         <div className="relative">
@@ -37,20 +51,17 @@ export default function Header() {
 
             {/* Full-screen Side Navigation Menu */}
             <div className={`fixed top-0 right-0 h-screen w-72 bg-white shadow-lg overflow-y-auto transition-transform transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} md:translate-x-0 md:w-0 z-50`}>
-                <button
-                    onClick={closeMenu}
-                    className='md:hidden text-2xl text-gray-500 focus:outline-none absolute top-4 right-4'
-                >
+                <button onClick={closeMenu} className='md:hidden text-2xl text-gray-500 focus:outline-none absolute top-6 right-4'>
                     <svg viewBox="0 0 24 24" className="h-6 w-6 stroke-slate-900">
                         <path d="M6 18L18 6M6 6l12 12" fill=" none " strokeWidth="1.5" strokeLinecap="round"></path>
                     </svg>
                 </button>
-                <nav className='flex flex-col items-center gap-4 py-4'>
-                    <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal text-slate-900 hover:bg-gray-200 py-2 px-4 transition duration-600' to='/'>Home</NavLink>
-                    <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal text-slate-900 hover:bg-gray-200 py-2 px-4 transition duration-600' to='/blogs'>Blogs</NavLink>
-                    <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal text-slate-900 hover:bg-gray-200 py-2 px-4 transition duration-600' to='work'>Previous Work</NavLink>
-                    <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal text-slate-900 hover:bg-gray-200 py-2 px-4 transition duration-600' to='what-we-do'>What We Do ?</NavLink>
-                    <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal text-slate-900 hover:bg-gray-200 py-2 px-4 transition duration-600' to='start-project'>Start Project</NavLink>
+                <nav className='flex flex-col items-center gap-4 py-24'>
+                    <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='/'>Home</NavLink>
+                    <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='/blogs'>Blogs</NavLink>
+                    <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='work'>Previous Work</NavLink>
+                    <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='what-we-do'>What We Do ?</NavLink>
+                    <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='start-project'>Start Project</NavLink>
                 </nav>
             </div>
 
