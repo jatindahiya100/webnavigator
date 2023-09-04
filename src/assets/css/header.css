@@ -1,118 +1,44 @@
-.header {
-    width: 100%;
+header {
     margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1.6em 0.8em;
+    height: 80px;
 }
 
-.header .logo a {
-    border: 6px solid black;
-    padding: 0.6em 0;
-    border-radius: 4rem;
-    font-size: large;
-    font-weight: 600;
-}
-
-.header .logo span:first-child {
-    color: white;
-    background: #000;
-    padding: 0.6em;
-    border-radius: 4rem 0 0 4rem;
-}
-
-.header .logo span:last-child {
-    color: black;
-    background: white;
-    padding: 0.6em;
-    border-radius: 0 4rem 4rem 0;
-
-}
-
-/* Header Button */
-.header-buttons {
-    display: flex;
+header .logo a {
+    display: inline-flex;
     align-items: center;
-    gap: 2em;
-}
-
-.header-buttons .nav-item {
-    padding: 0 1.6em;
-    line-height: 2.6em;
-    border-radius: 4rem;
-    color: white;
+    gap: 0.6em;
     font-weight: 600;
 }
 
-.toggle-menu {
-    display: inline-block;
+header .logo a img {
+    width: 34px;
+    height: 34px;
+}
+
+nav ul {
+    display: inline-flex;
+    align-items: center;
+    gap: 3em;
+}
+
+nav ul li a {
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    font-style: normal;
+    border-radius: 8px;
+    color: #0f172a;
+    padding: 0.8em 1.6em;
+}
+
+nav ul li a:hover {
+    background-color: #d0d0d173;
     transition: 0.6s;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-    width: 35px;
-    height: 5px;
-    margin: 6px 0;
-    transition: 0.6s;
-}
-
-.change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-}
-
-.change .bar2 {
-    opacity: 0;
-    transition: 0.6s;
-}
-
-.change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-}
-
-/* Side Nav */
-
-.sidenav {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 90px;
-    left: 0;
-    background-color: var(--accent);
-    overflow-x: hidden;
-    padding-top: 60px;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
-}
-
-.sidenav .nav-item {
-    color: var(--primary-color);
-    font-size: 5rem;
-    font-weight: 800;
-}
-
-.sidenav .nav-item:hover {
-    color: var(--secondary-color);
-    transition: 0.4s ease-in-out;
-}
-
-@media screen and (max-width: 800px) {
-    .header .logo a {
-        font-size: medium;
-    }
-
-    .header-buttons .nav-item {
-        display: none;
-    }
-
-    .sidenav .nav-item {
-        font-size: xx-large;
-    }
 }

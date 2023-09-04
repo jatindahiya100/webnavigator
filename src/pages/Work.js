@@ -19,7 +19,7 @@ const Work = () => {
     {
       imageSrc: SideBird,
       heading: 'SideBird - The Future Twitter',
-      description: 'Sidebird.io is a unique Twitter tool that enables passive growth through smart retweet automations. The emphasis was on providing non-spammy retweets to help users grow their Twitter presence even when they are busy or inactive.',
+      description: 'Sidebird.io is a unique Twitter tool that enables passive growth through smart retweet automations. The emphasis was on providing non-spammy retweets to help users grow their Twitter presence even when they are busy or in.',
       buttonText: 'Visit Site',
       websiteUrl: 'https://www.sidebird.io/'
     },
