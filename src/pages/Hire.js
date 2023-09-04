@@ -6,6 +6,7 @@ import MediaComponent from '../components/MediaComponent'
 // Lottie Imports
 import ChatLottie from '../assets/images/Lottie/Chat-Lottie-01.json';
 import { useEffect } from 'react';
+import Banner from '../components/Banner';
 
 export default function Hire() {
     useEffect(() => {
@@ -45,6 +46,7 @@ export default function Hire() {
 
     return (
         <>
+            <Banner/>
             <ComponentGrid>
                 {gridData.map((item, index) => (
                     <React.Fragment key={index}>

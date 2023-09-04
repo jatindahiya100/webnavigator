@@ -15,6 +15,7 @@ import AdsCampaignLottie from '../assets/images/Lottie/Ads-Campaign-Lottie-01.js
 import ReviewsLottie from '../assets/images/Lottie/Reviews-Lottie-01.json';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import Banner from '../components/Banner';
 
 export default function Home() {
   useEffect(() => {
@@ -175,6 +176,7 @@ export default function Home() {
 
   return (
     <>
+      <Banner />
       <ComponentGrid>
         {gridData.map((item, index) => (
           <React.Fragment key={index}>

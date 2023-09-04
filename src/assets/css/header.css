@@ -8,6 +8,10 @@ header {
     justify-content: space-between;
     height: 80px;
     background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 header .logo a {

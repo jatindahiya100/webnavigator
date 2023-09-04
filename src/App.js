@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Header from './components/Header';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Use BrowserRouter here
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
@@ -10,7 +11,6 @@ import Footer from './components/Footer';
 import Loader from './components/Loader';
 import FullBlogPost from './blogs/FullBlogPost';
 import NotFound from './components/NotFound';
-import LandingArea from "./components/LandingArea";
 
 function App() {
   const [resourcesLoaded, setResourcesLoaded] = useState(false);
@@ -59,7 +59,7 @@ function App() {
   return (
     <Router basename="/">
       <ScrollToTop />
-      <LandingArea />
+      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/what-we-do' element={<WhatWeDo />} />

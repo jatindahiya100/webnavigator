@@ -8,12 +8,13 @@ import WebDesignCover from '../assets/images/what-we-do/web-design-cover.png'
 import DigitalMarketingCover from '../assets/images/what-we-do/digital-marketing-cover.jpg'
 import HostingCover from '../assets/images/what-we-do/hosting-cover.png'
 import { useEffect } from 'react';
+import Banner from '../components/Banner';
 
 export default function WhatWeDo() {
   useEffect(() => {
     document.title = "The Web Navigators | What We Do";
   }, [])
-  
+
   const gridData = [
     {
       CustomComponent: {
@@ -75,6 +76,7 @@ export default function WhatWeDo() {
 
   return (
     <>
+      <Banner />
       <ComponentGrid>
         {gridData.map((item, index) => (
           <React.Fragment key={index}>

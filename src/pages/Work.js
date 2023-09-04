@@ -9,6 +9,7 @@ import customDashboardUI from '../assets/images/project/customDashboardUI.png'
 import TwoColumnGrid from '../components/TwoColumnGrid';
 import Card from '../components/Card'; // Assuming the Card component is imported here
 import { useEffect } from 'react'
+import Banner from '../components/Banner'
 
 const Work = () => {
   useEffect(() => {
@@ -89,6 +90,7 @@ const Work = () => {
 
   return (
     <>
+      <Banner />
       <ul style={styles}>
         <li style={{ lineHeight: '2em', border: "2px solid black", padding: "0 1em", borderRadius: "0.8em" }}>Full Stack Development</li>
         <li style={{ lineHeight: '2em', border: "2px solid black", padding: "0 1em", borderRadius: "0.8em" }}>Front-End Development</li>

@@ -8,6 +8,7 @@ import MediaComponent from '../components/MediaComponent'
 import BlogsLottie from '../assets/images/Lottie/Blogs-Lottie-01.json';
 import Pagination from './Pagination'; // Add the import statement for Pagination
 import { Link } from 'react-router-dom';
+import Banner from '../components/Banner';
 
 
 
@@ -46,29 +47,33 @@ function Blogs() {
     }
 
     return (
-        <div className="blogs-container">
-            <div className="content-container">
-                <div className="blog-posts">
-                    {currentItems.map((post, index) => (
-                        <Link
-                            key={index}
-                            to={`/blogs/${createValidSlug(post.heading)}`} // Modify the link to include the post id in the URL
-                            className="blog-post-link"
-                        >
-                            <BlogPostCard {...post} />
-                        </Link>
-                    ))}
-                    <Pagination
-                        currentPage={currentPage}
-                        totalPages={totalPages}
-                        onPageChange={handlePageChange}
-                    />
-                </div>
-                <div>
-                    <MediaComponent mediaType={LottieData.mediaType} lottieOptions={LottieData.lottieOptions} />
+        <>
+            <Banner />
+            <div className="blogs-container">
+                <div className="content-container">
+                    <div className="blog-posts">
+                        {currentItems.map((post, index) => (
+                            <Link
+                                key={index}
+                                to={`/blogs/${createValidSlug(post.heading)}`} // Modify the link to include the post id in the URL
+                                className="blog-post-link"
+                            >
+                                <BlogPostCard {...post} />
+                            </Link>
+                        ))}
+                        <Pagination
+                            currentPage={currentPage}
+                            totalPages={totalPages}
+                            onPageChange={handlePageChange}
+                        />
+                    </div>
+                    <div>
+                        <MediaComponent mediaType={LottieData.mediaType} lottieOptions={LottieData.lottieOptions} />
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
+
     );
 }
 
