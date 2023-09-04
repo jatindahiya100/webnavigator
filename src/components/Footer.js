@@ -25,11 +25,6 @@ const Footer = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/blogs" activeClassName="text-blue-500" className="text-sm sm:text-base">
-                Blogs
-              </NavLink>
-            </li>
-            <li>
               <NavLink to="/work" activeClassName="text-blue-500" className="text-sm sm:text-base">
                 Work
               </NavLink>

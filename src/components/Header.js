@@ -58,7 +58,6 @@ export default function Header() {
                 </button>
                 <nav className='flex flex-col items-center gap-4 py-24'>
                     <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='/'>Home</NavLink>
-                    <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='/blogs'>Blogs</NavLink>
                     <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='work'>Previous Work</NavLink>
                     <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='what-we-do'>What We Do ?</NavLink>
                     <NavLink onClick={closeMenu} className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='start-project'>Start Project</NavLink>
@@ -75,7 +74,6 @@ export default function Header() {
                 </div>
                 <nav className='hidden md:flex items-center gap-12'>
                     <NavLink className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='/'>Home</NavLink>
-                    <NavLink className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='/blogs'>Blogs</NavLink>
                     <NavLink className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='work'>Previous Work</NavLink>
                     <NavLink className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='what-we-do'>What We Do ?</NavLink>
                     <NavLink className='cursor-pointer text-base font-semibold leading-6 font-normal rounded-lg text-slate-900 py-2 px-4 hover:bg-gray-200 transition duration-600' to='start-project'>Start Project</NavLink>

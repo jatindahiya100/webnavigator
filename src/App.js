@@ -5,11 +5,9 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import WhatWeDo from './pages/WhatWeDo';
 import Work from './pages/Work';
-import Blogs from './blogs/Blogs';
 import Hire from './pages/Hire';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
-import FullBlogPost from './blogs/FullBlogPost';
 import NotFound from './components/NotFound';
 
 function App() {
@@ -64,8 +62,6 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/what-we-do' element={<WhatWeDo />} />
         <Route path='/work' element={<Work />} />
-        <Route path='/blogs' element={<Blogs />} />
-        <Route path="/blogs/:slug" element={<FullBlogPost />} />
         <Route path='/start-project' element={<Hire />} />
         {/* Add a route for unmatched paths */}
         <Route path='*' element={<NotFound />} />
