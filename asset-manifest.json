@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.6a148497.css",
-    "main.js": "/static/js/main.8cd197e8.js",
+    "main.css": "/static/css/main.14a07434.css",
+    "main.js": "/static/js/main.92bbd9a0.js",
     "static/media/Luxy-Hair.png": "/static/media/Luxy-Hair.f898d1e628e2274d627f.png",
     "static/media/Proper.png": "/static/media/Proper.7e02eb508d590ece1e00.png",
     "static/media/Clearbit.png": "/static/media/Clearbit.00352c9caf578fbdedbc.png",
     "static/media/JP-Lewis-Group.png": "/static/media/JP-Lewis-Group.de8a0ce5022c9724bd10.png",
     "static/media/customDashboardUI.png": "/static/media/customDashboardUI.2198ec8cb5f761d49669.png",
     "static/media/Sidebird-Twitter-fanbase-builder.png": "/static/media/Sidebird-Twitter-fanbase-builder.24794fb8ede4e3fe0e40.png",
+    "static/media/bg-gradient.png": "/static/media/bg-gradient.a00d699c321de62f33dc.png",
     "static/media/Compressor-io.png": "/static/media/Compressor-io.01fec784678adcdd699c.png",
-    "static/media/digital-marketing-cover.jpg": "/static/media/digital-marketing-cover.f1546cc593a7929dadd8.jpg",
-    "static/media/hosting-cover.png": "/static/media/hosting-cover.303c7fe4b44f9fdc724f.png",
-    "static/media/web-design-cover.png": "/static/media/web-design-cover.adc5d35efca70c9672f5.png",
+    "static/media/bg-gradient1.jpg": "/static/media/bg-gradient1.fc7585c96ed1be49b576.jpg",
+    "static/media/logo.png": "/static/media/logo.931be1238f0fd5b6d585.png",
     "index.html": "/index.html",
-    "main.6a148497.css.map": "/static/css/main.6a148497.css.map",
-    "main.8cd197e8.js.map": "/static/js/main.8cd197e8.js.map"
+    "main.14a07434.css.map": "/static/css/main.14a07434.css.map",
+    "main.92bbd9a0.js.map": "/static/js/main.92bbd9a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a148497.css",
-    "static/js/main.8cd197e8.js"
+    "static/css/main.14a07434.css",
+    "static/js/main.92bbd9a0.js"
   ]
 }
