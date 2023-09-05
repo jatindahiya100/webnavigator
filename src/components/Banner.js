@@ -1,5 +1,4 @@
 import React from 'react';
-import '../assets/css/Banner.css';
 import Lottie from 'lottie-react';
 
 export default function Banner({ spanText, h1Text, pText, buttonLabel, onClickfunction, lottieData }) {
