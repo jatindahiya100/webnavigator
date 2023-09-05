@@ -11,7 +11,7 @@ const WorkflowCard = ({ icon, title, description }) => {
     );
 };
 
-const ServicesSection = () => {
+const WorkflowComponent = () => {
     return (
         <section className="bg-[url(./assets/images/bg-gradient.png)] bg-cover bg-no-repeat bg-center min-h-screen flex items-center py-12 px-6 max-w-7xl mx-auto rounded-2xl mt-12">
             <div className="container mx-auto">
@@ -52,4 +52,4 @@ const ServicesSection = () => {
     );
 };
 
-export default ServicesSection;
+export default WorkflowComponent;
