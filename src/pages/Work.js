@@ -18,7 +18,7 @@ const Work = () => {
         h1Text="Check Out What We've Done"
         pText="Discover our impressive portfolio showcasing a wide range of successful projects, from web applications to mobile interfaces. See how we turn ideas into reality."
         buttonLabel="View Portfolio"
-        onClickfunction={() => { alert("hi") }}
+        onClickfunction={() => { }}
         lottieData={Lottie01}
       />
       <Portfolio/>

@@ -21,7 +21,7 @@ export default function Home() {
         h1Text="Welcome To The Web Navigators"
         pText="Welcome to The Web Navigators, where we bring your digital dreams to life with a dedicated team, empowering your brand online."
         buttonLabel="Get Started"
-        onClickfunction={() => { alert("hi") }}
+        onClickfunction={() => {  }}
         lottieData={Lottie01} // Pass your Lottie data here
       />
       <ExpertiseSection />
