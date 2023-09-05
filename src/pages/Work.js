@@ -1,13 +1,10 @@
 import React from 'react'
-import SideBird from '../assets/images/project/Sidebird-Twitter-fanbase-builder.png'
-import ClearBit from '../assets/images/project/Clearbit.png'
-import Compressor from '../assets/images/project/Compressor-io.png'
-import Proper from '../assets/images/project/Proper.png'
-import LuxyHair from '../assets/images/project/Luxy-Hair.png'
-import JPLewis from '../assets/images/project/JP-Lewis-Group.png'
-import customDashboardUI from '../assets/images/project/customDashboardUI.png'
 import { useEffect } from 'react'
 import Banner from '../components/Banner'
+
+// Lottie Imports
+import Lottie01 from '../assets/images/Lottie/Landing-Page_Lottie-01.json';
+import Portfolio from '../components/Portfolio';
 
 const Work = () => {
   useEffect(() => {
@@ -16,7 +13,15 @@ const Work = () => {
 
   return (
     <>
-      <Banner />
+      <Banner
+        spanText="Our Previous Work"
+        h1Text="Check Out What We've Done"
+        pText="Discover our impressive portfolio showcasing a wide range of successful projects, from web applications to mobile interfaces. See how we turn ideas into reality."
+        buttonLabel="View Portfolio"
+        onClickfunction={() => { alert("hi") }}
+        lottieData={Lottie01}
+      />
+      <Portfolio/>
     </>
   );
 };
