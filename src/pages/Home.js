@@ -11,7 +11,7 @@ import TestimonialsSection from '../components/TestimonialsSection';
 
 export default function Home() {
   useEffect(() => {
-    document.title = "The Web Navigators | Crafting Digital Experiences for Brand Success";
+    document.title = "The Web Navigators | Crafting Digital Experiences for Brand Success ";
   }, [])
 
   return (
