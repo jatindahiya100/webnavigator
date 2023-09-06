@@ -6,9 +6,18 @@ import Proper from '../assets/images/project/Proper.png'
 import LuxyHair from '../assets/images/project/Luxy-Hair.png'
 import JPLewis from '../assets/images/project/JP-Lewis-Group.png'
 import customDashboardUI from '../assets/images/project/customDashboardUI.png'
+import ImageCreator from '../assets/images/project/ImageCreator.png'
+import Durable from '../assets/images/project/Durable.png'
 
 // Replace with your actual project data
 const projects = [
+    {
+        category: 'Front-End',
+        name: 'Durable',
+        description: "We've meticulously designed an impressive front-end for Durable Website Builder, offering an engaging and efficient user interface. Dive into the website to experience our expertly crafted design firsthand!",
+        image: Durable,
+        link: 'https://clearbit.com/',
+    },
     {
         category: 'Front-End',
         name: 'Clearbit',
@@ -22,6 +31,13 @@ const projects = [
         description: 'Created a dynamic and customizable data dashboard, enabling users to monitor their data efficiently.',
         image: customDashboardUI,
         link: 'https://github.com/jatindahiya100/faizy',
+    },
+    {
+        category: 'Front-End',
+        name: 'Image Creator',
+        description: "We've created a polished and user-friendly front-end for Image Creator, ensuring a seamless browsing experience. Check it out now!",
+        image: ImageCreator,
+        link: 'https://imagecreator.alkaidvision.com/',
     },
     {
         category: 'Full Stack',
@@ -63,33 +79,25 @@ const projects = [
 
 const PortfolioCategory = ({ category, projects }) => (
     <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4 text-gray-800">{category}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <span className="text-lg font-bold text-blue-600 px-4 sm:px-0">{category}</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-4">
             {projects.map((project, index) => (
-                <div
-                    key={index}
-                    className="rounded-lg overflow-hidden shadow-lg transform hover:scale-105 duration-300 hover:shadow-xl"
-                >
-                    <img
-                        src={project.image}
+                <div key={index}
+                    className="rounded-lg overflow-hidden shadow-lg transform hover:scale-105 duration-300 hover:shadow-xl">
+                    <img src={project.image}
                         alt={project.name}
-                        className="w-full h-44 object-cover"
-                    />
+                        className="w-full h-44 object-cover" />
                     <div className="p-6 bg-white">
                         <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
-                        <p className="text-gray-600 h-32 overflow-y-auto">{project.description}</p>
-                        <div className="mt-4">
-                            <a
-                                href={project.link}
+                        <p className="text-gray-600 overflow-y-auto">
+                            {project.description}&nbsp;
+                            <a href={project.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-blue-600 hover:underline hover:text-blue-800 transition-colors duration-300"
-                            >
-                                <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors duration-300">
-                                    Visit Site
-                                </button>
+                                className="text-blue-600 hover:underline hover:text-blue-800 transition-colors duration-300">
+                                Check It Now
                             </a>
-                        </div>
+                        </p>
                     </div>
                 </div>
             ))}
@@ -103,9 +111,8 @@ const Portfolio = () => {
 
     return (
         <div id='portfolio-section' className="container mx-auto px-4 py-8">
-            <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
-                Portfolio
-            </h1>
+            <span className="text-lg font-bold text-blue-600 px-4 sm:px-0">Projects Completed</span>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold capitalize mt-4 mb-8 px-4 sm:px-0">In Web Design <br /> And Coding</h2>
             {categories.map((category, index) => (
                 <PortfolioCategory
                     key={index}
