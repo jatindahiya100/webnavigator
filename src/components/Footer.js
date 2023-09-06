@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'; // Import NavLink from react-router-
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white p-6 sm:p-8">
+    <footer className="bg-gray-900 text-white p-6 sm:p-8 mt-6 sm:mt-16">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {/* Left Grid Item */}
         <div className="col-span-1 sm:col-span-2 md:col-span-1 flex flex-col justify-center items-center sm:items-start mb-4">
