@@ -32,8 +32,8 @@ const FAQPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center">
-      <div className="max-w-3xl w-full p-8 overflow-y-auto">
+    <div className="flex flex-col justify-center items-center px-4 sm:px-0 mt-20">
+      <div className="max-w-3xl w-full overflow-y-auto">
         <h1 className="text-3xl font-semibold text-center mb-6">Frequently Asked Questions</h1>
         {faqs.map((faq, index) => (
           <div key={index} className="border border-gray-300 rounded-lg p-4 mb-4">

@@ -13,7 +13,7 @@ const WorkflowCard = ({ icon, title, description }) => {
 
 const WorkflowComponent = () => {
     return (
-        <div className='conatiner mx-auto min-h-screen'>
+        <div className='conatiner mx-auto min-h-screen mt-20'>
             <section className="bg-[url(./assets/images/bg-gradient.png)] bg-cover bg-no-repeat bg-center min-h-screen flex items-center py-12 px-6 max-w-7xl mx-auto rounded-2xl">
                 <div className="container mx-auto">
                     <span className="text-lg font-bold text-blue-600">
