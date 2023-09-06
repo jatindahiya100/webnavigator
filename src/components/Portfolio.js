@@ -102,7 +102,7 @@ const Portfolio = () => {
     const categories = [...new Set(projects.map((project) => project.category))];
 
     return (
-        <div className="container mx-auto px-4 py-8">
+        <div id='portfolio-section' className="container mx-auto px-4 py-8">
             <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
                 Portfolio
             </h1>

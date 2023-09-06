@@ -11,6 +11,14 @@ const Work = () => {
     document.title = "The Web Navigators | Previous Work";
   }, [])
 
+  const scrollToPortfolioSection = () => {
+    // Scroll to the ExpertiseSection parent div
+    const expertiseSectionDiv = document.getElementById('portfolio-section');
+    if (expertiseSectionDiv) {
+      expertiseSectionDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <Banner
@@ -18,7 +26,7 @@ const Work = () => {
         h1Text="Check Out What We've Done"
         pText="Discover our impressive portfolio showcasing a wide range of successful projects, from web applications to mobile interfaces. See how we turn ideas into reality."
         buttonLabel="View Portfolio"
-        onClickfunction={() => { }}
+        onClickfunction={scrollToPortfolioSection}
         lottieData={Lottie01}
       />
       <Portfolio/>

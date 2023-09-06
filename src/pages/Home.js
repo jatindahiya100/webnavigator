@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 // Lottie Imports
 import Lottie01 from '../assets/images/Lottie/Landing-Page_Lottie-01.json';
 // Components Imports
@@ -16,6 +15,14 @@ export default function Home() {
     document.title = "The Web Navigators | Crafting Digital Experiences for Brand Success ";
   }, [])
 
+  const scrollToExpertiseSection = () => {
+    // Scroll to the ExpertiseSection parent div
+    const expertiseSectionDiv = document.getElementById('expertise-section');
+    if (expertiseSectionDiv) {
+      expertiseSectionDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <Banner
@@ -23,14 +30,14 @@ export default function Home() {
         h1Text="Welcome To The Web Navigators"
         pText="Welcome to The Web Navigators, where we bring your digital dreams to life with a dedicated team, empowering your brand online."
         buttonLabel="Get Started"
-        onClickfunction={() => {  }}
+        onClickfunction={scrollToExpertiseSection}
         lottieData={Lottie01} // Pass your Lottie data here
       />
       <ExpertiseSection />
-      <StatsCard/>
+      <StatsCard />
       <WorkflowComponent />
       <TestimonialsSection />
-      <FAQAccordion/>
+      <FAQAccordion />
     </>
   );
 }

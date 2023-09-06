@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExpertiseComponent = () => {
   return (
-    <div className="container mx-auto min-h-screen">
+    <div id="expertise-section" className="container mx-auto min-h-screen">
       <span className="text-lg font-bold text-blue-600 px-4 sm:px-0">Our Expertise</span>
       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold capitalize mt-4 mb-8 px-4 sm:px-0">In Web Design <br /> And Digital Marketing</h2>
       <div className="flex flex-col sm:flex-row justify-center">

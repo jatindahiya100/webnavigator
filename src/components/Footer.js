@@ -20,22 +20,22 @@ const Footer = () => {
         <nav className="mt-6 sm:mt-12">
           <ul className="flex flex-wrap justify-center gap-4 sm:space-x-4">
             <li>
-              <NavLink to="/home" activeClassName="text-blue-500" className="text-sm sm:text-base">
+              <NavLink to="/home" className="text-sm sm:text-base">
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/work" activeClassName="text-blue-500" className="text-sm sm:text-base">
+              <NavLink to="/work" className="text-sm sm:text-base">
                 Work
               </NavLink>
             </li>
             <li>
-              <NavLink to="/what-we-do" activeClassName="text-blue-500" className="text-sm sm:text-base">
+              <NavLink to="/what-we-do" className="text-sm sm:text-base">
                 What We Do
               </NavLink>
             </li>
             <li>
-              <NavLink to="/start-project" activeClassName="text-blue-500" className="text-sm sm:text-base">
+              <NavLink to="/start-project" className="text-sm sm:text-base">
                 Start Project
               </NavLink>
             </li>

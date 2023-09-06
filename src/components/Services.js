@@ -51,7 +51,7 @@ const ServiceCard = ({ title, description }) => (
 );
 
 const Services = () => (
-    <div>
+    <div id='services-section'>
         <div className="container mx-auto px-4 sm:px-8">
             <span className="text-lg font-bold text-blue-600 text-center block">Our Services</span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold capitalize text-center mt-4 mb-6 sm:mb-8">
