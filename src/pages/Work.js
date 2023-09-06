@@ -1,10 +1,11 @@
 import React from 'react'
 import { useEffect } from 'react'
-import Banner from '../components/Banner'
-
 // Lottie Imports
-import Lottie01 from '../assets/images/Lottie/Landing-Page_Lottie-01.json';
+import Lottie01 from '../assets/images/Lottie/Lottie04.json';
+import Banner from '../components/Banner'
 import Portfolio from '../components/Portfolio';
+
+
 
 const Work = () => {
   useEffect(() => {
