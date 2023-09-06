@@ -3,8 +3,8 @@ import React from 'react';
 const ExpertiseComponent = () => {
   return (
     <div id="expertise-section" className="container mx-auto min-h-screen">
-      <span className="text-lg font-bold text-blue-600 px-4 sm:px-0">Our Expertise</span>
-      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold capitalize mt-4 mb-8 px-4 sm:px-0">In Web Design <br /> And Digital Marketing</h2>
+      <span className="text-lg font-bold text-blue-600 px-4 sm:px-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Our Expertise</span>
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold capitalize mt-4 mb-8 px-4 sm:px-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">In Web Design <br /> And Digital Marketing</h2>
       <div className="flex flex-col sm:flex-row justify-center">
         {/* Main Card 1: Web Design & Coding */}
         <div className="w-full sm:w-2/3 lg:w-1/2 p-4 sm:p-2">
@@ -14,7 +14,7 @@ const ExpertiseComponent = () => {
             {/* Grid for Categories */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Front-end */}
-              <div className="bg-slate-800 rounded-lg p-4">
+              <div className="bg-slate-800 rounded-lg p-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <span className="text-sm font-semibold text-blue-500">Front-end</span>
                 <p className="mt-2 mb-4 text-slate-400">
                   We specialize in creating user interfaces using the following technologies:
@@ -28,7 +28,7 @@ const ExpertiseComponent = () => {
               </div>
 
               {/* Back-end */}
-              <div className="bg-slate-800 rounded-lg p-4">
+              <div className="bg-slate-800 rounded-lg p-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <span className="text-sm font-semibold text-blue-500">Back-end</span>
                 <p className="mt-2 mb-4 text-slate-400">
                   Our back-end development expertise includes the following technologies:
@@ -41,7 +41,7 @@ const ExpertiseComponent = () => {
               </div>
 
               {/* API Development */}
-              <div className="bg-slate-800 rounded-lg p-4">
+              <div className="bg-slate-800 rounded-lg p-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <span className="text-sm font-semibold text-blue-500">API Development</span>
                 <p className="mt-2 mb-4 text-slate-400">
                   We excel in building APIs with the following technologies:
@@ -54,7 +54,7 @@ const ExpertiseComponent = () => {
               </div>
 
               {/* Integrations */}
-              <div className="bg-slate-800 rounded-lg p-4">
+              <div className="bg-slate-800 rounded-lg p-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <span className="text-sm font-semibold text-blue-500">Integrations</span>
                 <p className="mt-2 mb-4 text-slate-400">
                   We integrate various services and platforms using the following technologies:
@@ -77,7 +77,7 @@ const ExpertiseComponent = () => {
             {/* Categories */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* SEO */}
-              <div className="bg-black rounded-lg p-4">
+              <div className="bg-black rounded-lg p-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <span className="text-lg sm:text-xl font-semibold text-white">SEO</span>
                 <p className="text-slate-400 mt-2 mb-4">
                   We optimize your website for search engines to improve visibility and rankings.
@@ -85,9 +85,9 @@ const ExpertiseComponent = () => {
               </div>
 
               {/* Paid Advertising */}
-              <div className="bg-black rounded-lg p-4">
+              <div className="bg-black rounded-lg p-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <span className="text-lg sm:text-xl font-semibold text-white">Paid Advertising</span>
-                <p className="text-slate-400 mt-2 mb-4">
+                <p className="text-slate-400 mt-2 mb-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                   We create and manage paid advertising campaigns to drive targeted traffic.
                 </p>
               </div>

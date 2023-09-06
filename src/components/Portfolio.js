@@ -81,11 +81,11 @@ const projects = [
 
 const PortfolioCategory = ({ category, projects }) => (
     <div className="mb-8">
-        <span className="text-lg font-bold text-blue-600 px-4 sm:px-0">{category}</span>
+        <span className="text-lg font-bold text-blue-600 px-4 sm:px-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">{category}</span>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-4">
             {projects.map((project, index) => (
                 <div key={index}
-                    className="rounded-lg overflow-hidden shadow-lg transform hover:scale-105 duration-300 hover:shadow-xl">
+                    className="rounded-lg overflow-hidden shadow-lg transform hover:scale-105 duration-300 hover:shadow-xl" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     <LazyLoadImage
                         src={project.image}
                         alt={project.name}
@@ -116,8 +116,8 @@ const Portfolio = () => {
 
     return (
         <div id='portfolio-section' className="container mx-auto px-4 py-8">
-            <span className="text-lg font-bold text-blue-600 px-4 sm:px-0">Projects Completed</span>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold capitalize mt-4 mb-8 px-4 sm:px-0">In Web Design <br /> And Coding</h2>
+            <span className="text-lg font-bold text-blue-600 px-4 sm:px-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Projects Completed</span>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold capitalize mt-4 mb-8 px-4 sm:px-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">In Web Design <br /> And Coding</h2>
             {categories.map((category, index) => (
                 <PortfolioCategory
                     key={index}

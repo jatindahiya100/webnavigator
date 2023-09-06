@@ -9,6 +9,10 @@ import Hire from './pages/Hire';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
 import NotFound from './components/NotFound';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 function App() {
   const [resourcesLoaded, setResourcesLoaded] = useState(false);

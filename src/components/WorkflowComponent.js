@@ -4,7 +4,7 @@ import SocialMediaLottie from '../assets/images/Lottie/Social-Media-Lottie-01.js
 
 const WorkflowCard = ({ icon, title, description }) => {
     return (
-        <div className="p-4 rounded-lg shadow-lg bg-opacity-10 backdrop-blur-lg bg-gradient-to-r from-white via-gray-100 to-white">
+        <div className="p-4 rounded-lg shadow-lg bg-opacity-10 backdrop-blur-lg bg-gradient-to-r from-white via-gray-100 to-white" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
             <span className="text-sm font-bold text-blue-600 text-left">{title}</span>
             <p className="text-lg text-slate-700 mt-4">{description}</p>
         </div>

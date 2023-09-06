@@ -76,7 +76,7 @@ const TestimonialsSection = () => {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {testimonials.map((testimonial) => (
-                        <div key={testimonial.id} className="bg-white rounded-lg shadow-md p-4">
+                        <div key={testimonial.id} className="bg-white rounded-lg shadow-md p-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                             <div className="mb-4">
                                 <blockquote className="text-lg italic text-gray-700">
                                     {testimonial.text}
