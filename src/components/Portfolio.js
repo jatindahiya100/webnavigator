@@ -8,6 +8,8 @@ import JPLewis from '../assets/images/project/JP-Lewis-Group.png'
 import customDashboardUI from '../assets/images/project/customDashboardUI.png'
 import ImageCreator from '../assets/images/project/ImageCreator.png'
 import Durable from '../assets/images/project/Durable.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 // Replace with your actual project data
 const projects = [
@@ -84,9 +86,12 @@ const PortfolioCategory = ({ category, projects }) => (
             {projects.map((project, index) => (
                 <div key={index}
                     className="rounded-lg overflow-hidden shadow-lg transform hover:scale-105 duration-300 hover:shadow-xl">
-                    <img src={project.image}
+                    <LazyLoadImage
+                        src={project.image}
                         alt={project.name}
-                        className="w-full h-44 object-cover" />
+                        effect="opacity"
+                        className="w-full h-44 object-cover"
+                    />
                     <div className="p-6 bg-white">
                         <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
                         <p className="text-gray-600 overflow-y-auto">
