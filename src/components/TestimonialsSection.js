@@ -68,8 +68,8 @@ const TestimonialsSection = () => {
     testimonials.sort((a, b) => a.text.length - b.text.length);
 
     return (
-        <section className="py-12 mt-8 p-8">
-            <div className="container mx-auto text-center">
+        <section>
+            <div className="container mx-auto text-center min-h-screen">
                 <span className="text-lg font-bold text-blue-600">Testimonials</span>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold capitalize mt-4 mb-8">
                     What Our Clients Say

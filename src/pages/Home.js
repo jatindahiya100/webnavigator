@@ -5,8 +5,10 @@ import Lottie01 from '../assets/images/Lottie/Landing-Page_Lottie-01.json';
 // Components Imports
 import Banner from '../components/Banner';
 import ExpertiseSection from '../components/ExpertiseComponent';
-import ServicesSection from '../components/WorkflowComponent';
+import WorkflowComponent from '../components/WorkflowComponent';
 import TestimonialsSection from '../components/TestimonialsSection';
+import FAQAccordion from '../components/FAQPage';
+import StatsCard from '../components/StatsCard';
 
 
 export default function Home() {
@@ -25,8 +27,10 @@ export default function Home() {
         lottieData={Lottie01} // Pass your Lottie data here
       />
       <ExpertiseSection />
-      <ServicesSection />
+      <StatsCard/>
+      <WorkflowComponent />
       <TestimonialsSection />
+      <FAQAccordion/>
     </>
   );
 }
