@@ -20,7 +20,7 @@ const Footer = () => {
         <nav className="mt-6 sm:mt-12">
           <ul className="flex flex-wrap justify-center gap-4 sm:space-x-4">
             <li>
-              <NavLink to="/home" className="text-sm sm:text-base">
+              <NavLink to="/" className="text-sm sm:text-base">
                 Home
               </NavLink>
             </li>
