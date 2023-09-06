@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 const faqs = [
   {
     question: "What services does The Web Navigators offer?",
-    answer: "We offer a wide range of web development and design services, including website development, UI/UX design, e-commerce solutions, and more. Please visit our Services page for a detailed list of our offerings."
+    answer: 'We offer a wide range of web development and design services, including website development, UI/UX design, e-commerce solutions, and more. Please visit our "What We Do" page for a detailed list of our offerings.'
   },
   {
     question: "How do I request a quote for a project?",
-    answer: "You can request a quote by visiting our Contact page and filling out the inquiry form. Be sure to provide as much detail as possible about your project's requirements, and we'll get back to you with a customized quote."
+    answer: 'To request a quote for your project, simply click the "Start Conversation" button on the Start Project page. We will then initiate a discussion about your project, gather the necessary details, and provide you with a personalized quote tailored to your requirements.'
   },
   {
     question: "What is the typical turnaround time for a web development project?",
