@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import Lottie01 from '../assets/images/Lottie/Lottie04.json';
 import Banner from '../components/Banner'
 import Portfolio from '../components/Portfolio';
+import EmailValidation from './EmailValidation';
 
 
 
@@ -31,6 +32,7 @@ const Work = () => {
         lottieData={Lottie01}
       />
       <Portfolio/>
+      <EmailValidation/>
     </>
   );
 };
