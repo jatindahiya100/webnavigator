@@ -90,8 +90,8 @@ const PortfolioCategory = ({ category, projects }) => (
                         src={project.image}
                         alt={project.name}
                         effect="opacity"
-                        className="w-full h-44 object-cover"
-                    />
+                        className="w-full object-cover" />
+
                     <div className="p-6 bg-white">
                         <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
                         <p className="text-gray-600 overflow-y-auto">
