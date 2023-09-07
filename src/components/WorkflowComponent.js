@@ -17,9 +17,9 @@ const WorkflowComponent = () => {
             <section className="bg-[url(./assets/images/bg-gradient.png)] bg-cover bg-no-repeat bg-center min-h-screen flex items-center py-12 px-6 max-w-7xl mx-auto rounded-2xl">
                 <div className="container mx-auto">
                     <span className="text-lg font-bold text-blue-600">
-                        How We'll Help You?
+                        What We can Do?
                     </span>
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold capitalize mt-4 mb-8">
+                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold capitalize mt-4 mb-8 px-4 sm:px-0">
                         We Make Digital Magic Happen
                     </h2>
 
@@ -33,17 +33,21 @@ const WorkflowComponent = () => {
                         {/* Right Column */}
                         <div className="col-span-1">
                             {/* Text content in the right column */}
-                            <h2 className="text-xl font-bold mb-6">Our Workflow</h2>
+                            <h2 className="text-xl font-bold mb-6">Services We Offer</h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <WorkflowCard title="Web Development" description="We create custom websites tailored to your business needs." />
+                                <WorkflowCard title="Web Design" description="Stunning, user-friendly websites that captivate and convert." />
 
-                                <WorkflowCard title="Web Analysis and Fix" description="We analyze and fix issues on your website to improve performance." />
+                                <WorkflowCard title="Web Development" description="Robust web solutions that bring your vision to life." />
 
-                                <WorkflowCard title="Social Media Profile Analysis" description="We evaluate and optimize your social media profiles for better engagement." />
+                                <WorkflowCard title="SaaS (Software as a Service)" description="Streamlined and scalable software solutions for your business." />
 
-                                <WorkflowCard title="Google Business Profile" description="We help you register and improve your Google Business Profile for better online visibility." />
+                                <WorkflowCard title="Custom Solutions" description="Tailored technology solutions to meet your unique needs." />
 
-                                <WorkflowCard title="Paid Ads Campaign" description="We create and manage targeted paid advertising campaigns to reach potential customers and increase your earnings." />
+                                <WorkflowCard title="SEO (Search Engine Optimization)" description="Boost online visibility and traffic with expert SEO." />
+
+                                <WorkflowCard title="Paid Ads Management" description="Maximize ROI with targeted ad campaigns." />
+
+                                <WorkflowCard title="Google Business Profile Setup" description="Enhance your local online presence with Google." />
 
                             </div>
                         </div>

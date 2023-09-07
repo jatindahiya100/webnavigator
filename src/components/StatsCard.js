@@ -4,7 +4,7 @@ const StatsCard = () => {
     return (
         <div className="container mx-auto px-4 sm:px-0 overflow-hidden">
             <div className="border-2 rounded-lg p-6">
-                <h2 className="text-3xl font-semibold mb-8 text-slate-900 text-center mt-12" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Trusted by businesses worldwide</h2>
+                <h3 className="text-xl sm:text-2xl font-semibold mb-8 text-slate-900 text-center mt-12" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Trusted by businesses worldwide</h3>
                 <p className='text-center text-slate-500' data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">We're proud to share our achievements in serving clients,
                     completing projects, and growing our dedicated team.</p>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-12">
