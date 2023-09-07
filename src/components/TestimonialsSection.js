@@ -69,7 +69,7 @@ const TestimonialsSection = () => {
 
     return (
         <section>
-            <div className="container mx-auto text-center min-h-screen mt-20 px-4 sm:px-0">
+            <div className="container mx-auto text-center min-h-screen mt-12 px-4 sm:px-0">
                 <span className="text-lg font-bold text-blue-600 px-4 sm:px-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Testimonials</span>
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold capitalize mt-4 mb-8 px-4 sm:px-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     What Our Clients Say

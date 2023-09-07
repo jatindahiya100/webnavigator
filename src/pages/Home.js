@@ -8,6 +8,7 @@ import WorkflowComponent from '../components/WorkflowComponent';
 import TestimonialsSection from '../components/TestimonialsSection';
 import FAQAccordion from '../components/FAQPage';
 import StatsCard from '../components/StatsCard';
+import LeadershipSection from '../components/LeadershipSection';
 
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
       <ExpertiseSection />
       <StatsCard />
       <WorkflowComponent />
+      <LeadershipSection/>
       <TestimonialsSection />
       <FAQAccordion />
     </>
