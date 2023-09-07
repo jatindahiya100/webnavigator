@@ -1,6 +1,6 @@
 import React from 'react';
 import SideBird from '../assets/images/project/Sidebird-Twitter-fanbase-builder.png'
-import ClearBit from '../assets/images/project/Clearbit.png'
+import NeverAI from '../assets/images/project/NeverAI.png'
 import Compressor from '../assets/images/project/Compressor-io.png'
 import Proper from '../assets/images/project/Proper.png'
 import LuxyHair from '../assets/images/project/Luxy-Hair.png'
@@ -18,14 +18,14 @@ const projects = [
         name: 'Durable',
         description: "We've meticulously designed an impressive front-end for Durable Website Builder, offering an engaging and efficient user interface. Dive into the website to experience our expertly crafted design firsthand!",
         image: Durable,
-        link: 'https://clearbit.com/',
+        link: 'https://durable.co/',
     },
     {
-        category: 'Front-End',
-        name: 'Clearbit',
-        description: 'Enhanced the user experience of Clearbit data enrichment platform, improving data visualization and user journey.',
-        image: ClearBit,
-        link: 'https://clearbit.com/',
+        category: 'Full Stack',
+        name: 'Never AI',
+        description: 'Created and engineered the front-end of Never AI using React.js, Tailwind CSS, and various JavaScript libraries.',
+        image: NeverAI,
+        link: 'https://www.never.tech/',
     },
     {
         category: 'Front-End',
