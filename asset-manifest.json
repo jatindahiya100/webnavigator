@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6263bf77.css",
-    "main.js": "/static/js/main.7f4137dc.js",
+    "main.css": "/static/css/main.15bbdf7a.css",
+    "main.js": "/static/js/main.c80723aa.js",
     "static/media/NeverAI.png": "/static/media/NeverAI.82275855c1af3fd9e55c.png",
     "static/media/Luxy-Hair.png": "/static/media/Luxy-Hair.f898d1e628e2274d627f.png",
     "static/media/Proper.png": "/static/media/Proper.7e02eb508d590ece1e00.png",
@@ -15,11 +15,11 @@
     "static/media/bg-gradient1.jpg": "/static/media/bg-gradient1.fc7585c96ed1be49b576.jpg",
     "static/media/logo.png": "/static/media/logo.931be1238f0fd5b6d585.png",
     "index.html": "/index.html",
-    "main.6263bf77.css.map": "/static/css/main.6263bf77.css.map",
-    "main.7f4137dc.js.map": "/static/js/main.7f4137dc.js.map"
+    "main.15bbdf7a.css.map": "/static/css/main.15bbdf7a.css.map",
+    "main.c80723aa.js.map": "/static/js/main.c80723aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.6263bf77.css",
-    "static/js/main.7f4137dc.js"
+    "static/css/main.15bbdf7a.css",
+    "static/js/main.c80723aa.js"
   ]
 }
