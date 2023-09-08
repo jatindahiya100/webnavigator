@@ -4,14 +4,16 @@ function EmailVerification() {
     const [email, setEmail] = useState('');
     const [isValid, setIsValid] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
-    const [isVerified, setIsVerified] = useState(false);
+    const [isVerified, setIsVerified] = useState(null);
+    const [message, setMessage] = useState('');
 
     const handleEmailChange = (e) => {
         const newEmail = e.target.value;
         setEmail(newEmail);
-        setIsValid(false);
-        setIsLoading(false);
-        setIsVerified(false);
+        setIsValid(false);   // Reset isValid state
+        setIsLoading(false); // Reset isLoading state
+        setIsVerified(null); // Reset isVerified state
+        setMessage('');      // Reset message state
 
         const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
         setIsValid(emailRegex.test(newEmail));
@@ -21,12 +23,26 @@ function EmailVerification() {
         if (isValid) {
             setIsLoading(true);
 
-            setTimeout(() => {
-                setIsLoading(false);
-                setIsVerified(true);
-            }, 2000);
+            // Make a request to the ZeroBounce API for email verification
+            fetch(`https://api.zerobounce.net/v2/validate?api_key=219bd519adfa4c1baafbc65fbef752e2&email=${encodeURIComponent(email)}`)
+                .then((response) => response.json())
+                .then((data) => {
+                    setIsLoading(false);
+                    if (data.status === 'valid') {
+                        setIsVerified(true);
+                        setMessage('Email Verified Successfully!');
+                    } else {
+                        setIsVerified(false);
+                        setMessage('Invalid Email');
+                    }
+                })
+                .catch((error) => {
+                    setIsLoading(false);
+                    console.error('Error verifying email:', error);
+                    setMessage('Error verifying email. Please try again later.');
+                });
         } else {
-            alert('Please enter a valid email address.');
+            setMessage('Please enter a valid email address.');
         }
     };
 
@@ -38,15 +54,14 @@ function EmailVerification() {
             <p className="text-sm text-gray-600 text-center mb-8">
                 Please enter your email address below to initiate the verification process.
             </p>
-            <div className="flex items-center border border-gray-300 rounded-lg p-2">
+            <div className={`flex items-center border  ${isVerified === null ? 'border-gray-300' : isVerified ? 'border-green-500' : 'border-red-600'} rounded-lg p-2`}>
                 <input
                     type="email"
                     id="email"
                     name="email"
                     value={email}
                     onChange={handleEmailChange}
-                    className={`w-full p-3 rounded-lg outline-none ${isVerified ? 'border-green-500' : 'border-gray-300 bg-transparent'
-                        }`}
+                    className='w-full p-3 rounded-lg outline-none bg-transparent'
                     placeholder="Enter your email"
                     required
                 />
@@ -67,9 +82,7 @@ function EmailVerification() {
                     )}
                 </button>
             </div>
-            {isVerified && (
-                <p className="text-green-600 text-center mt-4">Email Verified Successfully!</p>
-            )}
+            {message && <p className={`${isVerified ? 'text-green-600' : 'text-red-600'} text-center mt-2`}>{message}</p>}
         </div>
     );
 }
