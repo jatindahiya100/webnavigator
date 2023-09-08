@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 function EmailVerification() {
+    const REACT_APP_ZEROBOUNCE_API_KEY = process.env.REACT_APP_API_KEY
     const [email, setEmail] = useState('');
     const [isValid, setIsValid] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
@@ -24,7 +25,7 @@ function EmailVerification() {
             setIsLoading(true);
 
             // Make a request to the ZeroBounce API for email verification
-            fetch(`https://api.zerobounce.net/v2/validate?api_key=219bd519adfa4c1baafbc65fbef752e2&email=${encodeURIComponent(email)}`)
+            fetch(`https://api.zerobounce.net/v2/validate?api_key=${REACT_APP_ZEROBOUNCE_API_KEY}&email=${encodeURIComponent(email)}`)
                 .then((response) => response.json())
                 .then((data) => {
                     setIsLoading(false);
