@@ -31,10 +31,10 @@ function EmailVerification() {
                     setIsLoading(false);
                     if (data.status === 'valid') {
                         setIsVerified(true);
-                        setMessage('Email Verified Successfully!');
+                        setMessage('This email is valid.');
                     } else {
                         setIsVerified(false);
-                        setMessage('Invalid Email');
+                        setMessage('Invalid email !');
                     }
                 })
                 .catch((error) => {
@@ -43,7 +43,7 @@ function EmailVerification() {
                     setMessage('Error verifying email. Please try again later.');
                 });
         } else {
-            setMessage('Please enter a valid email address.');
+            setMessage('Syntax error');
         }
     };
 
