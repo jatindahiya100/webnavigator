@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-// Import dotenv to load environment variables
-import dotenv from 'dotenv';
-dotenv.config();
 
 function EmailVerification() {
     const [email, setEmail] = useState('');
@@ -25,7 +22,7 @@ function EmailVerification() {
             setIsLoading(true);
 
             // Send a request to ZeroBounce API for email validation
-            fetch(`https://api.zerobounce.net/v2/validate?apikey=${process.env.ZEROBOUNCE_API_KEY}&email=${email}`)
+            fetch('https://api.zerobounce.net/v2/validate?apikey=219bd519adfa4c1baafbc65fbef752e2&email=' + email)
                 .then((response) => response.json())
                 .then((data) => {
                     setIsLoading(false);
