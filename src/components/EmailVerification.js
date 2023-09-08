@@ -21,10 +21,21 @@ function EmailVerification() {
         if (isValid) {
             setIsLoading(true);
 
-            setTimeout(() => {
-                setIsLoading(false);
-                setIsVerified(true);
-            }, 2000);
+            // Send a request to ZeroBounce API for email validation
+            fetch('https://api.zerobounce.net/v2/validate?apikey=219bd519adfa4c1baafbc65fbef752e2&email=' + email)
+                .then((response) => response.json())
+                .then((data) => {
+                    setIsLoading(false);
+                    if (data.status === 'Valid') {
+                        setIsVerified(true);
+                    } else {
+                        alert('Email validation failed. Please enter a valid email address.');
+                    }
+                })
+                .catch((error) => {
+                    setIsLoading(false);
+                    alert('Error occurred while verifying the email.');
+                });
         } else {
             alert('Please enter a valid email address.');
         }
