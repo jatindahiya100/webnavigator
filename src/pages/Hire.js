@@ -1,17 +1,19 @@
 import React from 'react'
-import { useEffect } from 'react';
 // Lottie Imports
 import ChatLottie from '../assets/images/Lottie/Chat-Lottie-01.json';
 // Components Imports
+import SEO from '../components/SEO';
 import Banner from '../components/Banner';
 
 export default function Hire() {
-    useEffect(() => {
-        document.title = "The Web Navigators | Start Project";
-    }, [])
+    // Define dynamic SEO data for this page
+    const pageTitle = 'Start Project';
+    const pageDescription = "Start your project with The Web Navigators. We specialize in web solutions that drive success. Let's create something amazing together!";
+    const canonicalURL = 'https://www.thewebnavigators.com/start-project';
 
     return (
         <>
+            <SEO title={pageTitle} description={pageDescription} canonicalUrl={canonicalURL} />
             <Banner
                 spanText="Let's Get Started!"
                 h1Text="Got some Idea. Let's Discuss"

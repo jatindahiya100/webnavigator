@@ -1,15 +1,16 @@
 import React from 'react'
-import { useEffect } from 'react';
 // Lottie Imports
 import Lottie01 from '../assets/images/Lottie/Lottie02.json';
 // Components Imports
+import SEO from '../components/SEO';
 import Banner from '../components/Banner';
 import Services from '../components/Services';
 
 export default function WhatWeDo() {
-  useEffect(() => {
-    document.title = "The Web Navigators | What We Do";
-  }, [])
+  // Define dynamic SEO data for this page
+  const pageTitle = 'What We Do ?';
+  const pageDescription = "Discover our expertise at The Web Navigators. We specialize in web solutions that drive success. Let's create something amazing together!";
+  const canonicalURL = 'https://www.thewebnavigators.com/what-we-do';
 
   const scrollToServicesSection = () => {
     // Scroll to the ExpertiseSection parent div
@@ -21,6 +22,7 @@ export default function WhatWeDo() {
 
   return (
     <>
+      <SEO title={pageTitle} description={pageDescription} canonicalUrl={canonicalURL} />
       <Banner
         spanText="What We Do ?"
         h1Text="Navigate Your Business Online"

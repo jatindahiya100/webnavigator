@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 // Lottie Imports
 import Lottie01 from '../assets/images/Lottie/Landing-Page_Lottie-01.json';
 // Components Imports
+import SEO from '../components/SEO';
 import Banner from '../components/Banner';
 import ExpertiseSection from '../components/ExpertiseComponent';
 import WorkflowComponent from '../components/WorkflowComponent';
@@ -12,9 +13,10 @@ import LeadershipSection from '../components/LeadershipSection';
 
 
 export default function Home() {
-  useEffect(() => {
-    document.title = "The Web Navigators | Crafting Digital Experiences for Brand Success";
-  }, [])
+  // Define dynamic SEO data for this page
+  const pageTitle = 'The Web Navigators | Crafting Digital Experiences for Brand Success';
+  const pageDescription = 'Elevate your brand with expert digital solutions from The Web Navigators. Specializing in web design, development, and impactful social media marketing.';
+  const canonicalURL = 'https://www.thewebnavigators.com/';
 
   const scrollToExpertiseSection = () => {
     // Scroll to the ExpertiseSection parent div
@@ -26,6 +28,7 @@ export default function Home() {
 
   return (
     <>
+      <SEO title={pageTitle} description={pageDescription} canonicalUrl={canonicalURL} />
       <Banner
         spanText="Navigating the Web's Waves with Ease"
         h1Text="Welcome To The Web Navigators"
@@ -37,7 +40,7 @@ export default function Home() {
       <ExpertiseSection />
       <StatsCard />
       <WorkflowComponent />
-      <LeadershipSection/>
+      <LeadershipSection />
       <TestimonialsSection />
       <FAQAccordion />
     </>
