@@ -5,7 +5,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import WhatWeDo from './pages/WhatWeDo';
 import Work from './pages/Work';
-import Hire from './pages/Hire';
+import StartProject from './pages/StartProject';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
 import NotFound from './components/NotFound';
@@ -66,7 +66,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/what-we-do' element={<WhatWeDo />} />
         <Route path='/work' element={<Work />} />
-        <Route path='/start-project' element={<Hire />} />
+        <Route path='/start-project' element={<StartProject />} />
         {/* Add a route for unmatched paths */}
         <Route path='*' element={<NotFound />} />
       </Routes>
