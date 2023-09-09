@@ -5,4 +5,4 @@ User-agent: *
 Disallow:
 
 # Specify the location of the sitemap.xml file
-Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://www.thewebnavigators.com/sitemap.xml
