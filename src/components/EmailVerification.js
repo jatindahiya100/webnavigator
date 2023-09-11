@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
 
 function EmailVerification() {
-    const REACT_APP_ZEROBOUNCE_API_KEY = process.env.REACT_APP_API_KEY
     const [email, setEmail] = useState('');
     const [isValid, setIsValid] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
-    const [isVerified, setIsVerified] = useState(null);
-    const [message, setMessage] = useState('');
+    const [apiResponse, setApiResponse] = useState(null);
 
     const handleEmailChange = (e) => {
         const newEmail = e.target.value;
         setEmail(newEmail);
-        setIsValid(false);   // Reset isValid state
-        setIsLoading(false); // Reset isLoading state
-        setIsVerified(null); // Reset isVerified state
-        setMessage('');      // Reset message state
+        setIsValid(false);
+        setIsLoading(false);
+        setApiResponse(null);
 
         const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
         setIsValid(emailRegex.test(newEmail));
@@ -24,26 +21,22 @@ function EmailVerification() {
         if (isValid) {
             setIsLoading(true);
 
-            // Make a request to the ZeroBounce API for email verification
-            fetch(`https://api.zerobounce.net/v2/validate?api_key=${REACT_APP_ZEROBOUNCE_API_KEY}&email=${encodeURIComponent(email)}`)
+            fetch('http://localhost:4000/verify_email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email }),
+            })
                 .then((response) => response.json())
                 .then((data) => {
                     setIsLoading(false);
-                    if (data.status === 'valid') {
-                        setIsVerified(true);
-                        setMessage('This email is valid.');
-                    } else {
-                        setIsVerified(false);
-                        setMessage('Invalid email !');
-                    }
+                    setApiResponse(data); // Store the API response
                 })
                 .catch((error) => {
                     setIsLoading(false);
                     console.error('Error verifying email:', error);
-                    setMessage('Error verifying email. Please try again later.');
                 });
-        } else {
-            setMessage('Syntax error');
         }
     };
 
@@ -55,7 +48,7 @@ function EmailVerification() {
             <p className="text-sm text-gray-600 text-center mb-8">
                 Please enter your email address below to initiate the verification process.
             </p>
-            <div className={`flex items-center border  ${isVerified === null ? 'border-gray-300' : isVerified ? 'border-green-500' : 'border-red-600'} rounded-lg p-2`}>
+            <div className={`flex items-center border rounded-lg p-2`}>
                 <input
                     type="email"
                     id="email"
@@ -83,7 +76,12 @@ function EmailVerification() {
                     )}
                 </button>
             </div>
-            {message && <p className={`${isVerified ? 'text-green-600' : 'text-red-600'} text-center mt-2`}>{message}</p>}
+            {apiResponse && (
+                <div className={`text-center mt-2 ${apiResponse.status === 'Email is valid' ? 'text-green-600' : 'text-red-600'}`}>
+                    <p>{apiResponse.status}</p>
+                    {/* You can display additional API response data as needed */}
+                </div>
+            )}
         </div>
     );
 }
