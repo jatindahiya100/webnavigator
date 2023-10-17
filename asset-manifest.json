@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.958823e4.css",
-    "main.js": "/static/js/main.e4f1c3a6.js",
+    "main.js": "/static/js/main.9be31842.js",
     "static/media/NeverAI.png": "/static/media/NeverAI.82275855c1af3fd9e55c.png",
     "static/media/Luxy-Hair.png": "/static/media/Luxy-Hair.f898d1e628e2274d627f.png",
     "static/media/Proper.png": "/static/media/Proper.7e02eb508d590ece1e00.png",
+    "static/media/GuWiGuttersAndWindows.png": "/static/media/GuWiGuttersAndWindows.c9af303b257c9a8da306.png",
     "static/media/JP-Lewis-Group.png": "/static/media/JP-Lewis-Group.de8a0ce5022c9724bd10.png",
     "static/media/customDashboardUI.png": "/static/media/customDashboardUI.2198ec8cb5f761d49669.png",
     "static/media/ImageCreator.png": "/static/media/ImageCreator.df46bd0ebcaba3fa5280.png",
@@ -16,10 +17,10 @@
     "static/media/logo.png": "/static/media/logo.931be1238f0fd5b6d585.png",
     "index.html": "/index.html",
     "main.958823e4.css.map": "/static/css/main.958823e4.css.map",
-    "main.e4f1c3a6.js.map": "/static/js/main.e4f1c3a6.js.map"
+    "main.9be31842.js.map": "/static/js/main.9be31842.js.map"
   },
   "entrypoints": [
     "static/css/main.958823e4.css",
-    "static/js/main.e4f1c3a6.js"
+    "static/js/main.9be31842.js"
   ]
 }
