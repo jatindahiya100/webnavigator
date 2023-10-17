@@ -1,6 +1,7 @@
 import React from 'react';
 import SideBird from '../assets/images/project/Sidebird-Twitter-fanbase-builder.png'
 import NeverAI from '../assets/images/project/NeverAI.png'
+import QuoteBuilder from '../assets/images/project/GuWiGuttersAndWindows.png'
 import Compressor from '../assets/images/project/Compressor-io.png'
 import Proper from '../assets/images/project/Proper.png'
 import LuxyHair from '../assets/images/project/Luxy-Hair.png'
@@ -19,6 +20,13 @@ const projects = [
         description: "We've meticulously designed an impressive front-end for Durable Website Builder, offering an engaging and efficient user interface. Dive into the website to experience our expertly crafted design firsthand!",
         image: Durable,
         link: 'https://durable.co/',
+    },
+    {
+        category: 'Full Stack',
+        name: 'Gu-Wi Quote Builder',
+        description: 'Gu-Wi Gutters assesses a property and completes a JotForm containing details about the services they can provide to the customer. The Quote Builder tool then retrieves this data from the JotForm and generates a customized plan that the client can subscribe to.',
+        image: QuoteBuilder,
+        link: 'https://guwiquotebuilder.com/#/5721608211525972188',
     },
     {
         category: 'Full Stack',
