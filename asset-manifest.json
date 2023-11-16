@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.958823e4.css",
-    "main.js": "/static/js/main.9be31842.js",
+    "main.js": "/static/js/main.da621137.js",
     "static/media/NeverAI.png": "/static/media/NeverAI.82275855c1af3fd9e55c.png",
     "static/media/Luxy-Hair.png": "/static/media/Luxy-Hair.f898d1e628e2274d627f.png",
     "static/media/Proper.png": "/static/media/Proper.7e02eb508d590ece1e00.png",
@@ -14,13 +14,17 @@
     "static/media/Compressor-io.png": "/static/media/Compressor-io.01fec784678adcdd699c.png",
     "static/media/Durable.png": "/static/media/Durable.ad48413d398e126f6091.png",
     "static/media/bg-gradient1.jpg": "/static/media/bg-gradient1.fc7585c96ed1be49b576.jpg",
+    "static/media/simran.jpeg": "/static/media/simran.50d3b9589c81374b46b2.jpeg",
+    "static/media/shubhangi.jpeg": "/static/media/shubhangi.b8a1cc5023b80c9b084d.jpeg",
+    "static/media/saurabh.jpeg": "/static/media/saurabh.21e63b3f6314054661e0.jpeg",
+    "static/media/jatin.jpeg": "/static/media/jatin.c93e270f4c118db17a72.jpeg",
     "static/media/logo.png": "/static/media/logo.931be1238f0fd5b6d585.png",
     "index.html": "/index.html",
     "main.958823e4.css.map": "/static/css/main.958823e4.css.map",
-    "main.9be31842.js.map": "/static/js/main.9be31842.js.map"
+    "main.da621137.js.map": "/static/js/main.da621137.js.map"
   },
   "entrypoints": [
     "static/css/main.958823e4.css",
-    "static/js/main.9be31842.js"
+    "static/js/main.da621137.js"
   ]
 }
