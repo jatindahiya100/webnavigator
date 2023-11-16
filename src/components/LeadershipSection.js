@@ -1,4 +1,8 @@
 import React from 'react';
+import Jatin from '../assets/images/jatin.jpeg'
+import Shubhangi from '../assets/images/shubhangi.jpeg'
+import Simran from '../assets/images/simran.jpeg'
+import Saurabh from '../assets/images/saurabh.jpeg'
 
 const LeadershipSection = () => {
     return (
@@ -11,7 +15,7 @@ const LeadershipSection = () => {
                 <ul className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
                     <li>
                         <div className="flex items-center gap-x-6">
-                            <img className="h-16 w-16 rounded-full" src="https://media.licdn.com/dms/image/D4D03AQHksx-XVgjPBA/profile-displayphoto-shrink_400_400/0/1693050106033?e=1699488000&v=beta&t=oP5ZY-Yo9dv-QyUiB-16Ji8V9oh0pacGTzCqAdapj8s" alt="" />
+                            <img className="h-16 w-16 rounded-full" src={Jatin} alt="" />
                             <div>
                                 <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">Jatin Dahiya</h3>
                                 <p className="text-sm font-semibold leading-6 text-indigo-600">Founder / Developer</p>
@@ -22,7 +26,7 @@ const LeadershipSection = () => {
                     {/* Additional people */}
                     <li>
                         <div className="flex items-center gap-x-6">
-                            <img className="h-16 w-16 rounded-full" src="https://media.licdn.com/dms/image/C4E03AQGFUbtKjjyM6w/profile-displayphoto-shrink_800_800/0/1635584386676?e=1699488000&v=beta&t=NePJTgl4GBupyW6zmhd3zOc5tdOKT7bPxg0fDxfDU5E" alt="" />
+                            <img className="h-16 w-16 rounded-full" src={Shubhangi} alt="" />
                             <div>
                                 <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">Shubhangi Gupta</h3>
                                 <p className="text-sm font-semibold leading-6 text-indigo-600">Developer</p>
@@ -31,7 +35,7 @@ const LeadershipSection = () => {
                     </li>
                     <li>
                         <div className="flex items-center gap-x-6">
-                            <img className="h-16 w-16 rounded-full" src="https://media.licdn.com/dms/image/C5603AQEIrdURlO12hw/profile-displayphoto-shrink_800_800/0/1630053000638?e=1699488000&v=beta&t=A4ZKvsobw4Z94lRbGs98QD-eV0C4rNCo0KfSMfRQBH4" alt="" />
+                            <img className="h-16 w-16 rounded-full" src={Simran} alt="" />
                             <div>
                                 <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">Simran Ahitaan</h3>
                                 <p className="text-sm font-semibold leading-6 text-indigo-600">UI Designer</p>
@@ -40,7 +44,7 @@ const LeadershipSection = () => {
                     </li>
                     <li>
                         <div className="flex items-center gap-x-6">
-                            <img className="h-16 w-16 rounded-full" src="https://media.licdn.com/dms/image/D4D03AQFRVvvpr_rC8Q/profile-displayphoto-shrink_400_400/0/1680177162024?e=1699488000&v=beta&t=b8ge9y22SaygKZ0WuyRJ1sh55kfIe1VoZ9hAJEYTG8I" alt="" />
+                            <img className="h-16 w-16 rounded-full" src={Saurabh} alt="" />
                             <div>
                                 <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">Saurabh Sharma</h3>
                                 <p className="text-sm font-semibold leading-6 text-indigo-600">Marketing Head</p>
