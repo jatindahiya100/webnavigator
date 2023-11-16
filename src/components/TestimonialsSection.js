@@ -6,25 +6,25 @@ const TestimonialsSection = () => {
             id: 1,
             text: 'Very fast turnaround, did the job as requested, no issues or problems, would use again',
             clientName: 'Andrew Davies',
-            clientPhoto: 'https://media.licdn.com/dms/image/C4E03AQFa-Ag6tVnphQ/profile-displayphoto-shrink_400_400/0/1631031319923?e=1699488000&v=beta&t=KmXSP967ABjyPSRt0D1tlYADE4-67Ixv1e5M3BML8Ao',
+            clientPhoto: 'https://www.upwork.com/profile-portraits/c1ETy2V41TYEMbK_UkE4Gp_QndW-EkANRhGmDwftqk6BJiP7PAXAAoDxfQp2xhzsPG',
         },
         {
             id: 2,
             text: 'Very Patient and talented. This work was extended for a month because I was continuously asking for changes, but Jatin was always very patient and successfully completed all the work that I asked for. I really appreciate his hard work. Meanwhile, he spent a lot of time communicating with me regarding to the project. His way of expressing was pretty clear and polite. I would highly recommend hiring him for your project.',
             clientName: 'Yang Henry',
-            clientPhoto: 'https://media.licdn.com/dms/image/C4E03AQEuema7-YQREw/profile-displayphoto-shrink_400_400/0/1516864097491?e=1699488000&v=beta&t=HmV6EoDzFs3YB6w2W6occUkZImpE05RcaCxnkLm8srg',
+            clientPhoto: 'https://www.upwork.com/profile-portraits/c1fFy29XOhI1nk0OdyqgvxMfhOyg-aWJmjGg4cnQa0VtDzHjSj5Qi_9CSboencGoR_',
         },
         {
             id: 3,
             text: 'Jatin has done a great job on my full stack development project. My project is really big but he managed to get every step done perfectly. Also he is always full of pashion & his working speed is fast. He has professional skills and knowledge that allow him to finish complicated tasks. I Really enjoy the experience working with him and will continue working with him on the further changes.',
             clientName: 'Yang Henry',
-            clientPhoto: 'https://media.licdn.com/dms/image/C4E03AQEuema7-YQREw/profile-displayphoto-shrink_400_400/0/1516864097491?e=1699488000&v=beta&t=HmV6EoDzFs3YB6w2W6occUkZImpE05RcaCxnkLm8srg',
+            clientPhoto: 'https://www.upwork.com/profile-portraits/c1fFy29XOhI1nk0OdyqgvxMfhOyg-aWJmjGg4cnQa0VtDzHjSj5Qi_9CSboencGoR_',
         },
         {
             id: 4,
             text: 'I really like the work Jatin has provided. Will release further tasks to him. I really love the work Jatin has provided. He is offering fast & reliable service. He has good knowledge in building a highly-customized website, and I will be working with him more in the future',
             clientName: 'Yang Henry',
-            clientPhoto: 'https://media.licdn.com/dms/image/C4E03AQEuema7-YQREw/profile-displayphoto-shrink_400_400/0/1516864097491?e=1699488000&v=beta&t=HmV6EoDzFs3YB6w2W6occUkZImpE05RcaCxnkLm8srg',
+            clientPhoto: 'https://www.upwork.com/profile-portraits/c1fFy29XOhI1nk0OdyqgvxMfhOyg-aWJmjGg4cnQa0VtDzHjSj5Qi_9CSboencGoR_',
         },
         {
             id: 5,
@@ -42,7 +42,7 @@ const TestimonialsSection = () => {
             id: 7,
             text: 'Excellent work!!!! He gave me exactly what I requested. I am looking forward to using him again in the future🙂',
             clientName: 'James Lewis',
-            clientPhoto: 'https://media.licdn.com/dms/image/C5603AQGLbl5VAk1VJw/profile-displayphoto-shrink_400_400/0/1581961879989?e=1699488000&v=beta&t=xbGv1JcvLXf7vv1Sv_TN7cVufDeoK3_Yx8zP1Hd0Lxo',
+            clientPhoto: 'https://www.upwork.com/profile-portraits/c1bjAY_NmGz9vYWUYzM-JJ-w4wRshV971Y5xntNd-S1gRQtJ9jXr8IvpcydUBQ9Oyl',
         },
         {
             id: 8,
@@ -54,13 +54,19 @@ const TestimonialsSection = () => {
             id: 9,
             text: 'I want to thank Jatin, for all the hard work he has done. From start to finish there was always a strong level of respect & understanding for the goal at hand. Working closely with him really took our programming to the next level!! He thinks about problems, finds solutions, and has awesome morale. Great communication, great working skills in outreach, and high work quality and efficiency. He had a DEEP understanding of what work was needed and performed above and BEYOND expectations. The tone of his communication was wonderful and emotionally engaging on all levels. To top it off, his experience is incredibly professional, fast, and reliable. Thank You Again, Faizy Jamal"',
             clientName: 'Faizy Jamal',
-            clientPhoto: 'https://media.licdn.com/dms/image/C4D03AQGejV9JE5GyGA/profile-displayphoto-shrink_400_400/0/1644562782321?e=1699488000&v=beta&t=DZiakJxMCRsjnxiktXqNJITe0lntFEHRl3ZDbTU4XIY',
+            clientPhoto: 'https://www.upwork.com/profile-portraits/c1HW5mZiPPNrTd3O4xUkXnpJ3TN6h7BM5gLrDfD51D2rsNS0f0FhTkSiv4IpDrZ5g-',
         },
         {
             id: 10,
             text: 'Jatin incorporated all the changes that I wanted in the website. He was professional and responded very quickly. I highly recommend him! He is very good at designing websites. I would definitely work with him again. He worked on a Sunday and gave me the desired outcomes for my website',
-            clientName: 'Caroline Swamidoss ',
-            clientPhoto: 'https://media.licdn.com/dms/image/C4E03AQHm4gPAzQCZxA/profile-displayphoto-shrink_400_400/0/1638232453557?e=1699488000&v=beta&t=sIgF_wpNKpmYmr3QzSk279lscfY3p_8IAmKOk65Nd6M',
+            clientName: 'Caroline Swamidoss',
+            clientPhoto: 'https://www.upwork.com/profile-portraits/c1fQHdjbJpBBR474f7aJUnbgBVriwUjJoeizS5Hr00DsVHe9CBAkagrqpZ-1rPQOie',
+        },
+        {
+            id: 11,
+            text: 'Jatin did everything asked of him and more. This small project was completed without a hitch. The front end and the database are functioning properly. Jatin was attentive and understood my requests and asked questions when necessary. We will continue to work with Jatin in the future and I recommend him to anyone looking for a reliable developer.',
+            clientName: 'Gavin Gene',
+            clientPhoto: 'https://www.upwork.com/profile-portraits/c1OEhIAyRd2T5jeUFUcKETENrfxCJEbSryKZUq0vPN_LNmPzW74wW8O6SWQGbN_RPh',
         }
     ];
 
