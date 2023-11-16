@@ -10,27 +10,27 @@ const StatsCard = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-12">
                     {/* Client Stats Card */}
                     <div className="p-6 rounded-lg text-center bg-slate-100 transition duration-300 transform hover:scale-105" data-aos="zoom-out-left">
-                        <div className="text-3xl font-bold mt-2 text-slate-900">35+</div>
+                        <div className="text-3xl font-bold mt-2 text-slate-900">20+</div>
                         <div className="text-sm font-bold text-gray-500">Clients</div>
                     </div>
 
                     {/* Projects Completed Stats Card */}
                     <div className="p-6 rounded-lg text-center bg-slate-100 transition duration-300 transform hover:scale-105" data-aos="zoom-out-left">
-                        <div className="text-3xl font-bold mt-2 text-slate-900">12+</div>
+                        <div className="text-3xl font-bold mt-2 text-slate-900">13+</div>
                         <div className="text-sm font-bold text-gray-500">Projects Completed</div>
 
                     </div>
 
                     {/* Team Members Stats Card */}
                     <div className="p-6 rounded-lg text-center bg-slate-100 transition duration-300 transform hover:scale-105" data-aos="zoom-out-left">
-                        <div className="text-3xl font-bold mt-2 text-slate-900">10+</div>
+                        <div className="text-3xl font-bold mt-2 text-slate-900">5+</div>
                         <div className="text-sm font-bold text-gray-500">Team Members</div>
 
                     </div>
 
                     {/* Countries Stats Card */}
                     <div className="p-6 rounded-lg text-center bg-slate-100 transition duration-300 transform hover:scale-105" data-aos="zoom-out-left">
-                        <div className="text-3xl font-bold mt-2 text-slate-900">50k+</div>
+                        <div className="text-3xl font-bold mt-2 text-slate-900">30k+</div>
                         <div className="text-sm font-bold text-gray-500">Revenue</div>
 
                     </div>
