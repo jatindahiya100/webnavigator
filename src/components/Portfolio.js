@@ -26,7 +26,7 @@ const projects = [
         name: 'Gu-Wi Quote Builder',
         description: 'Gu-Wi Gutters assesses a property and completes a JotForm containing details about the services they can provide to the customer. The Quote Builder tool then retrieves this data from the JotForm and generates a customized plan that the client can subscribe to.',
         image: QuoteBuilder,
-        link: 'https://guwiquotebuilder.com/#/5721608211525972188',
+        link: 'https://guwiquotebuilder.com/#/5722451285136736892',
     },
     {
         category: 'Full Stack',
