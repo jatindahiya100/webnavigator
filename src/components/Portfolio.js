@@ -2,11 +2,12 @@ import React from 'react';
 import SideBird from '../assets/images/project/Sidebird-Twitter-fanbase-builder.png'
 import NeverAI from '../assets/images/project/NeverAI.png'
 import QuoteBuilder from '../assets/images/project/GuWiGuttersAndWindows.png'
+import GuwiDashboard from '../assets/images/project/Gu-Wi-Dashboard.png'
+import SponsorPro from '../assets/images/project/Sponsor-Pro-AI-Outreach.png'
 import Compressor from '../assets/images/project/Compressor-io.png'
 import Proper from '../assets/images/project/Proper.png'
 import LuxyHair from '../assets/images/project/Luxy-Hair.png'
 import JPLewis from '../assets/images/project/JP-Lewis-Group.png'
-import customDashboardUI from '../assets/images/project/customDashboardUI.png'
 import ImageCreator from '../assets/images/project/ImageCreator.png'
 import Durable from '../assets/images/project/Durable.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -22,32 +23,39 @@ const projects = [
         link: 'https://durable.co/',
     },
     {
-        category: 'Full Stack',
-        name: 'Gu-Wi Quote Builder',
-        description: 'Gu-Wi Gutters assesses a property and completes a JotForm containing details about the services they can provide to the customer. The Quote Builder tool then retrieves this data from the JotForm and generates a customized plan that the client can subscribe to.',
-        image: QuoteBuilder,
-        link: 'https://guwiquotebuilder.com/#/5722451285136736892',
+        category: 'Front-End',
+        name: 'Image Creator',
+        description: "We've created a polished and user-friendly front-end for Image Creator, ensuring a seamless browsing experience. Check it out now!",
+        image: ImageCreator,
+        link: 'https://imagecreator.alkaidvision.com/',
     },
     {
-        category: 'Full Stack',
+        category: 'Front-End',
         name: 'Never AI',
         description: 'Created and engineered the front-end of Never AI using React.js, Tailwind CSS, and various JavaScript libraries.',
         image: NeverAI,
         link: 'https://www.never.tech/',
     },
     {
-        category: 'Front-End',
-        name: 'Custom Dashboard',
-        description: 'Created a dynamic and customizable data dashboard, enabling users to monitor their data efficiently.',
-        image: customDashboardUI,
-        link: 'https://github.com/jatindahiya100/faizy',
+        category: 'Full Stack',
+        name: 'Sponsor Pro AI Outreach Tool',
+        description: 'A cool app for athletes to find local brands. It helps them write messages using smart AI, making it easy to connect with sponsors.',
+        image: SponsorPro,
+        link: 'https://sponsorpro-70d8f.web.app/',
     },
     {
-        category: 'Front-End',
-        name: 'Image Creator',
-        description: "We've created a polished and user-friendly front-end for Image Creator, ensuring a seamless browsing experience. Check it out now!",
-        image: ImageCreator,
-        link: 'https://imagecreator.alkaidvision.com/',
+        category: 'Full Stack',
+        name: 'Gu-Wi Quote Builder',
+        description: 'I crafted a nifty tool for Gu-Wi that automatically generates two quotes for customers, using data from JotForm. Simplifying the process, it ensures a speedy and tailored experience for clients.',
+        image: QuoteBuilder,
+        link: 'https://guwiquotebuilder.com/#/5722451285136736892',
+    },
+    {
+        category: 'Full Stack',
+        name: 'Gu-Wi Admin Dashboard',
+        description: 'Developed Gu-Wi Admin Dashboard. Full Stack app with API integration, front-end, and Firebase. Enabled user-friendly interface, real-time analytics, and customization for efficient service management.',
+        image: GuwiDashboard,
+        link: 'https://guwi-dashboard.web.app/',
     },
     {
         category: 'Full Stack',
@@ -102,7 +110,7 @@ const PortfolioCategory = ({ category, projects }) => (
 
                     <div className="p-6 bg-white">
                         <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
-                        <p className="text-gray-600 overflow-y-auto">
+                        <p className="text-gray-500 text-sm">
                             {project.description}&nbsp;
                             <a href={project.link}
                                 target="_blank"
