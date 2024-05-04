@@ -3,6 +3,7 @@ import SideBird from '../assets/images/project/Sidebird-Twitter-fanbase-builder.
 import NeverAI from '../assets/images/project/NeverAI.png'
 import QuoteBuilder from '../assets/images/project/GuWiGuttersAndWindows.png'
 import GuwiDashboard from '../assets/images/project/Gu-Wi-Dashboard.png'
+import Artify from '../assets/images/project/Artify-Image-Restyle.png'
 import SponsorPro from '../assets/images/project/Sponsor-Pro-AI-Outreach.png'
 import Compressor from '../assets/images/project/Compressor-io.png'
 import Proper from '../assets/images/project/Proper.png'
@@ -35,6 +36,13 @@ const projects = [
         description: 'Created and engineered the front-end of Never AI using React.js, Tailwind CSS, and various JavaScript libraries.',
         image: NeverAI,
         link: 'https://www.never.tech/',
+    },
+    {
+        category: 'Full Stack',
+        name: 'Artify - AI Image Restyle',
+        description: 'Artify AI lets users transform their photos with AI filters and print them on customizable products for personalized art made easy.',
+        image: Artify,
+        link: 'https://artify-app-yu34e.ondigitalocean.app/',
     },
     {
         category: 'Full Stack',
@@ -128,7 +136,8 @@ const PortfolioCategory = ({ category, projects }) => (
 
 const Portfolio = () => {
     // Create an array of unique categories
-    const categories = [...new Set(projects.map((project) => project.category))];
+    const categories = [...new Set(projects.map((project) => project.category))]
+        .sort((a, b) => b.localeCompare(a));
 
     return (
         <div id='portfolio-section' className="container mx-auto px-4 py-8">
