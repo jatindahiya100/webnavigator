@@ -5,6 +5,7 @@ import QuoteBuilder from '../assets/images/project/GuWiGuttersAndWindows.png'
 import GuwiDashboard from '../assets/images/project/Gu-Wi-Dashboard.png'
 import Artify from '../assets/images/project/Artify-Image-Restyle.png'
 import SponsorPro from '../assets/images/project/Sponsor-Pro-AI-Outreach.png'
+import RainfireStore from '../assets/images/project/Rainfire-Online-Store.png'
 import Compressor from '../assets/images/project/Compressor-io.png'
 import Proper from '../assets/images/project/Proper.png'
 import LuxyHair from '../assets/images/project/Luxy-Hair.png'
@@ -39,14 +40,14 @@ const projects = [
     },
     {
         category: 'Full Stack',
-        name: 'Artify - AI Image Restyle',
+        name: 'AI Image Restyle',
         description: 'Artify AI lets users transform their photos with AI filters and print them on customizable products for personalized art made easy.',
         image: Artify,
         link: 'https://artify-app-yu34e.ondigitalocean.app/',
     },
     {
         category: 'Full Stack',
-        name: 'Sponsor Pro AI Outreach Tool',
+        name: 'AI Outreach Tool',
         description: 'A cool app for athletes to find local brands. It helps them write messages using smart AI, making it easy to connect with sponsors.',
         image: SponsorPro,
         link: 'https://sponsorpro-70d8f.web.app/',
@@ -64,6 +65,13 @@ const projects = [
         description: 'Developed Gu-Wi Admin Dashboard. Full Stack app with API integration, front-end, and Firebase. Enabled user-friendly interface, real-time analytics, and customization for efficient service management.',
         image: GuwiDashboard,
         link: 'https://guwi-dashboard.web.app/',
+    },
+    {
+        category: 'Full Stack',
+        name: 'Rainfire E-Commerce',
+        description: 'Rainfire E-Commerce: My full-stack e-commerce masterpiece. From design to deployment, every aspect crafted by me for seamless online shopping',
+        image: RainfireStore,
+        link: 'https://rainfire.in/',
     },
     {
         category: 'Full Stack',
@@ -124,7 +132,7 @@ const PortfolioCategory = ({ category, projects }) => (
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-blue-600 hover:underline hover:text-blue-800 transition-colors duration-300">
-                                Check It Now
+                                Preview
                             </a>
                         </p>
                     </div>
