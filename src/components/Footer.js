@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Left Grid Item */}
         <div className="col-span-1 sm:col-span-2 md:col-span-1 flex flex-col justify-center items-center sm:items-start mb-4">
           <h2 className="text-xl sm:text-2xl font-semibold text-center sm:text-start">Ready To Start A Project</h2>
-          <p className="text-gray-300 mb-4 sm:text-lg text-center sm:text-start mt-4 mb-4">
+          <p className="text-gray-300 sm:text-lg text-center sm:text-start mt-4 mb-4">
             Let's have a conversation about your project.
           </p>
           <button className="bg-blue-500 px-4 sm:px-6 py-3 sm:py-4 rounded-lg text-white hover:bg-blue-600 transition duration-300" onClick={() => {
